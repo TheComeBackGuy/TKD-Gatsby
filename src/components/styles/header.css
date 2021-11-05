@@ -1,0 +1,61 @@
+.headerBar {
+    width: 1000%;
+    background-color: white;
+}
+
+.headerConstraint {
+    height: 110px;
+    width: 100%;
+    /* margin-top: 40px; */
+    background-color: white;
+    margin: 40px auto 0 auto;
+}
+.headerGrid {
+    width: 80%;
+    max-width: var(--tkdWidth);
+    display: grid;
+    margin: 0 auto;
+    color: #888;
+    background-color: white;
+    grid-template-columns: 300px auto;
+}
+
+.logo {
+    position: relative;
+    top: -30px;
+    /* margin: 0 0 0 20px; */
+}
+
+.navspace {
+    width: auto;
+    border: 1px solid red;
+}
+nav {
+    text-align: right;
+    justify-self: right;
+    /* padding: 0 20px 0 0; */
+    height: 100%;
+}
+
+nav li {
+    display: inline-flex;
+    list-style-type: none;
+    justify-self: stretch;
+}
+nav button {
+    background-color: transparent;
+    font-size: 20px;
+    font-weight: 400;
+    border: none;
+    color: #b8b8b8;
+    padding: 60px 10px 0 10px;
+}
+nav button:hover {
+    color: var(--tkdBlue);
+    cursor: pointer;
+    transition: 0.5s;
+    transition-timing-function: ease;
+    border-radius: 0 0 4px 4px;
+}
+
+/* 1200 is max before changes? */

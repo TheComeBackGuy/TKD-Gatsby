@@ -1,0 +1,20 @@
+.showStatus {
+    width: 100%;
+    background-color: #e09900;
+    color: white;
+    /* padding: 10px; */
+    font-size: 20px;
+}
+.showStatus:hover {
+    background-color: #e07700;
+    transition: 0.5s ease-out;
+}
+.mastheadContainer {
+    display: block;
+    width: 100%;
+    background-color: thistle;
+}
+.banner {
+    width: 100%;
+    border: 1px solid greenyellow;
+}

@@ -1,11 +1,28 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-    font-family: "Open Sans"
+:root {
+    --tkdBlue: #2a2e40;
+    --tkdBlack: #222;
+    --tkdWidth: 1200px;
 }
 
-body{
-    background-color: #2A2E40;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
 
+header {
+    display: grid;
+    grid-template-rows: 100% 100%;
+}
+
+body {
+    background-color: var(--tkdBlue);
+    height: 100%;
+}
+
+.everything {
+    width: 100%;
+    background-color: transparent;
+    height: 100%;
 }

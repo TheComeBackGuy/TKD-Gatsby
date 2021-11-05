@@ -1,8 +1,8 @@
-main{
-    width:80%;
+main {
+    width: 80%;
     height: 100%;
-    max-width: 1500px;
-    background-color: white;
-    color:darkslategray;
+    max-width: var(--tkdWidth);
+    background-color: grey;
+    color: darkslategray;
     margin: 0 auto;
 }

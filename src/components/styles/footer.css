@@ -1,6 +1,21 @@
-footer{
-    width:100%;
-    color: #888;
+footer {
+    width: 100%;
+    color: #999;
     background-color: #222;
     padding: 20px;
+}
+
+.footerGrid {
+    width: 100%;
+    max-width: var(--tkdWidth);
+    /* background-color: grey; */
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+.address {
+    display: block;
+}
+
+li {
+    list-style-type: none;
 }
