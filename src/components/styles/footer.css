@@ -2,7 +2,7 @@ footer {
     width: 100%;
     color: #999;
     background-color: #222;
-    padding: 20px;
+    padding: 40px;
 }
 
 .footerGrid {
@@ -16,6 +16,18 @@ footer {
     display: block;
 }
 
-li {
+.listBullet {
     list-style-type: none;
+}
+
+.listBullet::before {
+    content: '•';
+    color: rgb(148, 17, 17);
+    /* margin-left: -1px; */
+    padding-right: 3px;
+}
+a {
+    color: #999;
+    text-decoration: none; /* no underline */
+    cursor: pointer;
 }

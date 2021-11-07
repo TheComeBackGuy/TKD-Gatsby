@@ -1,0 +1,28 @@
+.covidUpdate {
+    margin-top: 20px;
+    width: 100%;
+    padding: 30px 70px 50px 70px;
+    background-color: #dddddd;
+    text-align: center;
+}
+.covidUpdate p {
+    margin: 10px 0 0 0;
+    line-height: 1.5em;
+}
+
+.covidUpdate h1 {
+    border-bottom: 1px solid var(--tkdBlack);
+}
+
+.covidSolutions {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.covidSolutions p {
+    padding: 30px;
+    margin: 20px;
+    background-color: var(--tkdBlue);
+    color: #ddd;
+    border-radius: 15px;
+}

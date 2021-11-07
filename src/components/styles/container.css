@@ -1,8 +1,0 @@
-main {
-    width: 80%;
-    height: 100%;
-    max-width: var(--tkdWidth);
-    background-color: grey;
-    color: darkslategray;
-    margin: 0 auto;
-}

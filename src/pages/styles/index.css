@@ -1,7 +1,7 @@
 :root {
     --tkdBlue: #2a2e40;
     --tkdBlack: #222;
-    --tkdWidth: 1200px;
+    --tkdWidth: 1100px;
 }
 
 * {
@@ -25,4 +25,22 @@ body {
     width: 100%;
     background-color: transparent;
     height: 100%;
+}
+
+main {
+    width: 80%;
+    height: 100%;
+    max-width: var(--tkdWidth);
+    /* background-color: transparent; */
+    color: var(---tkdBlack);
+    margin: 0 auto;
+}
+
+.container {
+    width: 80%;
+    height: 100%;
+    max-width: var(--tkdWidth);
+    /* background-color: transparent; */
+    color: var(---tkdBlack);
+    margin: 0 auto;
 }

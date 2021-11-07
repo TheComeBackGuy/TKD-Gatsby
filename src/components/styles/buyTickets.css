@@ -1,8 +1,14 @@
 .callToActionButton {
     width: 100%;
-    margin: 10px 0 0 0;
-    background-color: seagreen;
+    background-color: #0fa60f;
     color: white;
-    padding: 5px;
+    padding: 10px;
     font-size: 20px;
+    border: none;
+}
+
+.callToActionButton:hover {
+    background-color: #93e528;
+    cursor: pointer;
+    transition: 0.25s ease-in;
 }
