@@ -1,0 +1,7 @@
+.boardNames {
+    list-style-type: none;
+    border: none;
+}
+.boardNames li h2 {
+    border: none;
+}

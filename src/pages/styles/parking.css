@@ -1,0 +1,22 @@
+.parking {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+}
+
+.parkingImage {
+    margin: 25px 0;
+    width: 250px;
+    border: none;
+    border-radius: 500px;
+}
+
+.card h2 {
+    margin-top: 20px;
+    border-bottom: 1px solid var(--tkdBlue);
+}
+
+.metered {
+    grid-column: 1 / span 2;
+}
