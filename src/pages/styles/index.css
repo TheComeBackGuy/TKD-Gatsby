@@ -45,3 +45,7 @@ main {
     color: var(---tkdBlack);
     margin: 0 auto;
 }
+
+li {
+    list-style-type: none;
+}

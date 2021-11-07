@@ -1,0 +1,167 @@
+[
+    {
+        "title": "A Doublewide, Texas Christmas",
+        "author": ["Jones", "Hope", "Wooten"],
+        "director": "Candace Moore",
+        "image": "../images/doublewide.jpg",
+        "opens": "December 3, 2021 22:00:00",
+        "closes": "December 19, 2021 15:00:00",
+        "description": "In this outrageously funny comedy, it’s Christmas-time in the newest—and tiniest—town in Texas. And it’s beginning to look a lot like trouble in Doublewide. Not only are the trailer park residents dealing with the stress of the holiday season, but they’ve just discovered that Doublewide is being double-crossed by the County. With their official incorporation papers in jeopardy, this band of eccentric Texans throw themselves into taking on the “Big Guys.” Determined to bolster their legitimacy, they first set their sights on the County-wide “Battle of The Mangers” competition. They conspire to win this smackdown with their “Nativity At The Alamo” entry…by any means possible.",
+        "cast": [
+            { "name": "Big Ethel", "actor": "Donna Shoun" },
+            { "name": "Georgia Dean", "actor": "Justine Link" },
+            { "name": "Lark Barken", "actor": "Eleanor Weedman" },
+            { "name": "Haywood Slogget", "actor": "Tom Ireland" },
+            { "name": "Patsy Price", "actor": "Windie Wilson" },
+            { "name": "Baby Crumpler", "actor": "Eric Collins" },
+            {
+                "name": "Caprice Crumpler",
+                "actor": "Joann Damiani"
+            },
+            {
+                "name": "Nash Slogget",
+                "actor": "Tristan Brown"
+            },
+            {
+                "name": "Joveeta Crumpler",
+                "actor": "Sarah Campbell"
+            }
+        ],
+        "ticketLink": "a-doublewide-texas-christmas-81671"
+    },
+    {
+        "title": "Office Hours",
+        "author": "Norm Foster",
+        "director": "Windie Wilson",
+        "promoImage": "../images/officeHours_website_banner.jpg",
+        "opens": "January 21, 2022 22:00:00",
+        "closes": "February 13, 2022 15:00:00",
+        "description": "Office Hours is a full-length comedy by Norm Foster. Six separate stories are unfolding in six separate offices on one Friday afternoon. In true Norm Foster style, it makes us laugh at our humanity, cleverly linking a TV news producer, a pair of Canadian movie producers, a rather unsavoury agent, an entertainment lawyer, a horse track owner. and a psychiatrist. This highly acclaimed theatrical comedy is a madcap race towards quitting time.",
+        "cast": [
+            {
+                "name": "Warren Kimble",
+                "actor": "",
+                "description": "A television news reporter"
+            },
+            {
+                "name": "Pam Gerard",
+                "actor": "",
+                "description": "A television news reporter"
+            },
+            {
+                "name": "One-Armed Man",
+                "actor": "",
+                "description": "A veiwer"
+            },
+            {
+                "name": "Gordon Blaine",
+                "actor": "",
+                "description": "A Canadian film producer"
+            },
+            {
+                "name": "Francine Majors",
+                "actor": "",
+                "description": "A Canadian film producer"
+            },
+            {
+                "name": "Bobby Holland",
+                "actor": "",
+                "description": "An American film producer"
+            },
+            {
+                "name": "Mark Young",
+                "actor": "",
+                "description": "An Agent"
+            },
+            {
+                "name": "Ellie Young",
+                "actor": "",
+                "description": "Mark's wife"
+            },
+            {
+                "name": "Richard Penny",
+                "actor": "",
+                "description": "A lawyer"
+            },
+            {
+                "name": "Rhonda Penny",
+                "actor": "",
+                "description": "Richard's Mother"
+            },
+            {
+                "name": "Lloyd Penny",
+                "actor": "",
+                "description": "Richard's Father"
+            },
+            {
+                "name": "Stan Thurber",
+                "actor": "",
+                "description": "A racetrack owner"
+            },
+            {
+                "name": "Artie Barnes",
+                "actor": "",
+                "description": "A racetrack Employee"
+            },
+            {
+                "name": "Sharon Freeman",
+                "actor": "",
+                "description": "A psychiatrist"
+            },
+            {
+                "name": "Man",
+                "actor": "",
+                "description": "A patient"
+            },
+            {
+                "name": "Neil Penny",
+                "actor": "",
+                "description": "A patient"
+            }
+        ],
+
+        "ticketLink": "office-hours-30914"
+    },
+    {
+        "title": "I Hate Hamlet",
+        "author": "Paul Rudnick",
+        "director": "Courtney Woolard",
+        "image": "./images/hamletBanner.jpg",
+        "opens": "April 1, 2022 22:00:00",
+        "closes": "April 17, 2022 15:00:00",
+        "description": "A young and successful television actor relocates to New York, where he rents a marvelous, gothic apartment. With his television career in limbo, the actor is offered the opportunity to play Hamlet onstage, but there’s one problem: He hates Hamlet. His dilemma deepens with the entrance of John Barrymore’s ghost, who arrives intoxicated and in full costume to the apartment that once was his. The contrast between the two actors, the towering, dissipated Barrymore whose Hamlet was the greatest of his time, and Andrew Rally, hot young television star, leads to a wildly funny duel over women, art, success, duty, television, and yes, the apartment.",
+        "cast": [
+            {
+                "name": "Felicia Dantine",
+                "actor": "",
+                "description": "Andrew Rally's real estate broker, Felicia Dantine claims that she can speak to the dead; however, her séance arranged to speak with the ghost of Barry more appears on the surface to have been a failure."
+            },
+            {
+                "name": "Andrew Rally",
+                "actor": "",
+                "description": "Young and popular, Andrew Rally is a television actor and star of a recently canceled soap opera. He just moved to New York City from Los Angeles, where he will soon be playing Hamlet on stage. He is both overwhelmed and chagrined by the challenge, because it is the stage, not Hollywood, and because it is perhaps the most difficult role every written. However, he has unwittingly moved into the apartment of the deceased John Barrymore, perhaps the greatest Shakespearean actor who ever lived."
+            },
+            {
+                "name": "Deirdre McDavey",
+                "actor": "",
+                "description": "Attractive and emotional, Deirdre McDavey is Rally's girlfriend. She is committed, much to his annoyance, to \"saving herself\" until they are married."
+            },
+            {
+                "name": "Lillian Troy",
+                "actor": "",
+                "description": "Rally's agent, Lillian Troy is in her early twenties but remembers fondly an affair she had with John Barry more many years ago, in the apartment Rally now lives in."
+            },
+            {
+                "name": "Jjohn Barrymore",
+                "actor": "",
+                "description": "A lengendary actor, John Barrymore, or, rather, his ghost is still quite active (in many ways) and appears to help Rally in the nuances of both acting and love."
+            },
+            {
+                "name": "Gary Peter Lefkowitz",
+                "actor": "",
+                "description": "A cocky, pompous television producer, Gary Peter Lefkowitz gave Rally his first big break. He wants Rally to move back to Los Angeles to film a new television series and can't understand why he isn't jumping at the chance."
+            }
+        ],
+        "ticketLink": "i-hate-hamlet-79784"
+    }
+]

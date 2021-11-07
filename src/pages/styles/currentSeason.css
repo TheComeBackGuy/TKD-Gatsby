@@ -1,0 +1,8 @@
+.knockout {
+    background-color: white;
+    color: var(--tkdBlack);
+}
+
+.season h3 {
+    font-size: 40px;
+}

@@ -20,3 +20,11 @@
     color: #ddd;
     border-radius: 15px;
 }
+
+.knockoutWhite {
+    padding: 30px;
+    margin: 20px;
+    background-color: white;
+    color: var(--tkdBlack);
+    border-radius: 15px;
+}
