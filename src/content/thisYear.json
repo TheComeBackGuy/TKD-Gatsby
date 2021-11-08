@@ -1,5 +1,68 @@
 [
     {
+        "title": "The Odd Couple",
+        "author": "Neil Simon",
+        "director": "Rebecca Gomez",
+        "image": "oddCouple",
+        "opens": "August 20, 2022 22:00:00",
+        "closes": "September 12, 2021 15:00:00",
+        "description": "Unger and Madison are at it again! Florence Unger and Olive Madison, that is, in Neil Simon\\'s hilarious 80\\'s comic classic: the female version of The Odd Couple. Instead of the poker party that begins the original version, Ms. Madison has invited the girls over for an evening of Trivial Pursuit. The Pidgeon sisters have been replaced by the two Constazuela brothers. But the hilarity remains the same!",
+        "cast": [
+            { "name": "Olive", "actor": "Courtney Woolard", "description": "" },
+            { "name": "Florence", "actor": "Anna Everence", "description": "" },
+            { "name": "Mickey", "actor": "Joyce Jones", "description": "" },
+            { "name": "Renee", "actor": "Angel Orenstein", "description": "" },
+            { "name": "Sylvia", "actor": "Liz Burling", "description": "" },
+            {
+                "name": "Vera",
+                "actor": "Brittany Lightfoot",
+                "description": ""
+            },
+            { "name": "Manolo", "actor": "David Snow", "description": "" },
+            { "name": "Jesus", "actor": "Greg Knox", "description": "" }
+        ],
+        "ticketLink": "the-odd-couple-female-version-19838"
+    },
+    {
+        "title": "The Haunting of Hill House",
+        "author": ["F Andrew Leslie", "Shirley Jackson"],
+        "director": ["Sarah Campbell", "Dennis Hart"],
+        "image": "hillHouse",
+        "opens": "October 8, 2021 22:00:00",
+        "closes": "October 31, 2021 15:00:00",
+        "description": "A chilling and mystifying study in mounting terror in which a small group of \\“psychically receptive” people are brought together in Hill House, a brooding, mid-Victorian mansion known as a place of evil and \\“contained ill will.\\” Led by the learned Dr. Montague, who is conducting research in supernatural phenomena, the visitors have come to probe the secrets of the old house and to draw forth the mysterious powers that it is alleged to possess—powers which have brought madness and death to those who have lived therein in the past. The play was adapted from the novel by Shirley Jackson.",
+        "cast": [
+            {
+                "name": "Eleanor Vance",
+                "actor": "Shelby Frye",
+                "description": ""
+            },
+            { "name": "Theodora", "actor": "Raine Palmer", "description": "" },
+            {
+                "name": "Dr. Montague",
+                "actor": "Tristan Brown",
+                "description": ""
+            },
+            {
+                "name": "Mrs. Montague",
+                "actor": "Cameron Skillen",
+                "description": ""
+            },
+            {
+                "name": "Luke Sanderson",
+                "actor": "Josh Bigwood",
+                "description": ""
+            },
+            { "name": "Arthur", "actor": "Ryan Rotella", "description": "" },
+            {
+                "name": "Mrs. Dudley",
+                "actor": "Graham Marema",
+                "description": ""
+            }
+        ],
+        "ticketLink": ""
+    },
+    {
         "title": "A Doublewide, Texas Christmas",
         "author": ["Jones", "Hope", "Wooten"],
         "director": "Candace Moore",
@@ -152,7 +215,7 @@
                 "description": "Rally's agent, Lillian Troy is in her early twenties but remembers fondly an affair she had with John Barry more many years ago, in the apartment Rally now lives in."
             },
             {
-                "name": "Jjohn Barrymore",
+                "name": "John Barrymore",
                 "actor": "",
                 "description": "A lengendary actor, John Barrymore, or, rather, his ghost is still quite active (in many ways) and appears to help Rally in the nuances of both acting and love."
             },
@@ -163,5 +226,25 @@
             }
         ],
         "ticketLink": "i-hate-hamlet-79784"
+    },
+    {
+        "title": "Rope",
+        "author": "Patrick Hamilton",
+        "director": "Dennis",
+        "image": "rope",
+        "opens": "June 3, 2022 20:00:00",
+        "closes": "June 19, 2022 15:00:00",
+        "description": "For the mere sake of adventure, danger, and the \"fun of the thing,\" Wyndham Brandon persuades his weak minded friend, Charles Granillo, to assist him in the murder of a fellow undergraduate, a perfectly harmless man named Ronald Raglan. They place the body in a wooden chest, and to add spice to their handiwork, invite a few acquaintances, including the dead youth's father, to a party, the chest with its gruesome contents serving as a supper table. The horror and tension are worked up gradually; thunder grows outside, the guests leave, and we see the reactions of the two murderers, watched closely by the suspecting lame poet, Rupert Cadell. Finally they break down under the strain and confess their guilt.",
+        "cast": [
+            { "name": "Wyndham Brandon", "actor": "", "description": "" },
+            { "name": "Charles Granillo", "actor": "", "description": "" },
+            { "name": "Sabot", "actor": "", "description": "" },
+            { "name": "Kenneth Raglan", "actor": "", "description": "" },
+            { "name": "Leila Arden", "actor": "", "description": "" },
+            { "name": "Sir Johnstone Kentley", "actor": "", "description": "" },
+            { "name": "Mrs. Debenham", "actor": "", "description": "" },
+            { "name": "Rupert Cadell", "actor": "", "description": "" }
+        ],
+        "ticketLink": ""
     }
 ]

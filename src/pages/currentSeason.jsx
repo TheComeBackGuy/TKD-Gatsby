@@ -5,8 +5,10 @@ import Footer from '../components/footer'
 import JSONData from '../content/thisYear.json'
 import './styles/currentSeason.css'
 import './styles/pages.css'
+import { graphql } from 'gatsby'
 // import { StaticImage } from 'gatsby-plugin-image'
 
+// export const query = graphql``
 export default function CurrentSeason() {
     return (
         <body className="everything">
@@ -49,13 +51,20 @@ export default function CurrentSeason() {
                                         </button>
                                         <ul>
                                             {data.cast.map((role) => {
-                                                return (
-                                                    <li>
-                                                        {' '}
-                                                        {role.name}:{' '}
-                                                        {role.actor}
-                                                    </li>
-                                                )
+                                                if (role.actor != '') {
+                                                    return (
+                                                        <li>
+                                                            {' '}
+                                                            <strong>
+                                                                {' '}
+                                                                {role.name}
+                                                            </strong>
+                                                            : {role.actor}
+                                                        </li>
+                                                    )
+                                                } else {
+                                                    return <li>{role.name}</li>
+                                                }
                                             })}
                                         </ul>
                                     </div>

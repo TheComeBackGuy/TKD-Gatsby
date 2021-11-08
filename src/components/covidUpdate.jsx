@@ -8,10 +8,10 @@ export default function CovidUpdate() {
         <div className="covidUpdate">
             <h1>Health and Safety Updates</h1>
             <p>
-                Theatre Knoxville Downtown is dedicated to keeping it's
-                performers, volunteers, and guests as safe as we can during the
-                ebb and flow of this outbreak. We are routinely revisiting our
-                policies reguarding social distancing and mask use.
+                TKD is dedicated to keeping it's performers, volunteers, and
+                guests as safe as we can during the ebb and flow of this
+                outbreak. We are routinely revisiting our policies reguarding
+                social distancing and mask use.
             </p>
             <p>
                 We would like to extend our thanks to all of our guests who have
