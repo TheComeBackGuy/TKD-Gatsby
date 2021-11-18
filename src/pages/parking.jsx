@@ -23,7 +23,7 @@ export default function Parking() {
 
                     <h2>Parking options</h2>
                     <div className="parking">
-                        <p className="knockout metered">
+                        <p className="knockoutWhite metered">
                             Metered parking is available on all of the streets
                             around the theater. The meters are FREE evenings
                             after 6 pm and all day Sunday. Parking is also

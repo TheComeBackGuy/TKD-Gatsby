@@ -51,7 +51,7 @@ export default function CurrentSeason() {
                                         </button>
                                         <ul>
                                             {data.cast.map((role) => {
-                                                if (role.actor != '') {
+                                                if (role.actor !== '') {
                                                     return (
                                                         <li>
                                                             {' '}

@@ -13,7 +13,7 @@ export default function Auditions() {
             <main className="container">
                 <h1 className="standardPage">Auditions</h1>
                 <article className="card">
-                    <h1>Audition Requirements</h1>
+                    <h1>General Requirements</h1>
                     <p>
                         No monologue is necessary. The audition will consist of
                         cold readings from the script in a group enviroment.

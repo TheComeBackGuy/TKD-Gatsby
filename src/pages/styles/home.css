@@ -1,3 +1,56 @@
 main {
     width: 100%;
 }
+
+.flexReviews {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-grow: 4; */
+}
+
+.flexReviews li {
+    flex-shrink: 1;
+    flex-basis: 33%;
+    display: flex;
+    text-align: left;
+    /* margin: 0 0 20px 0; */
+    /* padding-bottom: 100px; */
+}
+
+.flexReviews h3 {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.flexReviews h4 {
+    text-align: right;
+}
+
+.quotes {
+    width: 60px;
+    height: auto;
+    fill: var(--tkdBlue);
+    position: relative;
+    top: -50px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.bgColor {
+    background-color: #eae2b7;
+}
+
+.card h1 {
+    border-bottom: 1px solid var(--tkdBlue);
+    margin-bottom: 20px;
+}
+
+.etfGrid {
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+/* 
+.knockoutWhite::after {
+    content: url('../../images/svg/quotations.svg');
+} */

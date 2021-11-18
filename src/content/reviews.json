@@ -1,0 +1,41 @@
+[
+    {
+        "name": "A Faithful Patron",
+        "city": "Knoxville",
+        "state": "TN",
+        "review": "My wife and I attended last night’s performance of Death of a Saleseman and it was spectacular! The cast did such a marvelous job of making the characters real and believable in such a gripping story. [It’s] the most powerful performance we have seen at TKD since moving back to Knoxville in 2013."
+    },
+    {
+        "name": "Jim Wharton",
+        "city": "Knoxville",
+        "state": "TN",
+        "review": "Saw the play God of Carnage last night. It was a fantastic side-splitting performance. It is a true reflection of life raising children and dealing with neighbors."
+    },
+    {
+        "name": "Nicholas Stroud",
+        "city": "Knoxville",
+        "state": "TN",
+        "review": "This is a great theatre. The last show I saw, Every Christmas Story Ever Told …, was amazing and extremely well acted. It is a small venue that makes the show seem more personal and like you are the focus of the actors’ attention."
+    },
+
+    {
+        "name": "Cat Seagle Scussel",
+        "city": "Knoxville",
+        "state": "TN",
+        "review": "My husband and I love this place for our date nights. We both have enjoyed so many of the plays, most recently On Golden Pond. Can’t wait for the new location!"
+    },
+
+    {
+        "name": "Andrew Kruer",
+        "city": "Knoxville",
+        "state": "TN",
+        "review": "Just saw Sordid Lives as my first TKD production – small, quaint theater with amazing talent!"
+    },
+
+    {
+        "name": "Heather Dunlap",
+        "city": "Knoxville",
+        "state": "TN",
+        "review": "My boyfriend and I have been attending plays at TKD for over the last year and a half. We always look forward to being completely captivated by the experience whether we’re seeing a dramatic tear-evoking show or a comical gut-busting parody. It’s never just a date. It’s always a full experience that is inevitably followed by colorful conversation and analysis. While performances at larger theaters are enjoyable, there is a certain intimacy at TKD that is impossible to find elsewhere."
+    }
+]
