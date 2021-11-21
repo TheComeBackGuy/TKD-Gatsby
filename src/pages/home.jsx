@@ -37,14 +37,14 @@ export default function Home() {
             />
 
             <CovidUpdates />
-            <div className="card">
+            <div className="cardBlank white">
                 <h1>Our Guests Agree...</h1>
                 <ul className="flexReviews">
                     {Reviews.map((data, index) => {
                         if (data.name !== '' && data.review !== '') {
                             return (
                                 <li key={`content_item_${index}`}>
-                                    <div className="knockoutWhite bgColor">
+                                    <div className="knockoutBlank bgColor">
                                         <Quotes />
                                         <p>{data.review}</p>
                                         {''}
@@ -62,18 +62,18 @@ export default function Home() {
                     })}
                 </ul>
             </div>
-            <div className="card">
+            <div className="cardBlank lightGrey">
                 <h1>East Tennessee Foundation</h1>
 
                 <div className="etfGrid">
-                    <div>
+                    <div className="etfLogo">
                         <StaticImage
                             src="../images/etf_logo-980x400.png"
                             alt="East Tennessee Foundation"
                             placeholder="dominantColor"
                         />
                     </div>
-                    <div className="knockout">
+                    <div className="knockoutBlank white">
                         Theatre Knoxville Downtown has received support during
                         the COVID-19 pandemic through a generous grant from the
                         Arts Fund of the East Tennessee Foundation.

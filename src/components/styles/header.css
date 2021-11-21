@@ -47,11 +47,11 @@ nav button {
     font-size: 20px;
     font-weight: 400;
     border: none;
-    color: #b8b8b8;
+    color: var(--tkdBlue);
     padding: 60px 10px 0 10px;
 }
 nav button:hover {
-    color: var(--tkdBlue);
+    color: var(--tkdRed);
     cursor: pointer;
     transition: 0.5s;
     transition-timing-function: ease;

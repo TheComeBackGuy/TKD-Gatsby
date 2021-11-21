@@ -1,6 +1,6 @@
 .standardPage {
     width: 100%;
-    background-color: rgb(110, 37, 104);
+    background-color: var(--tkdGold);
     padding: 20px;
     color: white;
 }
@@ -9,7 +9,7 @@
     margin-top: 20px;
     width: 100%;
     padding: 30px 70px 50px 70px;
-    background-color: #dddddd;
+    background-color: white;
     text-align: center;
 }
 
@@ -25,6 +25,12 @@
     padding: 30px;
     margin: 20px;
     background-color: white;
+    color: var(--tkdBlack);
+    border-radius: 15px;
+}
+.knockoutBlank {
+    padding: 30px;
+    margin: 20px;
     color: var(--tkdBlack);
     border-radius: 15px;
 }

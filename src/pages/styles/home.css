@@ -38,7 +38,15 @@ main {
 }
 
 .bgColor {
-    background-color: #eae2b7;
+    background-color: rgb(235, 235, 235);
+}
+
+.lightGrey {
+    background-color: var(--tkdLightGrey);
+}
+
+.white {
+    background-color: white;
 }
 
 .card h1 {
@@ -47,9 +55,16 @@ main {
 }
 
 .etfGrid {
-    display: grid;
-    grid-template-columns: 70% 30%;
+    display: flex;
+    flex-flow: row nowrap;
+
+    /* grid-template-columns: 70% 30%; */
 }
+.etfLogo {
+    flex-basis: 70%;
+    align-self: center;
+}
+
 /* 
 .knockoutWhite::after {
     content: url('../../images/svg/quotations.svg');

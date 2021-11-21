@@ -2,7 +2,7 @@
     margin-top: 20px;
     width: 100%;
     padding: 30px 70px 50px 70px;
-    background-color: #dddddd;
+    background-color: var(--tkdLightGrey);
     text-align: center;
 }
 .covidUpdate p {

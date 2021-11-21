@@ -2,6 +2,21 @@
     --tkdBlue: #2a2e40;
     --tkdBlack: #222;
     --tkdWidth: 1100px;
+    --tkdPaleYellow: #eae2b7;
+    --tkdGold: #fcbf49;
+    --tkdOrange: #f77f00;
+    --tkdRed: #d62828;
+    --tkdLightGrey: rgb(235, 235, 235);
+    --tkdPurple: rgb(110, 37, 104);
+}
+h1 {
+    border-bottom: 1px solid var(--tkdBlue);
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 25px;
+    line-height: 30px;
 }
 
 * {
@@ -38,6 +53,7 @@ main {
 }
 
 .container {
+    overflow: hidden;
     width: 80%;
     height: 100%;
     max-width: var(--tkdWidth);
