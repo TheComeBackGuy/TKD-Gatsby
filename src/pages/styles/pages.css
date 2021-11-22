@@ -16,9 +16,9 @@
 .knockout {
     padding: 30px;
     margin: 20px;
-    background-color: var(--tkdBlue);
+    background-color: var(--tkdOrange);
     color: #ddd;
-    border-radius: 15px;
+    border-radius: var(--tkdBorderRadius);
 }
 
 .knockoutWhite {
@@ -26,13 +26,13 @@
     margin: 20px;
     background-color: white;
     color: var(--tkdBlack);
-    border-radius: 15px;
+    border-radius: var(--tkdBorderRadius);
 }
 .knockoutBlank {
     padding: 30px;
     margin: 20px;
     color: var(--tkdBlack);
-    border-radius: 15px;
+    border-radius: var(--tkdBorderRadius);
 }
 .cardBlank {
     margin-top: 20px;

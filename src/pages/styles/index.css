@@ -8,6 +8,9 @@
     --tkdRed: #d62828;
     --tkdLightGrey: rgb(235, 235, 235);
     --tkdPurple: rgb(110, 37, 104);
+    --tkdLightBlue: #2ea3f2;
+    --tkdGreen: #0fa60f;
+    --tkdBorderRadius: 10px 10px 20px 20px;
 }
 h1 {
     border-bottom: 1px solid var(--tkdBlue);
@@ -24,6 +27,7 @@ h3 {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins';
+    line-height: 1.75em;
 }
 
 header {

@@ -1,0 +1,60 @@
+.supportContainer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    margin: 20px 0 0 0;
+}
+
+.supportContainer .sponsorKnockout {
+    display: flex;
+    flex-flow: column nowrap;
+    flex-basis: 33%;
+    overflow: hidden;
+    border-radius: var(--tkdBorderRadius);
+    margin: 0 10px;
+}
+
+.sponsorLevel {
+    display: block;
+    width: 100%;
+    background-color: var(--tkdOrange);
+    color: white;
+    font-weight: 400;
+    padding: 10px 0;
+}
+.sponsorPrice {
+    background-color: white;
+    font-size: 60px;
+    color: var(--tkdLightBlue);
+    padding: 40px 0;
+}
+.sponsorBenefits {
+    padding: 40px;
+    text-align: left;
+}
+
+.sponsorBenefits li {
+    margin: 0 0 20px 0;
+}
+
+.sponsorBenefits li::before {
+    content: '•';
+    color: var(--tkdLightBlue);
+    /* margin-right: -1px; */
+    padding-right: 3px;
+}
+
+.signUpButton {
+    width: 80%;
+    margin: 20px 0 0 0;
+    padding: 20px;
+    background-color: var(--tkdGreen);
+    font-size: 20px;
+    border-radius: var(--tkdBorderRadius);
+    border: none;
+    color: white;
+}
+.signUpButton:hover {
+    cursor: pointer;
+}

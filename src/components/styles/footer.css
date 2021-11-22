@@ -22,7 +22,7 @@ footer {
 
 .listBullet::before {
     content: '•';
-    color: rgb(148, 17, 17);
+    color: var(--tkdRed);
     /* margin-left: -1px; */
     padding-right: 3px;
 }

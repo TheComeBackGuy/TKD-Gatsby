@@ -29,8 +29,9 @@ export default function Parking() {
                             after 6 pm and all day Sunday. Parking is also
                             available in several garages nearby.
                         </p>
-                        <div className="knockout">
+                        <div className="knockoutBlank lightGrey">
                             <h3>State Street Garage</h3>
+                            <cite>500 State St, Knoxville, TN 37902</cite>
                             <StaticImage
                                 className="parkingImage"
                                 src="../images/state-street-parking.jpg"
@@ -39,13 +40,14 @@ export default function Parking() {
                             />
 
                             <p>
-                                YO! State Street garage, 2 blocks north of the
+                                State Street garage, 2 blocks north of the
                                 theater on S. Central St. This garage is FREE
                                 evenings and weekends.
                             </p>
                         </div>
-                        <div className="knockout">
+                        <div className="knockoutBlank lightGrey">
                             <h3>First Horizon Bank Garage</h3>
+                            <cite>800 S Gay St, Knoxville, TN 37929</cite>
                             <StaticImage
                                 className="parkingImage"
                                 src="../images/first-horizon-bank.jpg"

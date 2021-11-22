@@ -1,4 +1,5 @@
 import * as React from 'react'
+import '../pages/styles/index.css'
 import './styles/buyTickets.css'
 
 export default function BuyTickets(props) {

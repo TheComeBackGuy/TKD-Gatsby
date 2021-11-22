@@ -1,0 +1,71 @@
+[
+    {
+        "name": "Single Shows",
+        "content": [
+            {
+                "adType": "¼ page",
+                "adPrice": 85,
+                "adBenefits": [
+                    "3.5\" x 2\"",
+                    "Black & White",
+                    "Multi-Show Discounts"
+                ]
+            },
+            {
+                "adType": "½ page",
+                "adPrice": 1200,
+                "adBenefits": [
+                    "3.5\" x 2\"",
+                    "Black & White",
+                    "Multi-Show Discounts"
+                ]
+            },
+            {
+                "adType": "¼ page",
+                "adPrice": 85,
+                "adBenefits": [
+                    "3.5\" x 2\"",
+                    "Black & White",
+                    "Multi-Show Discounts"
+                ]
+            },
+            {
+                "adType": "¼ page",
+                "adPrice": 85,
+                "adBenefits": [
+                    "3.5\" x 2\"",
+                    "Black & White",
+                    "Multi-Show Discounts"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Half-Season (4 Shows)",
+        "content": [
+            {
+                "adType": "¼ page",
+                "adPrice": 85,
+                "adBenefits": [
+                    "3.5\" x 2\"",
+                    "Black & White",
+                    "Multi-Show Discounts"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Full Season",
+        "content": [
+            {
+                "adType": "¼ page",
+                "adPrice": 85,
+                "adBenefits": [
+                    "3.5\" x 2\"",
+                    "Black & White",
+                    "Multi-Show Discounts"
+                ]
+            }
+        ]
+    }
+]

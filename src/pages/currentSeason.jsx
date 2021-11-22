@@ -3,34 +3,35 @@ import * as React from 'react'
 import Header from '../components/header'
 import Footer from '../components/footer'
 import JSONData from '../content/thisYear.json'
-import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import './styles/currentSeason.css'
 import './styles/pages.css'
 import { graphql } from 'gatsby'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import Img from 'gatsby-image'
 
 export const query = graphql`
-    query photoThumbs {
-        HillHouseImage: file(relativePath: { eq: "HillHouse_thumb.jpg" }) {
-            childImageSharp {
-                fluid(maxWidth: 100) {
-                    ...GatsbyImageSharpFluid
+    query myQuery {
+        allImageSharp {
+            edges {
+                node {
+                    id
+                    gatsbyImageData
                 }
             }
         }
     }
 `
 
-export default function CurrentSeason({ imageData }) {
+export default function CurrentSeason({ data }) {
     const allShows = false
     const today = new Date()
 
-    const isInFuture = (today, someOtherDay) => {
-        if (today.getTime() > someOtherDay.getTime()) {
-            return true
-        }
-        return false
-    }
+    // const isInFuture = (today, someOtherDay) => {
+    //     if (today.getTime() > someOtherDay.getTime()) {
+    //         return true
+    //     }
+    //     return false
+    // }
 
     function parseDate(date) {
         const thisDate = new Date(date)
@@ -104,15 +105,13 @@ export default function CurrentSeason({ imageData }) {
             <header>
                 <Header text="This is the header" />
             </header>
-            {/* <Img
-                fluid={imageData.HillHouseImage.childImageSharp.fluid}
-                alt="It's HIll House"
-            /> */}
-            {/* <ul>
-                {JSONData.content.map((data, index) => {
-                    return <li key={`content_item_${index}`}>{data.item}</li>
-                })}
-            </ul> */}
+            <GatsbyImage
+                image={
+                    data.allImageSharp.edges[0].node.gatsbyImageData.images
+                        .fallback.src
+                }
+                alt="this is also wrong"
+            />
             <main className="container">
                 <h1 className="standardPage">OUR SEASON</h1>
                 <div className="card">
@@ -120,7 +119,7 @@ export default function CurrentSeason({ imageData }) {
                     {/* <h1>{JSONData[0].title}</h1> */}
                     <ul className="showList">
                         {JSONData.map((data, index) => {
-                            const showDate = new Date(data.opens)
+                            // const showDate = new Date(data.opens)
 
                             if (!allShows && today) {
                                 // console.log(today, showDate)
@@ -168,6 +167,7 @@ export default function CurrentSeason({ imageData }) {
                                     </li>
                                 )
                             }
+                            return <h1>nah</h1>
                         })}
                     </ul>
                 </div>

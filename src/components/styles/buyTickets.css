@@ -1,6 +1,6 @@
 .callToActionButton {
     width: 100%;
-    background-color: #0fa60f;
+    background-color: var(--tkdGreen);
     color: white;
     padding: 10px;
     font-size: 20px;

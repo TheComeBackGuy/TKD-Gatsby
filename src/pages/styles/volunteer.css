@@ -1,7 +1,13 @@
 .volunteers {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-content: space-between;
+}
+
+.formHeader {
+    color: white;
+    border-bottom: 1px solid white;
 }
 
 .vr-field input {
@@ -14,4 +20,40 @@
 
 .vr-field li {
     display: inline;
+}
+
+.volImage {
+    width: 100%;
+    height: 250px;
+}
+
+.smallKnockout {
+    display: flex;
+    flex-flow: column nowrap;
+    flex-basis: 45%;
+    border-radius: var(--tkdBorderRadius);
+    overflow: hidden;
+    margin: 10px;
+}
+
+.smallKnockout p {
+    margin: 20px 0 0 0;
+    text-align: left;
+}
+
+.content {
+    padding: 20px;
+}
+
+.gold {
+    background-color: var(--tkdGold);
+    color: var(--tkdBlue);
+}
+.orange {
+    background-color: var(--tkdOrange);
+    color: white;
+}
+.red {
+    background-color: var(--tkdRed);
+    color: white;
 }

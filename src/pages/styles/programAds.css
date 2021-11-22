@@ -1,0 +1,52 @@
+.adContainer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    margin: 20px 0 0 0;
+}
+
+.adContainer .adKnockout {
+    display: flex;
+    flex-flow: column nowrap;
+    flex-basis: 25%;
+    overflow: hidden;
+    border-radius: var(--tkdBorderRadius);
+    margin: 0 10px;
+}
+
+.adLevel {
+    display: block;
+    width: 100%;
+    background-color: var(--tkdOrange);
+    color: white;
+    font-weight: 400;
+    padding: 10px 0;
+}
+.adPrice {
+    background-color: white;
+    font-size: 60px;
+    color: var(--tkdLightBlue);
+    padding: 40px 0;
+}
+.adBenefits {
+    padding: 40px;
+    text-align: left;
+}
+
+.adBenefits li {
+    margin: 0 0 20px 0;
+}
+
+.adBenefits li::before {
+    content: '•';
+    color: var(--tkdLightBlue);
+    /* margin-right: -1px; */
+    padding-right: 3px;
+}
+
+.adHeader {
+    color: var(--tkdLightBlue);
+    margin-top: 30px;
+    border: none;
+}
