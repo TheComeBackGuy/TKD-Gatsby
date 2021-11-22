@@ -1,3 +1,4 @@
+import './styles/index.css'
 import './styles/home.css'
 import './styles/pages.css'
 
@@ -46,7 +47,10 @@ export default function Home() {
                     {Reviews.map((data, index) => {
                         if (data.name !== '' && data.review !== '') {
                             return (
-                                <li key={`content_item_${index}`}>
+                                <li
+                                    key={`content_item_${index}`}
+                                    className="reviewItem"
+                                >
                                     <div className="knockoutBlank bgColor">
                                         <Quotes />
                                         <p>{data.review}</p>
@@ -76,7 +80,7 @@ export default function Home() {
                             placeholder="dominantColor"
                         />
                     </div>
-                    <div className="knockoutBlank white">
+                    <div className="knockoutBlank white etfText">
                         Theatre Knoxville Downtown has received support during
                         the COVID-19 pandemic through a generous grant from the
                         Arts Fund of the East Tennessee Foundation.

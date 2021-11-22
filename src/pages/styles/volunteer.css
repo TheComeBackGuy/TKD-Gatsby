@@ -44,16 +44,3 @@
 .content {
     padding: 20px;
 }
-
-.gold {
-    background-color: var(--tkdGold);
-    color: var(--tkdBlue);
-}
-.orange {
-    background-color: var(--tkdOrange);
-    color: white;
-}
-.red {
-    background-color: var(--tkdRed);
-    color: white;
-}

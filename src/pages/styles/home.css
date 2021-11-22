@@ -3,16 +3,20 @@
 }
 
 .flexReviews {
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    /* flex-grow: 4; */
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 
-.flexReviews li {
-    flex-shrink: 1;
-    flex-basis: 33%;
+.reviewItem {
     display: flex;
-    text-align: left;
+    flex-basis: 30%;
+    align-items: flex-start;
+    flex-grow: 3;
+    /* flex-shrink: 1; */
+    /* border: 1px solid red; */
     /* margin: 0 0 20px 0; */
     /* padding-bottom: 100px; */
 }
@@ -27,6 +31,7 @@
 }
 
 .quotes {
+    /* border: 1px solid tomato; */
     width: 60px;
     height: auto;
     fill: var(--tkdBlue);
@@ -56,16 +61,22 @@
 
 .etfGrid {
     display: flex;
-    flex-flow: row nowrap;
-
-    /* grid-template-columns: 70% 30%; */
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 .etfLogo {
-    flex-basis: 70%;
+    flex-basis: 30%;
     align-self: center;
 }
-
-/* 
-.knockoutWhite::after {
-    content: url('../../images/svg/quotations.svg');
-} */
+.etfText {
+    flex-basis: 60%;
+}
+@media only screen and (max-width: 1100px) {
+    .etfGrid {
+        flex-flow: column nowrap;
+    }
+    .etfLogo {
+        width: 50%;
+    }
+}

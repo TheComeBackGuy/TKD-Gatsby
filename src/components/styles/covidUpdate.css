@@ -15,11 +15,14 @@
 }
 
 .covidSolutions {
-    display: grid;
-    grid-template-columns: 50% 50%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
 }
 
 .covidSolutions p {
+    flex-basis: 40%;
+    flex-grow: 2;
     padding: 30px;
     margin: 20px;
     background-color: var(--tkdBlue);

@@ -1,59 +1,64 @@
-.headerBar {
-    width: 1000%;
-    background-color: white;
-}
-
 .headerConstraint {
-    height: 110px;
+    display: flex;
+    flex-flow: column nowrap;
     width: 100%;
     /* margin-top: 40px; */
     background-color: white;
-    margin: 40px auto 0 auto;
+    margin: 0 auto;
 }
 .headerGrid {
     width: 80%;
+    height: 80px;
     max-width: var(--tkdWidth);
     display: grid;
     margin: 0 auto;
     color: #888;
     background-color: white;
     grid-template-columns: 300px auto;
+    overflow: visible;
 }
 
+.logoBox {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 100%;
+}
 .logo {
+    align-self: center;
+    justify-self: left;
     position: relative;
-    top: -35px;
-    /* margin: 0 0 0 20px; */
+    width: 240px;
+    top: -30px;
 }
 
-.navSpace {
-    width: auto;
-    height: auto;
-    border: 1px solid red;
+.navBlock {
+    height: inherit;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+    /* border: 1px solid red; */
 }
 .desktopMenu {
-    display: block;
-    text-align: right;
-    justify-self: right;
-    /* padding: 0 20px 0 0; */
-    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-end;
+    justify-content: space-between;
+    width: 100%;
 }
 
-nav li {
-    display: inline-flex;
-    list-style-type: none;
-    justify-self: stretch;
-}
-nav button {
+.desktopMenu button {
     background-color: transparent;
     font-size: 20px;
     font-weight: 400;
     border: none;
     color: var(--tkdBlue);
-    padding: 60px 10px 0 10px;
+    padding: 0 10px;
 }
-nav button:hover {
-    color: var(--tkdRed);
+.desktopMenu button:hover {
+    color: var(--tkdOrange);
     cursor: pointer;
     transition: 0.5s;
     transition-timing-function: ease;
@@ -62,31 +67,38 @@ nav button:hover {
 
 .hamburger {
     display: none;
-    top: 30px;
-    left: 10px;
-    flex-flow: column nowrap;
+    flex-flow: column wrap;
+    align-self: center;
+    justify-self: flex-end;
     justify-content: space-between;
-    width: 50px;
-    height: 50px;
-    border: 1px solid rebeccapurple;
-    z-index: 20;
+    width: 40px;
+    height: 30px;
+    /* border: 1px solid rebeccapurple; */
 }
 
 .hamburgerLayers {
-    height: 5px;
-    color: var(--tkdRed);
+    display: flex;
+
+    width: 100%;
+    height: 4px;
+    background-color: var(--tkdRed);
+    /* margin: 0 0 10px 0; */
+    /* padding: 10px; */
     border-radius: 5px;
 }
 
 /* 1200 is max before changes? */
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 850px) {
     .desktopMenu {
         display: none;
     }
     .hamburger {
-        display: block;
+        display: flex;
     }
     .headerGrid {
         width: 95%;
+    }
+    .logo {
+        width: 150px;
     }
 }

@@ -1,3 +1,4 @@
+import './styles/index.css'
 import './styles/pages.css'
 import './styles/volunteer.css'
 
@@ -132,31 +133,39 @@ export default function Volunteer() {
                         <div className="vr-field">
                             <ul>
                                 <li>
-                                    <label>First Name:</label>
-                                    <input
-                                        type="text"
-                                        name="first_name"
-                                        required
-                                    />
+                                    <label>
+                                        First Name:
+                                        <input
+                                            type="text"
+                                            name="first_name"
+                                            required
+                                        />
+                                    </label>
                                 </li>
                                 <li>
-                                    <label>Last Name:</label>
-                                    <input type="text" name="last_name" />
+                                    <label>
+                                        Last Name:
+                                        <input type="text" name="last_name" />
+                                    </label>
                                 </li>
                                 <li>
-                                    <label>Email:</label>
-                                    <input
-                                        type="email"
-                                        name="email_address"
-                                        required
-                                    />
+                                    <label>
+                                        Email:
+                                        <input
+                                            type="email"
+                                            name="email_address"
+                                            required
+                                        />
+                                    </label>
                                 </li>
                                 <li>
-                                    <input
-                                        type="submit"
-                                        onClick={submitVR}
-                                        value="Sign Up"
-                                    />
+                                    <label htmlFor="#">
+                                        <input
+                                            type="submit"
+                                            onClick={submitVR}
+                                            value="Sign Up"
+                                        />
+                                    </label>
                                 </li>
                             </ul>
                         </div>
