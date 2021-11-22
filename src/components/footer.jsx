@@ -1,5 +1,7 @@
-import * as React from 'react'
 import './styles/footer.css'
+
+import * as React from 'react'
+
 import { Link } from 'gatsby'
 
 export default function Footer() {

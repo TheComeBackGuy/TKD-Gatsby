@@ -1,5 +1,6 @@
-import React from 'react'
 import JSONData from '../content/thisYear.json'
+import React from 'react'
+
 const JSONbuildtime = () => (
     <div style={{ maxWidth: `960px`, margin: `1.45rem` }}>
         <h1>{JSONData[0].title}</h1>

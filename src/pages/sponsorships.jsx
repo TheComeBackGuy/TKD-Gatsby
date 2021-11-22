@@ -1,9 +1,10 @@
-import * as React from 'react'
-
-import Header from '../components/header'
-import Footer from '../components/footer'
 import './styles/pages.css'
 import './styles/sponsorships.css'
+
+import * as React from 'react'
+
+import Footer from '../components/footer'
+import Header from '../components/header'
 
 export default function Sponsorships() {
     return (

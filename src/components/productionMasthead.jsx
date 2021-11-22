@@ -1,7 +1,9 @@
-import * as React from 'react'
 import './styles/productionMasthead.css'
-import { StaticImage } from 'gatsby-plugin-image'
+
+import * as React from 'react'
+
 import BuyTickets from './buyTickets'
+import { StaticImage } from 'gatsby-plugin-image'
 
 export default function ProductionMasthead(props) {
     return (

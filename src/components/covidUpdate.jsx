@@ -1,11 +1,14 @@
-import * as React from 'react'
 import './styles/covidUpdate.css'
+import '../pages/styles/pages.css'
+
+import * as React from 'react'
+
 import Bandage from '../images/svg/bandageIcon.svg'
 import Mask from '../images/svg/maskIcon.svg'
 
 export default function CovidUpdate() {
     return (
-        <div className="covidUpdate">
+        <div className="card">
             <h1>Health and Safety Updates</h1>
             <p>
                 TKD is dedicated to keeping it's performers, volunteers, and

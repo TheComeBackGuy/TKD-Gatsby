@@ -1,7 +1,9 @@
-import * as React from 'react'
 import './styles/header.css'
-import { StaticImage } from 'gatsby-plugin-image'
+
+import * as React from 'react'
+
 import { Link } from 'gatsby'
+import { StaticImage } from 'gatsby-plugin-image'
 
 export default function Header(props) {
     return (
@@ -18,7 +20,12 @@ export default function Header(props) {
                     </Link>
                 </div>
                 <div className="navSpace">
-                    <nav>
+                    <ul className="hamburger">
+                        <li className="hamburgerLayers"></li>
+                        <li className="hamburgerLayers"></li>
+                        <li className="hamburgerLayers"></li>
+                    </ul>
+                    <nav className="desktopMenu">
                         <ul>
                             <li>
                                 <Link to="/currentSeason">

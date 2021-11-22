@@ -1,12 +1,15 @@
-import * as React from 'react'
-import ProductionMasthead from '../components/productionMasthead'
-import CovidUpdates from '../components/covidUpdate'
 import './styles/home.css'
 import './styles/pages.css'
-import Reviews from '../content/reviews.json'
+
+import * as React from 'react'
+
+import CovidUpdates from '../components/covidUpdate'
+import ProductionMasthead from '../components/productionMasthead'
 import Quotes from '../images/svg/quotations.svg'
-// import EtfLogo from '../images/etf_logo-980x400.png'
+import Reviews from '../content/reviews.json'
 import { StaticImage } from 'gatsby-plugin-image'
+
+// import EtfLogo from '../images/etf_logo-980x400.png'
 
 export default function Home() {
     // function displayReview() {
@@ -30,7 +33,7 @@ export default function Home() {
     // }
 
     return (
-        <main>
+        <main className="mainHome">
             <ProductionMasthead
                 title="doublewide"
                 status="Now in production - Learn More"

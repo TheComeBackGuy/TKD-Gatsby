@@ -1,13 +1,14 @@
-import * as React from 'react'
-
-import Header from '../components/header'
-import Footer from '../components/footer'
-import JSONData from '../content/thisYear.json'
 import './styles/currentSeason.css'
 import './styles/pages.css'
+
+import * as React from 'react'
+
+import Footer from '../components/footer'
+import Header from '../components/header'
+import JSONData from '../content/thisYear.json'
 import { graphql } from 'gatsby'
-import { GatsbyImage, getImage } from 'gatsby-plugin-image'
-import Img from 'gatsby-image'
+
+// import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 
 export const query = graphql`
     query myQuery {
@@ -105,22 +106,13 @@ export default function CurrentSeason({ data }) {
             <header>
                 <Header text="This is the header" />
             </header>
-            <GatsbyImage
-                image={
-                    data.allImageSharp.edges[0].node.gatsbyImageData.images
-                        .fallback.src
-                }
-                alt="this is also wrong"
-            />
+
             <main className="container">
                 <h1 className="standardPage">OUR SEASON</h1>
                 <div className="card">
                     <p>All Shows/Upcoming Shows</p>
-                    {/* <h1>{JSONData[0].title}</h1> */}
                     <ul className="showList">
                         {JSONData.map((data, index) => {
-                            // const showDate = new Date(data.opens)
-
                             if (!allShows && today) {
                                 // console.log(today, showDate)
                                 return (

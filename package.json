@@ -31,5 +31,6 @@
     "react-helmet": "^6.1.0",
     "react-router": "^6.0.0",
     "react-router-dom": "^6.0.0"
-  }
+  },
+  "devDependencies": {}
 }

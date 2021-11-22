@@ -3,37 +3,37 @@
         "name": "Single Shows",
         "content": [
             {
-                "adType": "¼ page",
+                "adType": "Quarter Page",
                 "adPrice": 85,
                 "adBenefits": [
-                    "3.5\" x 2\"",
+                    "3.5\" × 2\"",
                     "Black & White",
                     "Multi-Show Discounts"
                 ]
             },
             {
-                "adType": "½ page",
-                "adPrice": 1200,
+                "adType": "Half Page",
+                "adPrice": 150,
                 "adBenefits": [
-                    "3.5\" x 2\"",
+                    "3.5\" × 2\"",
                     "Black & White",
                     "Multi-Show Discounts"
                 ]
             },
             {
-                "adType": "¼ page",
-                "adPrice": 85,
+                "adType": "Full Page Interior",
+                "adPrice": 250,
                 "adBenefits": [
-                    "3.5\" x 2\"",
+                    "5\" × 5\"",
                     "Black & White",
                     "Multi-Show Discounts"
                 ]
             },
             {
-                "adType": "¼ page",
-                "adPrice": 85,
+                "adType": "Full Page Exterior",
+                "adPrice": 350,
                 "adBenefits": [
-                    "3.5\" x 2\"",
+                    "3.5\" × 2\"",
                     "Black & White",
                     "Multi-Show Discounts"
                 ]
@@ -41,16 +41,27 @@
         ]
     },
     {
-        "name": "Half-Season (4 Shows)",
+        "name": "Half Season (4 shows)",
         "content": [
             {
-                "adType": "¼ page",
-                "adPrice": 85,
-                "adBenefits": [
-                    "3.5\" x 2\"",
-                    "Black & White",
-                    "Multi-Show Discounts"
-                ]
+                "adType": "Quarter Page",
+                "adPrice": 255,
+                "adBenefits": ["3.5\" × 2\"", "Black & White", "One show FREE!"]
+            },
+            {
+                "adType": "Half Page",
+                "adPrice": 450,
+                "adBenefits": ["3.5\" × 2\"", "Black & White", "One show FREE!"]
+            },
+            {
+                "adType": "Full Page Interior",
+                "adPrice": 750,
+                "adBenefits": ["5\" × 5\"", "Black & White", "One show FREE!"]
+            },
+            {
+                "adType": "Full Page Exterior",
+                "adPrice": 1050,
+                "adBenefits": ["3.5\" × 2\"", "Black & White", "One show FREE!"]
             }
         ]
     },
@@ -58,12 +69,35 @@
         "name": "Full Season",
         "content": [
             {
-                "adType": "¼ page",
-                "adPrice": 85,
+                "adType": "Quarter Page",
+                "adPrice": 500,
                 "adBenefits": [
-                    "3.5\" x 2\"",
+                    "3.5\" × 2\"",
                     "Black & White",
-                    "Multi-Show Discounts"
+                    "Two shows FREE!"
+                ]
+            },
+            {
+                "adType": "Half Page",
+                "adPrice": 900,
+                "adBenefits": [
+                    "3.5\" × 2\"",
+                    "Black & White",
+                    "Two shows FREE!"
+                ]
+            },
+            {
+                "adType": "Full Page Interior",
+                "adPrice": 1500,
+                "adBenefits": ["5\" × 5\"", "Black & White", "Two shows FREE!"]
+            },
+            {
+                "adType": "Full Page Exterior",
+                "adPrice": 2100,
+                "adBenefits": [
+                    "3.5\" × 2\"",
+                    "Black & White",
+                    "Two shows FREE!"
                 ]
             }
         ]

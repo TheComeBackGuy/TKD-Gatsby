@@ -1,10 +1,11 @@
-import * as React from 'react'
-
-import Header from '../components/header'
-import Footer from '../components/footer'
 import './styles/pages.css'
 import './styles/programAds.css'
+
+import * as React from 'react'
+
 import AdInfo from '../content/programAds.json'
+import Footer from '../components/footer'
+import Header from '../components/header'
 
 export default function ProgramAds(props) {
     console.log(AdInfo)

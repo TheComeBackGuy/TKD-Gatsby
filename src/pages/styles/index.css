@@ -2,6 +2,7 @@
     --tkdBlue: #2a2e40;
     --tkdBlack: #222;
     --tkdWidth: 1100px;
+    --tdkMaxWidth: 1000px;
     --tkdPaleYellow: #eae2b7;
     --tkdGold: #fcbf49;
     --tkdOrange: #f77f00;
@@ -61,6 +62,7 @@ main {
     width: 80%;
     height: 100%;
     max-width: var(--tkdWidth);
+
     /* background-color: transparent; */
     color: var(---tkdBlack);
     margin: 0 auto;
@@ -68,4 +70,10 @@ main {
 
 li {
     list-style-type: none;
+}
+
+@media only screen and (max-width: 1100px) {
+    .container {
+        width: 100%;
+    }
 }

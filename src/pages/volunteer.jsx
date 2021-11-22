@@ -1,9 +1,10 @@
-import * as React from 'react'
-
-import Header from '../components/header'
-import Footer from '../components/footer'
 import './styles/pages.css'
 import './styles/volunteer.css'
+
+import * as React from 'react'
+
+import Footer from '../components/footer'
+import Header from '../components/header'
 import { StaticImage } from 'gatsby-plugin-image'
 
 export default function Volunteer() {
