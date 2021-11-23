@@ -5,9 +5,13 @@ import * as React from 'react'
 
 import ContactBar from '../components/ContactBar'
 import { Link } from 'gatsby'
+import Nav from '../components/Nav'
 import { StaticImage } from 'gatsby-plugin-image'
+import { useState } from 'react'
 
 export default function Header(props) {
+    const [dropDown, setDropDown] = useState(false)
+
     return (
         <header className="headerConstraint">
             <ContactBar />
@@ -23,35 +27,23 @@ export default function Header(props) {
                     </Link>
                 </div>
                 <div className="navBlock">
-                    <ul className="hamburger">
-                        <li className="hamburgerLayers"></li>
-                        <li className="hamburgerLayers"></li>
-                        <li className="hamburgerLayers"></li>
-                    </ul>
-                    <ul className="desktopMenu">
-                        <li>
-                            <Link to="/currentSeason">
-                                <button>Current Season</button>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/parking">
-                                <button>Parking</button>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/auditions">
-                                <button>Auditions</button>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/donate">
-                                <button>Donate</button>
-                            </Link>
-                        </li>
-                    </ul>
+                    <button
+                        className="hamburgerButton"
+                        onClick={() => {
+                            setDropDown(!dropDown)
+                            console.log({ dropDown })
+                        }}
+                    >
+                        <ul className="hamburger">
+                            <li className="hamburgerLayers"></li>
+                            <li className="hamburgerLayers"></li>
+                            <li className="hamburgerLayers"></li>
+                        </ul>
+                    </button>
+                    <Nav aStyle="desktop" />
                 </div>
             </div>
+            <Nav aStyle="mobile" isActive={dropDown} />
         </header>
     )
 }
