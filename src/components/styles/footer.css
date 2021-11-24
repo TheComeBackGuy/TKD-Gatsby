@@ -6,6 +6,7 @@ footer {
 }
 
 .footerGrid {
+    border: 1px solid red;
     width: 100%;
     max-width: var(--tkdWidth);
     /* background-color: grey; */
