@@ -8,7 +8,7 @@ import Header from '../components/header'
 
 export default function TheBoard() {
     return (
-        <body className="everything">
+        <div className="everything">
             <header>
                 <Header text="This is the header" />
             </header>
@@ -48,6 +48,6 @@ export default function TheBoard() {
                 </div>
                 <Footer />
             </main>
-        </body>
+        </div>
     )
 }

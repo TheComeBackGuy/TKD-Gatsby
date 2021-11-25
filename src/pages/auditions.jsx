@@ -8,7 +8,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 
 export default function Auditions() {
     return (
-        <body className="everything">
+        <div className="everything">
             <header>
                 <Header text="This is the header" />
             </header>
@@ -42,6 +42,6 @@ export default function Auditions() {
                 </article>
                 <Footer />
             </main>
-        </body>
+        </div>
     )
 }

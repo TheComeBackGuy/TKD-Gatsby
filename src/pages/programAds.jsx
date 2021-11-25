@@ -10,7 +10,7 @@ import Header from '../components/header'
 export default function ProgramAds(props) {
     console.log(AdInfo)
     return (
-        <body className="everything">
+        <div className="everything">
             <header>
                 <Header text="This is the header" />
             </header>
@@ -105,6 +105,6 @@ export default function ProgramAds(props) {
 
                 <Footer />
             </main>
-        </body>
+        </div>
     )
 }

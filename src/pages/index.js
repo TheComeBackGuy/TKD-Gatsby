@@ -9,7 +9,7 @@ import Home from './home'
 
 export default function Index() {
     return (
-        <body className="everything">
+        <div className="everything">
             <header>
                 <Header text="This is the header" />
             </header>
@@ -17,6 +17,6 @@ export default function Index() {
                 <Home />
                 <Footer />
             </main>
-        </body>
+        </div>
     )
 }

@@ -9,7 +9,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 
 export default function Parking() {
     return (
-        <body className="everything">
+        <div className="everything">
             <header>
                 <Header text="This is the header" />
             </header>
@@ -67,6 +67,6 @@ export default function Parking() {
                 </div>
                 <Footer />
             </main>
-        </body>
+        </div>
     )
 }

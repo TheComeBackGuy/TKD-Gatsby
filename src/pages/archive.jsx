@@ -7,7 +7,7 @@ import Header from '../components/header'
 
 export default function Archive() {
     return (
-        <body className="everything">
+        <div className="everything">
             <header>
                 <Header text="This is the header" />
             </header>
@@ -15,6 +15,6 @@ export default function Archive() {
                 <h1 className="standardPage">Archive</h1>
                 <Footer />
             </main>
-        </body>
+        </div>
     )
 }

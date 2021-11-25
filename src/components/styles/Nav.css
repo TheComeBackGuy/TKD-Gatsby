@@ -56,8 +56,9 @@
     .desktopMenu {
         display: none;
     }
-    .falseActive {
+    .hidden {
         display: none;
+        transition: 1s all ease-in;
     }
     .trueActive {
         display: flex;

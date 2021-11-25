@@ -8,7 +8,7 @@ import Header from '../components/header'
 
 export default function Sponsorships() {
     return (
-        <body className="everything">
+        <div className="everything">
             <header>
                 <Header text="This is the header" />
             </header>
@@ -110,6 +110,6 @@ export default function Sponsorships() {
                 </div>
                 <Footer />
             </main>
-        </body>
+        </div>
     )
 }

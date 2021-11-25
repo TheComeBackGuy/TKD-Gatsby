@@ -13,7 +13,7 @@ export default function Volunteer() {
     }
 
     return (
-        <body className="everything">
+        <div className="everything">
             <header>
                 <Header text="This is the header" />
             </header>
@@ -176,6 +176,6 @@ export default function Volunteer() {
 
                 <Footer />
             </main>
-        </body>
+        </div>
     )
 }

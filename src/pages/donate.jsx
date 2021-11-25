@@ -12,7 +12,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 
 export default function Donate() {
     return (
-        <body className="everything">
+        <div className="everything">
             <header>
                 <Header text="This is the header" />
             </header>
@@ -82,6 +82,6 @@ export default function Donate() {
 
                 <Footer />
             </main>
-        </body>
+        </div>
     )
 }

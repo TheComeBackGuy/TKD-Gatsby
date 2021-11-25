@@ -6,10 +6,9 @@ import { Link } from 'gatsby'
 import TopNav from '../content/TopNav.json'
 
 export default function Nav(props) {
-    console.log(`${props.aStyle}Menu`)
-    // if (props.aStyle  == mobile && props.isActive) {
+    // if (props.aStyle == 'mobile' && props.isActive) {
     return (
-        <ul className={`${props.aStyle}Menu`}>
+        <ul className={`desktopMenu`}>
             {TopNav.topNav.map((data, index) => {
                 return (
                     <li key={`content_item_${index}`}>
