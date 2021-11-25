@@ -1,5 +1,5 @@
 import './styles/covidUpdate.css'
-import '../pages/styles/pages.css'
+import '../pages/styles/index.css'
 
 import * as React from 'react'
 

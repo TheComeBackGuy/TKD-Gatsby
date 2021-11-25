@@ -1,18 +1,19 @@
 .adContainer {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: space-between;
     align-content: flex-start;
     margin: 20px 0 0 0;
 }
 
-.adContainer .adKnockout {
+.adKnockout {
     display: flex;
     flex-flow: column nowrap;
-    flex-basis: 25%;
+    flex-basis: 20%;
+    flex-grow: 1;
     overflow: hidden;
     border-radius: var(--tkdBorderRadius);
-    margin: 0 10px;
+    margin: 0 10px 10px 0;
 }
 
 .adLevel {
@@ -49,4 +50,15 @@
     color: var(--tkdLightBlue);
     margin-top: 30px;
     border: none;
+}
+@media only screen and (max-width: 850px) {
+    .adKnockout {
+        flex-basis: 40%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .adKnockout {
+        flex-flow: column nowrap;
+    }
 }

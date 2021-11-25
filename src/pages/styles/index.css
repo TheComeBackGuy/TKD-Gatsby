@@ -91,13 +91,59 @@ li {
     background-size: 20px 20px;
 }
 
+.standardPage {
+    width: 100%;
+    background-color: var(--tkdGold);
+    padding: 20px;
+    color: white;
+}
+
+.card {
+    margin-top: 20px;
+    width: 100%;
+    padding: 30px 70px 50px 70px;
+    background-color: white;
+    text-align: center;
+}
+
+.knockout {
+    padding: 30px;
+    margin: 20px;
+    background-color: var(--tkdOrange);
+    color: #ddd;
+    border-radius: var(--tkdBorderRadius);
+}
+
+.knockoutWhite {
+    padding: 30px;
+    margin: 20px;
+    background-color: white;
+    color: var(--tkdBlack);
+    border-radius: var(--tkdBorderRadius);
+}
+.knockoutBlank {
+    padding: 30px;
+    margin: 20px;
+    color: var(--tkdBlack);
+    border-radius: var(--tkdBorderRadius);
+}
+.cardBlank {
+    margin-top: 20px;
+    width: 100%;
+    padding: 30px 70px 50px 70px;
+    text-align: center;
+}
+
 @media only screen and (max-width: 850px) {
     .container {
         width: 100%;
     }
-}
-
-@media only screen and (max-width: 850px) {
+    .card,
+    .cardBlank,
+    .knockoutBlank,
+    .knockoutWhite {
+        padding: 10px;
+    }
     h1 {
         line-height: 1em;
     }

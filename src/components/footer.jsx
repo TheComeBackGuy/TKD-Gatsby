@@ -26,23 +26,20 @@ export default function Footer() {
                     <Link to="/theBoard">
                         <li className="listBullet">The Board</li>
                     </Link>
-                </ul>
-                <ul className="list">
+
                     <Link to="/sponsorships">
                         <li className="listBullet">Sponsorships</li>
                     </Link>
                     <Link to="/programAds">
                         <li className="listBullet">Program Ads</li>
                     </Link>
-                </ul>
-                <ul className="list">
-                    {' '}
+
                     <Link to="/auditions">
                         <li className="listBullet">Auditions</li>
                     </Link>
-                    <Link to="/archive">
+                    {/* <Link to="/archive">
                         <li className="listBullet">Archive</li>
-                    </Link>
+                    </Link> */}
                 </ul>
             </div>
         </footer>

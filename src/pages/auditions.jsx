@@ -1,4 +1,4 @@
-import './styles/pages.css'
+import './styles/index.css'
 
 import * as React from 'react'
 

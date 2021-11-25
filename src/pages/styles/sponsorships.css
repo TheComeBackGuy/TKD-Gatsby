@@ -1,18 +1,20 @@
 .supportContainer {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: space-between;
     align-content: flex-start;
     margin: 20px 0 0 0;
 }
 
-.supportContainer .sponsorKnockout {
+.sponsorKnockout {
     display: flex;
     flex-flow: column nowrap;
-    flex-basis: 33%;
+    flex-basis: 30%;
+    flex-grow: 2;
     overflow: hidden;
     border-radius: var(--tkdBorderRadius);
-    margin: 0 10px;
+    margin: 0 10px 20px 0;
+    padding: 0;
 }
 
 .sponsorLevel {
@@ -24,18 +26,22 @@
     padding: 10px 0;
 }
 .sponsorPrice {
+    text-align: center;
     background-color: white;
     font-size: 60px;
     color: var(--tkdLightBlue);
     padding: 40px 0;
+    /* margin: 0 auto; */
 }
 .sponsorBenefits {
-    padding: 40px;
+    /* border: 1px solid tomato; */
+    display: block;
     text-align: left;
+    padding: 40px;
 }
 
 .sponsorBenefits li {
-    margin: 0 0 20px 0;
+    margin: 20px 0 20px 0;
 }
 
 .sponsorBenefits li::before {
@@ -57,4 +63,22 @@
 }
 .signUpButton:hover {
     cursor: pointer;
+}
+@media only screen and (max-width: 850px) {
+    .card,
+    .cardBlank,
+    .knockoutBlank,
+    .sponsorBenefits,
+    .knockoutWhite {
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        line-height: 1em;
+    }
+    .supportContainer {
+        flex-flow: column wrap;
+    }
 }

@@ -1,7 +1,18 @@
-.boardNames {
+.president {
     list-style-type: none;
     border: none;
+    margin: 0;
 }
-.boardNames li h2 {
+
+.vice {
+    font-size: 20px;
+}
+
+.boardNames li {
     border: none;
+}
+
+.boardMember {
+    margin: 20px 0 0.75em 0;
+    font-size: 15px;
 }

@@ -1,5 +1,4 @@
 import './styles/index.css'
-import './styles/pages.css'
 import './styles/volunteer.css'
 
 import * as React from 'react'

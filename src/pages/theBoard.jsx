@@ -1,4 +1,4 @@
-import './styles/pages.css'
+import './styles/index.css'
 import './styles/theBoard.css'
 
 import * as React from 'react'
@@ -17,22 +17,32 @@ export default function TheBoard() {
                 <div className="card">
                     <ul className="boardNames">
                         <li>
-                            <h1>President: Sarah Campbell</h1>
+                            <h3 className="president">
+                                President: Sarah Campbell
+                            </h3>
                         </li>
                         <li>
-                            <h1>Vice-President: Joe Johnson</h1>
+                            <h3 className="vice">
+                                Vice-President: Joe Johnson
+                            </h3>
                         </li>
                         <li>
-                            <h2>Secretary: Courtney Woolard </h2>
+                            <h3 className="boardMember">
+                                Secretary: Courtney Woolard{' '}
+                            </h3>
                         </li>
                         <li>
-                            <h2>Treasurer: Windie Wilson</h2>
+                            <h3 className="boardMember">
+                                Treasurer: Windie Wilson
+                            </h3>
                         </li>
                         <li>
-                            <h3>Dennis Hart</h3>
+                            <h3 className="boardMember">Dennis Hart</h3>
                         </li>
                         <li>
-                            <h3>Arisa Carero Spencer</h3>
+                            <h3 className="boardMember">
+                                Arisa Carero Spencer
+                            </h3>
                         </li>
                     </ul>
                 </div>

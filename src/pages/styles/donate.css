@@ -1,6 +1,10 @@
 .donateGrid {
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
+    display: flex;
+    flex-flow: row wrap;
+}
+.donateGrid div {
+    flex-basis: 20%;
+    flex-grow: 3;
 }
 
 .donateGrid button {
@@ -36,7 +40,7 @@ a {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    padding-top: 45px;
+
     background-color: #fcfcfc;
     color: #6c7778;
     border: 1px solid darkgrey;
@@ -44,13 +48,9 @@ a {
 .donateGrid .logo {
     width: 100%;
     margin-top: 10px;
-    width: 150px;
     align-self: center;
-}
-
-.paypal .logo,
-.amazonSmile .logo {
-    width: 90%;
+    max-width: 250px;
+    /* border: 1px solid red; */
 }
 
 .amazonButton {
@@ -66,6 +66,7 @@ a {
     flex-direction: column;
     background-color: white;
     color: #385397;
+
     border: 1px solid #385397;
 }
 .krogerButton {
@@ -75,4 +76,10 @@ a {
     width: 100%;
     border-radius: 15px;
     border: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .donateGrid div {
+        flex-basis: 100%;
+    }
 }

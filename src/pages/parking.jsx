@@ -1,4 +1,4 @@
-import './styles/pages.css'
+import './styles/index.css'
 import './styles/parking.css'
 
 import * as React from 'react'
@@ -31,7 +31,8 @@ export default function Parking() {
                             after 6 pm and all day Sunday. Parking is also
                             available in several garages nearby.
                         </p>
-                        <div className="knockoutBlank lightGrey">
+
+                        <div className="knockoutBlank lightGrey garage">
                             <h3>State Street Garage</h3>
                             <cite>500 State St, Knoxville, TN 37902</cite>
                             <StaticImage
@@ -47,7 +48,7 @@ export default function Parking() {
                                 evenings and weekends.
                             </p>
                         </div>
-                        <div className="knockoutBlank lightGrey">
+                        <div className="knockoutBlank lightGrey garage">
                             <h3>First Horizon Bank Garage</h3>
                             <cite>800 S Gay St, Knoxville, TN 37929</cite>
                             <StaticImage

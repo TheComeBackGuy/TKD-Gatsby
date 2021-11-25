@@ -6,6 +6,7 @@ import * as React from 'react'
 import Email from '../images/svg/email.svg'
 import Facebook from '../images/svg/facebook.svg'
 import Instagram from '../images/svg/instagram.svg'
+import Phone from '../images/svg/phone.svg'
 import Twitter from '../images/svg/twitter.svg'
 
 export default function ContactBar() {
@@ -14,8 +15,17 @@ export default function ContactBar() {
     return (
         <div className="contactBar">
             <p className="contactContainer">
-                <ul className="contactList">
-                    <li>865-544-1999</li>
+                <ul className="contactList ">
+                    <li>
+                        <span className="phoneNumber">865-544-1999</span>
+                        <span className="phoneIcon">
+                            <Phone
+                                width={thumbSize}
+                                height={thumbSize}
+                                fill="#222"
+                            />
+                        </span>
+                    </li>
                     <li>
                         <form action="mailto:infor@theatreknoxville.com">
                             <button className="iconButton">

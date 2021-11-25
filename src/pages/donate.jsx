@@ -1,10 +1,13 @@
-import './styles/pages.css'
+import './styles/index.css'
 import './styles/donate.css'
 
 import * as React from 'react'
 
+import Amazon from '../images/svg/amazon-smile.svg'
 import Footer from '../components/footer'
 import Header from '../components/header'
+import Kroger from '../images/svg/Kroger.svg'
+import PaypalLogo from '../images/svg/Paypal'
 import { StaticImage } from 'gatsby-plugin-image'
 
 export default function Donate() {
@@ -22,12 +25,7 @@ export default function Donate() {
                     three ways to easily support us.
                     <div className="donateGrid">
                         <div className="knockout paypal">
-                            <StaticImage
-                                className="logo"
-                                src="../images/Paypal.svg"
-                                alt="Paypal Logo"
-                                description="The words Paypal."
-                            />
+                            <PaypalLogo className="logo" />
                             <p>
                                 Make a one-time contribution by credit card or
                                 with an existing PayPal account. You may also
@@ -46,29 +44,13 @@ export default function Donate() {
                                 <button className="paypalButton">
                                     Donate with Paypal
                                 </button>
-                                {/* <input
-                                    type="image"
-                                    src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
-                                    border="0"
-                                    name="submit"
-                                    title="PayPal - The safer, easier way to pay online!"
-                                    alt="Donate with PayPal button"
-                                /> */}
-                                {/* <img
-                                    alt=""
-                                    border="0"
-                                    src="https://www.paypal.com/en_US/i/scr/pixel.gif"
-                                    width="1"
-                                    height="1"
-                                /> */}
                             </form>
                         </div>
                         <div className="knockout amazonSmile">
-                            <StaticImage
+                            <Amazon
                                 className="logo"
-                                src="../images/svg/amazon-smile.svg"
-                                alt="Amazon Smile Logo"
-                                description="The words Amazon Smile followed by 'You shop. Amazon Gives."
+                                alt="Amazon Logo"
+                                description="The Amazon logo."
                             />
                             <p>
                                 Shop at smile.amazon.com and they’ll donate to
@@ -80,13 +62,10 @@ export default function Donate() {
                             </button>
                         </div>
                         <div className="knockout kroger">
-                            {' '}
-                            <StaticImage
+                            <Kroger
                                 className="logo"
-                                src="../images/svg/Kroger.svg"
-                                alt="Kroger Logo"
-                                description="The words Kroger"
-                                // hieght="100px"
+                                alt="Paypal Logo"
+                                description="The words Paypal."
                             />
                             <p>
                                 Earn money for TKD every time you use your
