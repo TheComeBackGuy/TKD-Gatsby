@@ -3,13 +3,16 @@ import './styles/index.css'
 
 import * as React from 'react'
 
-import { setState, useState } from 'react'
-
 import Footer from '../components/footer'
 import Header from '../components/header'
-import JSONData from '../content/thisYear.json'
 import { graphql } from 'gatsby'
 import thisSeason from '../content/thisYear.json'
+import { useState } from 'react'
+
+// import JSONData from '../content/thisYear.json'
+
+
+
 
 // import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 
@@ -85,7 +88,7 @@ export default function CurrentSeason({ data }) {
             // console.log(show.title + ' ends on ' + show.closes)
             /**if the show hasn't closed, it's added to a list */
             displayShows.push(show)
-        } else if (allShows == true) {
+        } else if (allShows === true) {
             displayShows.push(show)
         }
     })

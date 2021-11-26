@@ -8,7 +8,6 @@ import Footer from '../components/footer'
 import Header from '../components/header'
 import Kroger from '../images/svg/Kroger.svg'
 import PaypalLogo from '../images/svg/Paypal'
-import { StaticImage } from 'gatsby-plugin-image'
 
 export default function Donate() {
     return (
