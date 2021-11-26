@@ -53,6 +53,19 @@
     padding: 0;
 }
 
+.seasonButton {
+    border-radius: 2px 2px 5px 5px;
+    background-color: var(--tkdLightBlue);
+    padding: 5px;
+    border: none;
+    color: white;
+    margin: 0 5px;
+}
+
+.disabled {
+    background-color: var(--tkdLightGrey);
+}
+
 @media only screen and (max-width: 1100px) {
     .showContainer {
         flex-basis: 45%;

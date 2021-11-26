@@ -133,6 +133,10 @@ li {
     padding: 30px 70px 50px 70px;
     text-align: center;
 }
+.button,
+a {
+    cursor: pointer;
+}
 
 @media only screen and (max-width: 850px) {
     .container {
@@ -146,5 +150,12 @@ li {
     }
     h1 {
         line-height: 1em;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .standardPage {
+        padding: 10px;
+        font-size: 20px;
     }
 }

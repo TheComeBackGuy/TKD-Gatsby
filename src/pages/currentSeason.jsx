@@ -3,10 +3,13 @@ import './styles/index.css'
 
 import * as React from 'react'
 
+import { setState, useState } from 'react'
+
 import Footer from '../components/footer'
 import Header from '../components/header'
 import JSONData from '../content/thisYear.json'
 import { graphql } from 'gatsby'
+import thisSeason from '../content/thisYear.json'
 
 // import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 
@@ -24,15 +27,69 @@ export const query = graphql`
 `
 
 export default function CurrentSeason({ data }) {
-    const allShows = false
+    /**Are we displaying all shows? Default is false */
+    const [allShows, setAllShows] = useState(false)
+    // const allShows = false
+    // const today = new Date()
+
+    const displayShows = []
+    // console.log('data is ' + props.data)
+
+    /***compare today with end date of all shows. whichever show is the first to pass the test, use it's image as the header.*/
+    // use the variable to search a query
+    /**Use it's link as the link */
     const today = new Date()
 
-    // const isInFuture = (today, someOtherDay) => {
-    //     if (today.getTime() > someOtherDay.getTime()) {
-    //         return true
-    //     }
-    //     return false
-    // }
+    function inThePast(date) {
+        const compare = new Date(date)
+        if (today.getTime() >= compare.getTime()) return true
+    }
+
+    function headerDisplay() {
+        if (allShows) {
+            return (
+                <div>
+                    <h1>Productions This Season</h1>
+                    <button
+                        className="seasonButton"
+                        onClick={() => {
+                            setAllShows(!allShows)
+                        }}
+                    >
+                        Show Upcoming Productions
+                    </button>
+                </div>
+            )
+        } else if (!allShows) {
+            return (
+                <div>
+                    <h1>Upcoming Productions</h1>
+                    <button
+                        className="seasonButton"
+                        onClick={() => {
+                            setAllShows(!allShows)
+                        }}
+                    >
+                        Show All Productions For This Season
+                    </button>
+                </div>
+            )
+        }
+    }
+
+    thisSeason.map((show) => {
+        const closing = new Date(show.closes)
+        // console.log(closing + ' entry')
+        /**comparing the show closing dates from the JSON file  */
+        if (!allShows && !inThePast(closing)) {
+            // console.log(show.title + ' ends on ' + show.closes)
+            /**if the show hasn't closed, it's added to a list */
+            displayShows.push(show)
+        } else if (allShows == true) {
+            displayShows.push(show)
+        }
+    })
+    // console.log(upcomingShowImages[0])
 
     function parseDate(date) {
         const thisDate = new Date(date)
@@ -101,6 +158,24 @@ export default function CurrentSeason({ data }) {
         }
     }
 
+    function checkTicketButton(check, link) {
+        if (!inThePast(check)) {
+            return (
+                <button
+                    className="showTicket"
+                    onClick={() => {
+                        window.open(
+                            `https://www.onthestage.tickets/show/theatre-knoxville-downtown/${link}/tickets`
+                        )
+                    }}
+                >
+                    Tickets
+                </button>
+            )
+        }
+        return
+    }
+
     return (
         <div className="everything">
             <header>
@@ -110,51 +185,52 @@ export default function CurrentSeason({ data }) {
             <main className="container">
                 <h1 className="standardPage">OUR SEASON</h1>
                 <div className="card">
-                    <p>All Shows/Upcoming Shows</p>
+                    {headerDisplay()}
+
                     <ul className="showList">
-                        {JSONData.map((data, index) => {
-                            if (!allShows && today) {
-                                // console.log(today, showDate)
-                                return (
-                                    /** showItem is the main containter for the production  */
-                                    <li
-                                        key={`content_item_${index}`}
-                                        className="showContainer"
+                        {displayShows.map((data, index) => {
+                            return (
+                                /** showItem is the main containter for the production  */
+                                <li
+                                    key={`content_item_${index}`}
+                                    className="showContainer"
+                                >
+                                    <div className="placeholder">
+                                        <p>Image goes here</p>
+                                    </div>
+                                    <div className="showDetails">
+                                        <h3>{data.title}</h3>
+                                        <p>
+                                            <cite>
+                                                By: {dataList(data.author)}
+                                            </cite>
+                                            <br />
+                                            {parseDate(data.opens)} -{' '}
+                                            {parseDate(data.closes)}
+                                            <br />
+                                            <strong className="director">
+                                                Directed By:{' '}
+                                            </strong>
+                                            <br />
+                                            {dataList(data.director)}
+                                        </p>
+                                    </div>
+                                    {checkTicketButton(
+                                        data.closes,
+                                        data.ticketLink
+                                    )}
+                                    {/* <button
+                                        className="showTicket"
+                                        onClick={() => {
+                                            window.open(
+                                                `https://www.onthestage.tickets/show/theatre-knoxville-downtown/${data.ticketLink}/tickets`
+                                            )
+                                        }}
                                     >
-                                        <div className="placeholder">
-                                            <p>Image goes here</p>
-                                        </div>
-                                        <div className="showDetails">
-                                            <h3>{data.title}</h3>
-                                            <p>
-                                                <cite>
-                                                    By: {dataList(data.author)}
-                                                </cite>
-                                                <br />
-                                                {parseDate(data.opens)} -{' '}
-                                                {parseDate(data.closes)}
-                                                <br />
-                                                <strong className="director">
-                                                    Directed By:{' '}
-                                                </strong>
-                                                <br />
-                                                {dataList(data.director)}
-                                            </p>
-                                        </div>
-                                        <button
-                                            className="showTicket"
-                                            onClick={() => {
-                                                window.open(
-                                                    `https://www.onthestage.tickets/show/theatre-knoxville-downtown/${data.ticketLink}/tickets`
-                                                )
-                                            }}
-                                        >
-                                            Tickets
-                                        </button>
-                                    </li>
-                                )
-                            }
-                            return <h1>nah</h1>
+                                        Tickets
+                                    </button> */}
+                                </li>
+                            )
                         })}
                     </ul>
                 </div>
