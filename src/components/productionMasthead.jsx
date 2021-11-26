@@ -5,6 +5,7 @@ import * as React from 'react'
 import { GatsbyImage, getImage } from 'gatsby-image'
 
 import BuyTickets from './buyTickets'
+import { graphql } from 'gatsby'
 import thisSeason from '../content/thisYear.json'
 
 // import { GatsbyImage, getImage } from 'gatsby-plugin-image'
