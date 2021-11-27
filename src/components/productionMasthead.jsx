@@ -8,34 +8,34 @@ import thisSeason from '../content/thisYear.json'
 
 // import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 
-export const query = graphql`
-    query myQuery {
-        doublewide: file(name: { eq: "doublewide" }) {
-            id
-            childImageSharp {
-                gatsbyImageData
-            }
-        }
-        officeHours: file(name: { eq: "officeHours" }) {
-            id
-            childImageSharp {
-                gatsbyImageData
-            }
-        }
-        iHateHamlet: file(name: { eq: "iHateHamlet" }) {
-            id
-            childImageSharp {
-                gatsbyImageData
-            }
-        }
-        rope: file(name: { eq: "rope" }) {
-            id
-            childImageSharp {
-                gatsbyImageData
-            }
-        }
-    }
-`
+// export const query = graphql`
+//     query myQuery {
+//         doublewide: file(name: { eq: "doublewide" }) {
+//             id
+//             childImageSharp {
+//                 gatsbyImageData
+//             }
+//         }
+//         officeHours: file(name: { eq: "officeHours" }) {
+//             id
+//             childImageSharp {
+//                 gatsbyImageData
+//             }
+//         }
+//         iHateHamlet: file(name: { eq: "iHateHamlet" }) {
+//             id
+//             childImageSharp {
+//                 gatsbyImageData
+//             }
+//         }
+//         rope: file(name: { eq: "rope" }) {
+//             id
+//             childImageSharp {
+//                 gatsbyImageData
+//             }
+//         }
+//     }
+// `
 
 export default function ProductionMasthead(props) {
     const upcomingShowImages = []

@@ -11,23 +11,20 @@ import { useState } from 'react'
 
 // import JSONData from '../content/thisYear.json'
 
-
-
-
 // import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 
-export const query = graphql`
-    query myQuery {
-        allImageSharp {
-            edges {
-                node {
-                    id
-                    gatsbyImageData
-                }
-            }
-        }
-    }
-`
+// export const query = graphql`
+//     query myQuery {
+//         allImageSharp {
+//             edges {
+//                 node {
+//                     id
+//                     gatsbyImageData
+//                 }
+//             }
+//         }
+//     }
+// `
 
 export default function CurrentSeason({ data }) {
     /**Are we displaying all shows? Default is false */
