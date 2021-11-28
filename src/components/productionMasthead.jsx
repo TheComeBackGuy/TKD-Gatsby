@@ -3,8 +3,9 @@ import './styles/productionMasthead.css'
 import * as React from 'react'
 
 import BuyTickets from './buyTickets'
-import { graphql } from 'gatsby'
 import thisSeason from '../content/thisYear.json'
+
+// import { graphql } from 'gatsby'
 
 // import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 
@@ -47,7 +48,7 @@ export default function ProductionMasthead(props) {
         // use the variable to search a query
         /**Use it's link as the link */
 
-        thisSeason.map((show) => {
+        thisSeason.forEach((show) => {
             const closing = new Date(show.closes)
             // console.log(closing + ' entry')
             /**comparing the show closing dates from the JSON file  */
