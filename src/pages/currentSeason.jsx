@@ -3,9 +3,11 @@ import './styles/index.css'
 
 import * as React from 'react'
 
+import FindImage from '../components/FindImage'
 import Footer from '../components/footer'
 import { GatsbyImage } from 'gatsby-plugin-image'
 import Header from '../components/header'
+import InThePast from '../components/InThePast'
 import { getImage } from 'gatsby-plugin-image'
 import { graphql } from 'gatsby'
 import thisSeason from '../content/thisYear.json'
@@ -17,6 +19,7 @@ import { useState } from 'react'
 /**the query just looks for jpgs in the shows folder
  * that will be where all promo/posters will be for shows
  */
+
 export const showImageSearch = graphql`
     {
         allFile(filter: { relativeDirectory: { eq: "shows" } }) {
@@ -30,7 +33,10 @@ export const showImageSearch = graphql`
                             originalImg
                             originalName
                         }
-                        gatsbyImageData(placeholder: DOMINANT_COLOR)
+                        gatsbyImageData(
+                            placeholder: DOMINANT_COLOR
+                            layout: CONSTRAINED
+                        )
                     }
                 }
             }
@@ -55,43 +61,11 @@ export default function CurrentSeason({ data }) {
     const imageData = data.allFile.edges
     console.log(data.allFile.edges)
 
-    /**checks image against the imput and returns the fluid data if it matches */
-    // const findImage = imageData.find((imageName) => {
-    //     return imageName == data.allFile.edges.node.name
-    // })
-
-    // function findImage(showImage) {
-    //     const path = imageData.find((imageName) => {
-    //         return imageName.node.name == showImage
-    //     })
-    //     console.log(path)
-    // }
-
-    // function findImage(showImage) {
-    //     imageData.map((image) => {
-    //         console.log(image.node.name + ' vs ' + showImage)
-    //         if (image.node.name == showImage) {
-    //             /**if the image name == our show image name, we return that image data */
-    //             return data.file.childImageSharp.gatsbyImageData
-    //         }
-    //     })
-    //     return
-    // }
-
     /**Are we displaying all shows to the user? Default is false */
     const [allShows, setAllShows] = useState(false)
 
     /**we're putting either all the shows or the remaining season's shows here */
     const displayShows = []
-
-    /**today's date */
-    const today = new Date()
-
-    /**check to see what day it is and what shows are left in the season */
-    function inThePast(date) {
-        const compare = new Date(date)
-        if (today.getTime() >= compare.getTime()) return true
-    }
 
     /**button and header for remaing shows/whole season */
     function headerDisplay() {
@@ -130,7 +104,7 @@ export default function CurrentSeason({ data }) {
     thisSeason.forEach((show) => {
         const closing = new Date(show.closes)
         /**comparing the show closing dates from the JSON file  */
-        if (!allShows && !inThePast(closing)) {
+        if (!allShows && !InThePast(closing)) {
             /**if the show hasn't closed, it's added to a list */
             displayShows.push(show)
         } else if (allShows === true) {
@@ -215,7 +189,7 @@ export default function CurrentSeason({ data }) {
 
     /**If the event has passed, it doesn't render a Buy Ticket button */
     function checkTicketButton(check, link) {
-        if (!inThePast(check)) {
+        if (!InThePast(check)) {
             return (
                 <button
                     className="showTicket"
@@ -260,19 +234,20 @@ export default function CurrentSeason({ data }) {
                                             'this item was ' + show.title
                                         )}
                                         {/* //*still not working */}
-                                        {/* <GatsbyImage
+                                        <GatsbyImage
                                             image={getImage(
-                                                findImage(show.image)
+                                                FindImage(imageData, show.image)
                                             )}
                                             alt={show.title}
-                                        /> */}
-                                        <GatsbyImage
+                                            width="100"
+                                        />
+                                        {/* <GatsbyImage
                                             image={getImage(
                                                 data.file.childImageSharp
                                                     .gatsbyImageData
                                             )}
                                             alt={show.title}
-                                        />
+                                        /> */}
 
                                         {/* <img
                                             src="../images/shows/doublewide.jpg"
@@ -298,7 +273,7 @@ export default function CurrentSeason({ data }) {
                                     </div>
                                     {checkTicketButton(
                                         show.closes,
-                                        data.ticketLink
+                                        show.ticketLink
                                     )}
                                     {/* <button
                                         className="showTicket"

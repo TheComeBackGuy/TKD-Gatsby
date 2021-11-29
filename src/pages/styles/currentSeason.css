@@ -8,9 +8,8 @@
 }
 
 .placeholder {
-    background-color: turquoise;
+    /* background-color: turquoise; */
     width: 100%;
-    height: 150px;
 }
 .showList {
     display: flex;

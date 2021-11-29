@@ -4,6 +4,7 @@ import './styles/home.css'
 import * as React from 'react'
 
 import CovidUpdates from '../components/covidUpdate'
+import FindImage from '../components/FindImage'
 import ProductionMasthead from '../components/productionMasthead'
 import Quotes from '../images/svg/quotations.svg'
 import Reviews from '../content/reviews.json'
@@ -12,26 +13,6 @@ import { StaticImage } from 'gatsby-plugin-image'
 // import EtfLogo from '../images/etf_logo-980x400.png'
 
 export default function Home() {
-    // function displayReview() {
-    //     Reviews.map((data, index) => {
-    //         if (data.name != '' && data.review != '') {
-    //             return (
-    //                 <li key={`content_item_${index}`}>
-    //                     <div className="knockoutWhite">
-    //                         <p>{data.review}</p>
-    //                         {''}
-    //                         <h3>-{data.name}</h3>
-    //                         {''}
-    //                         <h4>
-    //                             {data.city}, {data.state}
-    //                         </h4>
-    //                     </div>
-    //                 </li>
-    //             )
-    //         }
-    //     })
-    // }
-
     return (
         <main className="mainHome">
             <ProductionMasthead
