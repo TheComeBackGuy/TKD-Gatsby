@@ -14,7 +14,9 @@ import { StaticImage } from 'gatsby-plugin-image'
 export default function Home() {
     return (
         <main className="mainHome">
-            <ProductionMasthead />
+            <div className="firstElement">
+                <ProductionMasthead />
+            </div>
             <CovidUpdates />
             <div className="cardBlank white">
                 <h1>Our Guests Agree...</h1>

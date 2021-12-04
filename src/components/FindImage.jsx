@@ -8,6 +8,8 @@ export default function FindImage(queryArray, showImage) {
             // console.log(showImage + ' vs ' + images.node.name)
             // console.log(images.node.childImageSharp.gatsbyImageData)
             returnStatement = images.node.childImageSharp.gatsbyImageData
+            console.log('returnStatement is: ')
+            console.log(returnStatement)
         }
     })
     return returnStatement
