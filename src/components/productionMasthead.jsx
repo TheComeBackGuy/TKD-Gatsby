@@ -11,36 +11,38 @@ import { graphql } from 'gatsby'
 // import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 /**the query just looks for jpgs in the shows folder
  * that will be where all promo/posters will be for shows
- */
-export const BannerQuery = graphql`
-    query mastheadBannerOne {
-        allFile(filter: { relativeDirectory: { eq: "shows" } }) {
-            edges {
-                node {
-                    id
-                    name
-                    childImageSharp {
-                        fluid(maxWidth: 200, cropFocus: CENTER) {
-                            base64
-                            originalImg
-                            originalName
-                        }
-                        gatsbyImageData(
-                            placeholder: DOMINANT_COLOR
-                            layout: CONSTRAINED
-                        )
-                    }
-                }
-            }
-        }
-    }
-`
+//  */
+// export const BannerQuery = graphql`
+//     query mastheadBannerOne {
+//         allFile(filter: { relativeDirectory: { eq: "shows" } }) {
+//             edges {
+//                 node {
+//                     id
+//                     name
+//                     childImageSharp {
+//                         fluid(maxWidth: 200, cropFocus: CENTER) {
+//                             base64
+//                             originalImg
+//                             originalName
+//                         }
+//                         gatsbyImageData(
+//                             placeholder: DOMINANT_COLOR
+//                             layout: CONSTRAINED
+//                         )
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// `
 
 export default function ProductionMasthead({ data }) {
     // const imageData = data.allFile.edges
     // const imageData = showImageSearch
-    console.log('Masthead Banner is: ')
-    console.log(data)
+    if (data) {
+        console.log('Masthead Banner is: ')
+        console.log(data)
+    }
 
     /**We want to find the first image who's closing date isn't in the future */
     // function banner() {

@@ -8,8 +8,33 @@ import ProductionMasthead from '../components/productionMasthead'
 import Quotes from '../images/svg/quotations.svg'
 import Reviews from '../content/reviews.json'
 import { StaticImage } from 'gatsby-plugin-image'
+import { graphql } from 'gatsby'
 
 // import EtfLogo from '../images/etf_logo-980x400.png'
+
+export const MainQuery = graphql`
+    query mastheadBanner {
+        allFile(filter: { relativeDirectory: { eq: "shows" } }) {
+            edges {
+                node {
+                    id
+                    name
+                    childImageSharp {
+                        fluid(maxWidth: 200, cropFocus: CENTER) {
+                            base64
+                            originalImg
+                            originalName
+                        }
+                        gatsbyImageData(
+                            placeholder: DOMINANT_COLOR
+                            layout: CONSTRAINED
+                        )
+                    }
+                }
+            }
+        }
+    }
+`
 
 export default function Home() {
     return (
