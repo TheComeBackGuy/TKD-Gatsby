@@ -16,7 +16,7 @@ export default function Donate() {
                 <Header text="This is the header" />
             </header>
             <main className="container">
-                <h1 className="standardPage">Donate</h1>
+                <h1 className="standardPage topElement">Donate</h1>
                 <article className="card">
                     Outside of our day-to-day operation needs, we always need
                     building supplies for sets, props, and cotumes for our

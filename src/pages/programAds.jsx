@@ -15,7 +15,7 @@ export default function ProgramAds(props) {
                 <Header text="This is the header" />
             </header>
             <main className="container">
-                <h1 className="standardPage">Program Ads</h1>
+                <h1 className="standardPage topElement">Program Ads</h1>
 
                 <div className="card">
                     <h1>Levels of support</h1>

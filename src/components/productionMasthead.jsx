@@ -2,63 +2,40 @@ import './styles/productionMasthead.css'
 
 import * as React from 'react'
 
-import { GatsbyImage, getImage } from 'gatsby-plugin-image'
-
 import BuyTickets from './buyTickets'
-import FindImage from './FindImage'
-import InThePast from './InThePast'
+import { GatsbyImage } from 'gatsby-plugin-image'
+import { getImage } from 'gatsby-plugin-image'
 import { graphql } from 'gatsby'
 import thisSeason from '../content/thisYear.json'
 
 // import showImageSearch from '../pages/currentSeason'
-
-export const bannerSearch = graphql`
-    {
-        allFile(filter: { relativeDirectory: { eq: "shows" } }) {
+export const BannerTest = graphql`
+    query bannerQuery {
+        allJson {
             edges {
                 node {
                     id
-                    name
-                    childImageSharp {
-                        fluid(maxWidth: 200, cropFocus: CENTER) {
-                            base64
-                            originalImg
-                            originalName
-                        }
-                        gatsbyImageData(
-                            placeholder: DOMINANT_COLOR
-                            layout: CONSTRAINED
-                        )
-                    }
                 }
-            }
-        }
-        file(relativePath: {}, relativeDirectory: { eq: "shows" }) {
-            name
-            id
-            publicURL
-            relativePath
-            childImageSharp {
-                gatsbyImageData
             }
         }
     }
 `
-// import CurrentSeason from '../pages/currentSeason'
 
+// import CurrentSeason from '../pages/currentSeason'
 export default function ProductionMasthead({ data }) {
+    console.log('Masthead Data is ')
+    console.log(data)
     const upcomingShowImages = []
     // const imageData = data.allFile.edges
     // const imageData = showImageSearch
-    console.log(data)
 
     /**We want to find the first image who's closing date isn't in the future */
-    function banner() {
-        const show = thisSeason.find((show) => !InThePast(show.closes))
-        console.log(show.title + ' closes on ' + show.closes)
-        // console.log(FindImage(imageData, show.image))
-        // return FindImage(imageData, show.image)
-    }
+    // function banner() {
+    //     const show = thisSeason.find((show) => !InThePast(show.closes))
+    //     console.log(show.title + ' closes on ' + show.closes)
+    //     // console.log(FindImage(imageData, show.image))
+    //     // return FindImage(imageData, show.image)
+    // }
 
     const currentShow = () => {
         /***compare today with end date of all shows. whichever show is the first to pass the test, use it's image as the header.*/
@@ -79,13 +56,12 @@ export default function ProductionMasthead({ data }) {
         // console.log(upcomingShowImages[0])
     }
 
-    function showStatus() {}
-
     currentShow()
     return (
-        <div className="mastheadContainer">
+        <div className="mastheadContainer topElement">
             <button className="showStatus">Banner</button>
-            {/* <GatsbyImage image={getImage(data)} alt="current Show" /> */}
+
+            <GatsbyImage image={getImage()} alt="current Show" />
 
             <BuyTickets url="https://www.onthestage.tickets/show/theatre-knoxville-downtown/a-doublewide-texas-christmas-81671/tickets" />
         </div>

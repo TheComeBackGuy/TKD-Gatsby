@@ -18,7 +18,7 @@ export default function Volunteer() {
                 <Header text="This is the header" />
             </header>
             <div className="container">
-                <h1 className="standardPage">Volunteer</h1>
+                <h1 className="standardPage topElement">Volunteer</h1>
                 <div className="card">
                     <h1>
                         The best community theater is exactly that; a community.

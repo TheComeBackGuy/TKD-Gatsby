@@ -8,10 +8,13 @@ import Footer from '../components/footer'
 import { GatsbyImage } from 'gatsby-plugin-image'
 import Header from '../components/header'
 import InThePast from '../components/InThePast'
+import { Link } from 'gatsby'
 import { getImage } from 'gatsby-plugin-image'
 import { graphql } from 'gatsby'
 import thisSeason from '../content/thisYear.json'
 import { useState } from 'react'
+
+// import MainQuery from '../components/MainQuery'
 
 // import JSONData from '../content/thisYear.json'
 
@@ -19,9 +22,8 @@ import { useState } from 'react'
 /**the query just looks for jpgs in the shows folder
  * that will be where all promo/posters will be for shows
  */
-
-export const showImageSearch = graphql`
-    {
+export const MainQuery = graphql`
+    query imageSearch {
         allFile(filter: { relativeDirectory: { eq: "shows" } }) {
             edges {
                 node {
@@ -52,6 +54,7 @@ export const showImageSearch = graphql`
         }
     }
 `
+
 /**overall function */
 export default function CurrentSeason({ data }) {
     /**just to check/be sure I'm grabbing the right paths */
@@ -59,7 +62,8 @@ export default function CurrentSeason({ data }) {
 
     /**set variable for the mapping */
     const imageData = data.allFile.edges
-    console.log(data.allFile.edges)
+    console.log('CurrentSeason data is :')
+    console.log(data)
 
     /**Are we displaying all shows to the user? Default is false */
     const [allShows, setAllShows] = useState(false)
@@ -214,7 +218,7 @@ export default function CurrentSeason({ data }) {
             </header>
 
             <main className="container">
-                <h1 className="standardPage">OUR SEASON</h1>
+                <h1 className="standardPage topElement">OUR SEASON</h1>
                 <div className="card">
                     {headerDisplay()}
 
@@ -230,17 +234,22 @@ export default function CurrentSeason({ data }) {
                                         {/*I want to be able to compare the JSON variable 
                                         with the data.name result in the query. 
                                         If they match, use the fluid */}
-                                        {console.log(
+                                        {/* {console.log(
                                             'this item was ' + show.title
-                                        )}
+                                        )} */}
                                         {/* //*still not working */}
-                                        <GatsbyImage
-                                            image={getImage(
-                                                FindImage(imageData, show.image)
-                                            )}
-                                            alt={show.title}
-                                            width="100"
-                                        />
+                                        <Link to="Details.jsx">
+                                            <GatsbyImage
+                                                image={getImage(
+                                                    FindImage(
+                                                        imageData,
+                                                        show.image
+                                                    )
+                                                )}
+                                                alt={show.title}
+                                                width="100"
+                                            />
+                                        </Link>
                                         {/* <GatsbyImage
                                             image={getImage(
                                                 data.file.childImageSharp
@@ -248,7 +257,6 @@ export default function CurrentSeason({ data }) {
                                             )}
                                             alt={show.title}
                                         /> */}
-
                                         {/* <img
                                             src="../images/shows/doublewide.jpg"
                                             alt={show.title}

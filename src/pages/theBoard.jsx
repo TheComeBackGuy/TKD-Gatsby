@@ -13,7 +13,7 @@ export default function TheBoard() {
                 <Header text="This is the header" />
             </header>
             <main className="container">
-                <h1 className="standardPage">Board of Directors</h1>
+                <h1 className="standardPage topElement">Board of Directors</h1>
                 <div className="card">
                     <ul className="boardNames">
                         <li>

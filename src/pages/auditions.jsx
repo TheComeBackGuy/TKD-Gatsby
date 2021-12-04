@@ -13,7 +13,7 @@ export default function Auditions() {
                 <Header text="This is the header" />
             </header>
             <main className="container">
-                <h1 className="standardPage">Auditions</h1>
+                <h1 className="standardPage topElement">Auditions</h1>
                 <article className="card">
                     <h1>General Requirements</h1>
                     <p>

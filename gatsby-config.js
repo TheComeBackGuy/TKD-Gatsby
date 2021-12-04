@@ -60,5 +60,11 @@ module.exports = {
                 },
             },
         },
+        {
+            resolve: `gatsby-transformer-json`,
+            options: {
+                typeName: `Json`, // a fixed string
+            },
+        },
     ],
 }

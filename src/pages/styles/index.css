@@ -133,6 +133,10 @@ li {
     padding: 30px 70px 50px 70px;
     text-align: center;
 }
+
+.topElement {
+    margin-top: 91px;
+}
 .button,
 a {
     cursor: pointer;

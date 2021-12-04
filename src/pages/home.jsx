@@ -4,7 +4,6 @@ import './styles/home.css'
 import * as React from 'react'
 
 import CovidUpdates from '../components/covidUpdate'
-import FindImage from '../components/FindImage'
 import ProductionMasthead from '../components/productionMasthead'
 import Quotes from '../images/svg/quotations.svg'
 import Reviews from '../content/reviews.json'
@@ -15,11 +14,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 export default function Home() {
     return (
         <main className="mainHome">
-            <ProductionMasthead
-                title="doublewide"
-                status="Now in production - Learn More"
-            />
-
+            <ProductionMasthead />
             <CovidUpdates />
             <div className="cardBlank white">
                 <h1>Our Guests Agree...</h1>

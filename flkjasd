@@ -1,0 +1,32 @@
+[33me7f6685[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;32mqueryTest[m[33m)[m Fixed the Current Season page to load images dynamically to their respective shows
+[33maf3f842[m still trying to add the show images in the right places. Close calls, but no win
+[33m03c8cee[m changed build command back to gatsby build
+[33m477093c[m reinstalled npm and deleted babel conflict
+[33meaa8768[m addded babel-loader
+[33m87166f2[m Broke the whole site and Tyler helped fix it. Trying to deploy to Netlify again
+[33mc457c68[m fixed a few error messages
+[33m5704e42[m trying react-scripts build
+[33m5b5d976[m changed it back. Just mad eNetlify loop the run command
+[33ma746946[m changed build command. Was having trouble with Netlify
+[33m152c32c[m fixed an import error with graphql
+[33m76649db[m Added a sorting feature to the season shows. resized headers
+[33m19ae98f[m fixed the menu and now to add all the dynamic information/images
+[33ma341197[m most mobile and tablet adaptions are done. Need to fix mobile menu to be collapse-able. Then, on to adding all the graphql data
+[33m9380ae8[m about to start really changing styles for mobile and tablet
+[33m1450da9[m Kind of got the drop down menu working.
+[33md550dcb[m fixed the .svg plugin
+[33m5130816[m Started on some mobile adjustments. Just working on elements on the index and home pages.
+[33m68dff09[m About to start adding CSS for mobile and tablet display
+[33me578ee7[m Made the Sponsorships and Volunteer and Program ads pages. Did some css as well as some random stuff
+[33ma3619a1[m Did a bunch of random work. Tried to use graphiQl but it's giving me trouble
+[33ma531da5[m added reviews, ETF segments as well as several other little features.
+[33m91e77d9[m deleted gatsby-source-filedata as it was throwing errors.
+[33m7741575[m changed setting to gatsby-plugin-sharp after getting an error message the said forceBase64Format must be one of png, jpg, webp
+[33m996b83f[m All shows are added. Most pages need work. Next task is to format Current Shows page.
+[33m9bc67c3[m[33m ([m[1;32mjson-shows[m[33m)[m Added files and shows to json file
+[33m8dab5b6[m[33m ([m[1;32mmdx[m[33m)[m about to start adding the blog element
+[33m1ddcaf9[m fixed body bg color
+[33mf6c5e0d[m Donate page and Audition pages are semi working.
+[33m4678908[m Basic Structure Done
+[33mc140b96[m Begin TKD basic site
+[33m1c23468[m Initial commit from gatsby

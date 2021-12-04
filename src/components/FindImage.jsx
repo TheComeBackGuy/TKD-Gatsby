@@ -3,10 +3,10 @@
  */
 export default function FindImage(queryArray, showImage) {
     let returnStatement = null
-    queryArray.map((images) => {
-        if (images.node.name == showImage) {
-            console.log(showImage + ' vs ' + images.node.name)
-            console.log(images.node.childImageSharp.gatsbyImageData)
+    queryArray.forEach((images) => {
+        if (images.node.name === showImage) {
+            // console.log(showImage + ' vs ' + images.node.name)
+            // console.log(images.node.childImageSharp.gatsbyImageData)
             returnStatement = images.node.childImageSharp.gatsbyImageData
         }
     })

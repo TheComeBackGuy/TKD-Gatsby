@@ -13,7 +13,9 @@ export default function Sponsorships() {
                 <Header text="This is the header" />
             </header>
             <main className="container">
-                <h1 className="standardPage">Be a part of the community!</h1>
+                <h1 className="standardPage topElement">
+                    Be a part of the community!
+                </h1>
                 <div className="card">
                     <h1>Levels of support</h1>
                     <p>

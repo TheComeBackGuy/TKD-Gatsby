@@ -5,7 +5,7 @@ import * as React from 'react'
 
 import Footer from '../components/footer'
 import Header from '../components/header'
-import Home from './home'
+import Home from './Home'
 
 export default function Index() {
     return (

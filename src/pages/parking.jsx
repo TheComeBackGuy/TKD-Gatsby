@@ -14,7 +14,7 @@ export default function Parking() {
                 <Header text="This is the header" />
             </header>
             <main className="container">
-                <h1 className="standardPage">Parking</h1>
+                <h1 className="standardPage topElement">Parking</h1>
                 <div className="card">
                     <h3>We are located at:</h3>
                     <cite>

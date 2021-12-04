@@ -12,7 +12,7 @@ export default function Archive() {
                 <Header text="This is the header" />
             </header>
             <main className="container">
-                <h1 className="standardPage">Archive</h1>
+                <h1 className="standardPage topElement">Archive</h1>
                 <Footer />
             </main>
         </div>
