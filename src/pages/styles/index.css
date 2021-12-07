@@ -12,6 +12,7 @@
     --tkdLightBlue: #2ea3f2;
     --tkdGreen: #0fa60f;
     --tkdBorderRadius: 10px 10px 20px 20px;
+    --tkdGap: 10px;
 }
 
 .gold {
@@ -99,7 +100,7 @@ li {
 }
 
 .card {
-    margin-top: 20px;
+    margin-top: var(--tkdGap);
     width: 100%;
     padding: 30px 70px 50px 70px;
     background-color: white;
@@ -128,7 +129,7 @@ li {
     border-radius: var(--tkdBorderRadius);
 }
 .cardBlank {
-    margin-top: 20px;
+    margin-top: var(--tkdGap);
     width: 100%;
     padding: 30px 70px 50px 70px;
     text-align: center;

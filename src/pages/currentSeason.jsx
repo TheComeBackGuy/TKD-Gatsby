@@ -3,12 +3,14 @@ import './styles/index.css'
 
 import * as React from 'react'
 
+import DataList from '../components/DataList'
 import FindImage from '../components/FindImage'
 import Footer from '../components/footer'
 import { GatsbyImage } from 'gatsby-plugin-image'
 import Header from '../components/header'
 import InThePast from '../components/InThePast'
 import { Link } from 'gatsby'
+import ParseDate from '../components/ParseDate'
 import { getImage } from 'gatsby-plugin-image'
 import { graphql } from 'gatsby'
 import thisSeason from '../content/seasons.json'
@@ -71,7 +73,7 @@ export default function CurrentSeason() {
     })
 
     /**Month detector so we can display the date for the shows */
-    function parseDate(date) {
+    function ParseDate(date) {
         const thisDate = new Date(date)
         let month = thisDate.getMonth() + 1
         const day = thisDate.getDate()
@@ -122,7 +124,7 @@ export default function CurrentSeason() {
     }
 
     /**Detects if the entry is an array */
-    function dataList(category) {
+    function DataList(category) {
         //If it's not, it just returns the single entry
         if (!Array.isArray(category)) {
             return category
@@ -184,7 +186,11 @@ export default function CurrentSeason() {
                                     className="showContainer"
                                 >
                                     <div className="placeholder">
-                                        <Link to="Details.jsx">
+                                        <Link
+                                            to={`/production/${new Date(
+                                                show.opens
+                                            ).getFullYear()}/${show.slug}/`}
+                                        >
                                             <img
                                                 src={`/shows/${show.image}.jpg`}
                                                 alt={show.title}
@@ -196,17 +202,17 @@ export default function CurrentSeason() {
                                         <h3>{show.title}</h3>
                                         <p>
                                             <cite>
-                                                By: {dataList(show.author)}
+                                                By: {DataList(show.author)}
                                             </cite>
                                             <br />
-                                            {parseDate(show.opens)} -{' '}
-                                            {parseDate(show.closes)}
+                                            {ParseDate(show.opens)} -{' '}
+                                            {ParseDate(show.closes)}
                                             <br />
                                             <strong className="director">
                                                 Directed By:{' '}
                                             </strong>
                                             <br />
-                                            {dataList(show.director)}
+                                            {DataList(show.director)}
                                         </p>
                                     </div>
                                     {checkTicketButton(

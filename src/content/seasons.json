@@ -4,13 +4,14 @@
         "end": 2022,
         "shows": [
             {
-                "title": "The Odd Couple",
+                "title": "The Odd Couple: Female Version",
+                "slug": "The-Odd-Couple-Female-Version",
                 "author": "Neil Simon",
                 "director": "Rebecca Gomez",
                 "image": "oddCouple",
-                "opens": "August 20, 2022 22:00:00",
+                "opens": "August 20, 2021 22:00:00",
                 "closes": "September 12, 2021 15:00:00",
-                "description": "Unger and Madison are at it again! Florence Unger and Olive Madison, that is, in Neil Simon\\'s hilarious 80\\'s comic classic: the female version of The Odd Couple. Instead of the poker party that begins the original version, Ms. Madison has invited the girls over for an evening of Trivial Pursuit. The Pidgeon sisters have been replaced by the two Constazuela brothers. But the hilarity remains the same!",
+                "description": "<p>Unger and Madison are at it again! Florence Unger and Olive Madison, that is, in Neil Simon's hilarious 80's comic classic: the female version of The Odd Couple. Instead of the poker party that begins the original version, Ms. Madison has invited the girls over for an evening of Trivial Pursuit. The Pidgeon sisters have been replaced by the two Constazuela brothers. But the hilarity remains the same!<p>",
                 "cast": [
                     {
                         "name": "Olive",
@@ -53,12 +54,13 @@
             },
             {
                 "title": "The Haunting of Hill House",
+                "slug": "The-Haunting-Of-Hill-House",
                 "author": ["F Andrew Leslie", "Shirley Jackson"],
                 "director": ["Sarah Campbell", "Dennis Hart"],
                 "image": "hillHouse",
                 "opens": "October 8, 2021 22:00:00",
                 "closes": "October 31, 2021 15:00:00",
-                "description": "A chilling and mystifying study in mounting terror in which a small group of \\“psychically receptive” people are brought together in Hill House, a brooding, mid-Victorian mansion known as a place of evil and \\“contained ill will.\\” Led by the learned Dr. Montague, who is conducting research in supernatural phenomena, the visitors have come to probe the secrets of the old house and to draw forth the mysterious powers that it is alleged to possess—powers which have brought madness and death to those who have lived therein in the past. The play was adapted from the novel by Shirley Jackson.",
+                "description": "<p>A chilling and mystifying study in mounting terror in which a small group of “psychically receptive” people are brought together in Hill House, a brooding, mid-Victorian mansion known as a place of evil and “contained ill will.”</p><p> Led by the learned Dr. Montague, who is conducting research in supernatural phenomena, the visitors have come to probe the secrets of the old house and to draw forth the mysterious powers that it is alleged to possess—powers which have brought madness and death to those who have lived therein in the past. The play was adapted from the novel by Shirley Jackson.</p>",
                 "cast": [
                     {
                         "name": "Eleanor Vance",
@@ -100,12 +102,13 @@
             },
             {
                 "title": "A Doublewide, Texas Christmas",
+                "slug": "A-Doublewide-Texas-Christmas",
                 "author": ["Jones", "Hope", "Wooten"],
                 "director": "Candace Moore",
                 "image": "doublewide",
                 "opens": "December 3, 2021 22:00:00",
                 "closes": "December 19, 2021 15:00:00",
-                "description": "In this outrageously funny comedy, it’s Christmas-time in the newest—and tiniest—town in Texas. And it’s beginning to look a lot like trouble in Doublewide. Not only are the trailer park residents dealing with the stress of the holiday season, but they’ve just discovered that Doublewide is being double-crossed by the County. With their official incorporation papers in jeopardy, this band of eccentric Texans throw themselves into taking on the “Big Guys.” Determined to bolster their legitimacy, they first set their sights on the County-wide “Battle of The Mangers” competition. They conspire to win this smackdown with their “Nativity At The Alamo” entry…by any means possible.",
+                "description": "<p>In this outrageously funny comedy, it’s Christmas-time in the newest—and tiniest—town in Texas. And it’s beginning to look a lot like trouble in Doublewide.</p><p>Not only are the trailer park residents dealing with the stress of the holiday season, but they’ve just discovered that Doublewide is being double-crossed by the County. With their official incorporation papers in jeopardy, this band of eccentric Texans throw themselves into taking on the “Big Guys.” Determined to bolster their legitimacy, they first set their sights on the County-wide “Battle of The Mangers” competition. They conspire to win this smackdown with their “Nativity At The Alamo” entry…by any means possible.</p>",
                 "cast": [
                     { "name": "Big Ethel", "actor": "Donna Shoun" },
                     { "name": "Georgia Dean", "actor": "Justine Link" },
@@ -130,12 +133,13 @@
             },
             {
                 "title": "Office Hours",
+                "slug": "Office-Hours",
                 "author": "Norm Foster",
                 "director": "Windie Wilson",
                 "image": "officeHours",
                 "opens": "January 21, 2022 22:00:00",
                 "closes": "February 13, 2022 15:00:00",
-                "description": "Office Hours is a full-length comedy by Norm Foster. Six separate stories are unfolding in six separate offices on one Friday afternoon. In true Norm Foster style, it makes us laugh at our humanity, cleverly linking a TV news producer, a pair of Canadian movie producers, a rather unsavoury agent, an entertainment lawyer, a horse track owner. and a psychiatrist. This highly acclaimed theatrical comedy is a madcap race towards quitting time.",
+                "description": "<p>Office Hours is a full-length comedy by Norm Foster. Six separate stories are unfolding in six separate offices on one Friday afternoon. In true Norm Foster style, it makes us laugh at our humanity, cleverly linking a TV news producer, a pair of Canadian movie producers, a rather unsavoury agent, an entertainment lawyer, a horse track owner. and a psychiatrist. This highly acclaimed theatrical comedy is a madcap race towards quitting time.</p>",
                 "cast": [
                     {
                         "name": "Warren Kimble",
@@ -223,12 +227,13 @@
             },
             {
                 "title": "I Hate Hamlet",
+                "slug": "I-Hate-Hamlet",
                 "author": "Paul Rudnick",
                 "director": "Courtney Woolard",
                 "image": "iHateHamlet",
                 "opens": "April 1, 2022 22:00:00",
                 "closes": "April 17, 2022 15:00:00",
-                "description": "A young and successful television actor relocates to New York, where he rents a marvelous, gothic apartment. With his television career in limbo, the actor is offered the opportunity to play Hamlet onstage, but there’s one problem: He hates Hamlet. His dilemma deepens with the entrance of John Barrymore’s ghost, who arrives intoxicated and in full costume to the apartment that once was his. The contrast between the two actors, the towering, dissipated Barrymore whose Hamlet was the greatest of his time, and Andrew Rally, hot young television star, leads to a wildly funny duel over women, art, success, duty, television, and yes, the apartment.",
+                "description": "<p>A young and successful television actor relocates to New York, where he rents a marvelous, gothic apartment. With his television career in limbo, the actor is offered the opportunity to play Hamlet onstage, but there’s one problem: He hates Hamlet. </p><p>His dilemma deepens with the entrance of John Barrymore’s ghost, who arrives intoxicated and in full costume to the apartment that once was his. The contrast between the two actors, the towering, dissipated Barrymore whose Hamlet was the greatest of his time, and Andrew Rally, hot young television star, leads to a wildly funny duel over women, art, success, duty, television, and yes, the apartment.</p>",
                 "cast": [
                     {
                         "name": "Felicia Dantine",
@@ -265,12 +270,13 @@
             },
             {
                 "title": "Rope",
+                "slug": "Rope",
                 "author": "Patrick Hamilton",
                 "director": "Dennis Hart",
                 "image": "rope",
                 "opens": "June 3, 2022 20:00:00",
                 "closes": "June 19, 2022 15:00:00",
-                "description": "For the mere sake of adventure, danger, and the \"fun of the thing,\" Wyndham Brandon persuades his weak minded friend, Charles Granillo, to assist him in the murder of a fellow undergraduate, a perfectly harmless man named Ronald Raglan. They place the body in a wooden chest, and to add spice to their handiwork, invite a few acquaintances, including the dead youth's father, to a party, the chest with its gruesome contents serving as a supper table. The horror and tension are worked up gradually; thunder grows outside, the guests leave, and we see the reactions of the two murderers, watched closely by the suspecting lame poet, Rupert Cadell. Finally they break down under the strain and confess their guilt.",
+                "description": "<p>For the mere sake of adventure, danger, and the 'fun of the thing,' Wyndham Brandon persuades his weak minded friend, Charles Granillo, to assist him in the murder of a fellow undergraduate, a perfectly harmless man named Ronald Raglan. They place the body in a wooden chest, and to add spice to their handiwork, and invite a few acquaintances to a party.<p>",
                 "cast": [
                     {
                         "name": "Wyndham Brandon",
@@ -307,6 +313,7 @@
         "shows": [
             {
                 "title": "Doublewide, Texas",
+                "slug": "Doublewide-Texas",
                 "author": ["Jones", "Hope", "Wooten"],
                 "director": "Joe Johnson",
                 "image": "",
@@ -352,6 +359,7 @@
             },
             {
                 "title": "All in the Timing",
+                "slug": "All-In-The-Timing",
                 "author": "David Ives",
                 "director": "Greg Congleton",
                 "image": "",
@@ -387,7 +395,8 @@
                 "ticketLink": ""
             },
             {
-                "title": "Agatha Christie's Murder on the Otient Express",
+                "title": "Agatha Christie's Murder on the Orient Express",
+                "slug": "Murder-On-The-Orient-Express",
                 "author": ["Agatha Christie", "Ken Ludwig"],
                 "director": "Courtney Woolard",
                 "image": "",

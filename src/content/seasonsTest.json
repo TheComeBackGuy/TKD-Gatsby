@@ -1,12 +1,13 @@
 [
     {
-        "title": "The Odd Couple",
+        "title": "The Odd Couple: Female Version",
+        "slug": "The-Odd-Couple-Female-Version",
         "author": "Neil Simon",
         "director": "Rebecca Gomez",
         "image": "oddCouple",
         "opens": "August 20, 2022 22:00:00",
         "closes": "September 12, 2021 15:00:00",
-        "description": "Unger and Madison are at it again! Florence Unger and Olive Madison, that is, in Neil Simon\\'s hilarious 80\\'s comic classic: the female version of The Odd Couple. Instead of the poker party that begins the original version, Ms. Madison has invited the girls over for an evening of Trivial Pursuit. The Pidgeon sisters have been replaced by the two Constazuela brothers. But the hilarity remains the same!",
+        "description": "<p>Unger and Madison are at it again! Florence Unger and Olive Madison, that is, in Neil Simon's hilarious 80's comic classic: the female version of The Odd Couple. Instead of the poker party that begins the original version, Ms. Madison has invited the girls over for an evening of Trivial Pursuit. The Pidgeon sisters have been replaced by the two Constazuela brothers. But the hilarity remains the same!</p>",
         "cast": [
             {
                 "name": "Olive",
@@ -49,12 +50,13 @@
     },
     {
         "title": "The Haunting of Hill House",
+        "slug": "The-Haunting-of-Hill-House",
         "author": ["F Andrew Leslie", "Shirley Jackson"],
         "director": ["Sarah Campbell", "Dennis Hart"],
         "image": "hillHouse",
         "opens": "October 8, 2021 22:00:00",
         "closes": "October 31, 2021 15:00:00",
-        "description": "A chilling and mystifying study in mounting terror in which a small group of \\“psychically receptive” people are brought together in Hill House, a brooding, mid-Victorian mansion known as a place of evil and \\“contained ill will.\\” Led by the learned Dr. Montague, who is conducting research in supernatural phenomena, the visitors have come to probe the secrets of the old house and to draw forth the mysterious powers that it is alleged to possess—powers which have brought madness and death to those who have lived therein in the past. The play was adapted from the novel by Shirley Jackson.",
+        "description": "<p>A chilling and mystifying study in mounting terror in which a small group of “psychically receptive” people are brought together in Hill House, a brooding, mid-Victorian mansion known as a place of evil and “contained ill will.” Led by the learned Dr. Montague, who is conducting research in supernatural phenomena, the visitors have come to probe the secrets of the old house and to draw forth the mysterious powers that it is alleged to possess—powers which have brought madness and death to those who have lived therein in the past. The play was adapted from the novel by Shirley Jackson.</p>",
         "cast": [
             {
                 "name": "Eleanor Vance",
@@ -96,6 +98,7 @@
     },
     {
         "title": "A Doublewide, Texas Christmas",
+        "slug": "A-Doublewide-Texas-Christmas",
         "author": ["Jones", "Hope", "Wooten"],
         "director": "Candace Moore",
         "image": "doublewide",
@@ -126,6 +129,7 @@
     },
     {
         "title": "Office Hours",
+        "slug": "Office-Hours",
         "author": "Norm Foster",
         "director": "Windie Wilson",
         "image": "officeHours",
@@ -219,6 +223,7 @@
     },
     {
         "title": "I Hate Hamlet",
+        "slug": "I-Hate-Hamlet",
         "author": "Paul Rudnick",
         "director": "Courtney Woolard",
         "image": "iHateHamlet",
@@ -261,6 +266,7 @@
     },
     {
         "title": "Rope",
+        "slug": "Rope",
         "author": "Patrick Hamilton",
         "director": "Dennis Hart",
         "image": "rope",
@@ -297,6 +303,7 @@
     },
     {
         "title": "Doublewide, Texas",
+        "slug": "Doublewide-Texas",
         "author": ["Jones", "Hope", "Wooten"],
         "director": "Joe Johnson",
         "image": "",
@@ -342,6 +349,7 @@
     },
     {
         "title": "All in the Timing",
+        "slug": "All-In-The-Timing",
         "author": "David Ives",
         "director": "Greg Congleton",
         "image": "",
@@ -378,6 +386,7 @@
     },
     {
         "title": "Agatha Christie's Murder on the Orient Express",
+        "slug": "Murder-on-the-Orient-Express",
         "author": ["Agatha Christie", "Ken Ludwig"],
         "director": "Courtney Woolard",
         "image": "",
