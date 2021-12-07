@@ -11,60 +11,13 @@ import InThePast from '../components/InThePast'
 import { Link } from 'gatsby'
 import { getImage } from 'gatsby-plugin-image'
 import { graphql } from 'gatsby'
-import thisSeason from '../content/thisYear.json'
+import thisSeason from '../content/seasons.json'
 import { useState } from 'react'
 
 // import MainQuery from '../components/MainQuery'
 
-// import JSONData from '../content/thisYear.json'
-
-// import { GatsbyImage, getImage } from 'gatsby-plugin-image'
-/**the query just looks for jpgs in the shows folder
- * that will be where all promo/posters will be for shows
- */
-export const MainQuery = graphql`
-    query imageSearch {
-        allFile(filter: { relativeDirectory: { eq: "shows" } }) {
-            edges {
-                node {
-                    id
-                    name
-                    childImageSharp {
-                        fluid(maxWidth: 200, cropFocus: CENTER) {
-                            base64
-                            originalImg
-                            originalName
-                        }
-                        gatsbyImageData(
-                            placeholder: DOMINANT_COLOR
-                            layout: CONSTRAINED
-                        )
-                    }
-                }
-            }
-        }
-        file(relativePath: {}, relativeDirectory: { eq: "shows" }) {
-            name
-            id
-            publicURL
-            relativePath
-            childImageSharp {
-                gatsbyImageData
-            }
-        }
-    }
-`
-
 /**overall function */
-export default function CurrentSeason({ data }) {
-    /**just to check/be sure I'm grabbing the right paths */
-    // console.log(data.allFile.edges.map((item) => item.node.name))
-
-    /**set variable for the mapping */
-    const imageData = data.allFile.edges
-    console.log('CurrentSeason data is :')
-    console.log(data)
-
+export default function CurrentSeason() {
     /**Are we displaying all shows to the user? Default is false */
     const [allShows, setAllShows] = useState(false)
 
@@ -105,7 +58,7 @@ export default function CurrentSeason({ data }) {
     }
 
     /**this is where we display the shows, depending on what the user whants to see */
-    thisSeason.forEach((show) => {
+    thisSeason[0].shows.forEach((show) => {
         const closing = new Date(show.closes)
         /**comparing the show closing dates from the JSON file  */
         if (!allShows && !InThePast(closing)) {
@@ -231,36 +184,13 @@ export default function CurrentSeason({ data }) {
                                     className="showContainer"
                                 >
                                     <div className="placeholder">
-                                        {/*I want to be able to compare the JSON variable 
-                                        with the data.name result in the query. 
-                                        If they match, use the fluid */}
-                                        {/* {console.log(
-                                            'this item was ' + show.title
-                                        )} */}
-                                        {/* //*still not working */}
                                         <Link to="Details.jsx">
-                                            <GatsbyImage
-                                                image={getImage(
-                                                    FindImage(
-                                                        imageData,
-                                                        show.image
-                                                    )
-                                                )}
+                                            <img
+                                                src={`/shows/${show.image}.jpg`}
                                                 alt={show.title}
-                                                width="100"
+                                                className="thumb"
                                             />
                                         </Link>
-                                        {/* <GatsbyImage
-                                            image={getImage(
-                                                data.file.childImageSharp
-                                                    .gatsbyImageData
-                                            )}
-                                            alt={show.title}
-                                        /> */}
-                                        {/* <img
-                                            src="../images/shows/doublewide.jpg"
-                                            alt={show.title}
-                                        /> */}
                                     </div>
                                     <div className="showDetails">
                                         <h3>{show.title}</h3>

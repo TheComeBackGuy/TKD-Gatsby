@@ -1,0 +1,422 @@
+[
+    {
+        "start": 2021,
+        "end": 2022,
+        "shows": [
+            {
+                "title": "The Odd Couple",
+                "author": "Neil Simon",
+                "director": "Rebecca Gomez",
+                "image": "oddCouple",
+                "opens": "August 20, 2022 22:00:00",
+                "closes": "September 12, 2021 15:00:00",
+                "description": "Unger and Madison are at it again! Florence Unger and Olive Madison, that is, in Neil Simon\\'s hilarious 80\\'s comic classic: the female version of The Odd Couple. Instead of the poker party that begins the original version, Ms. Madison has invited the girls over for an evening of Trivial Pursuit. The Pidgeon sisters have been replaced by the two Constazuela brothers. But the hilarity remains the same!",
+                "cast": [
+                    {
+                        "name": "Olive",
+                        "actor": "Courtney Woolard",
+                        "description": ""
+                    },
+                    {
+                        "name": "Florence",
+                        "actor": "Anna Everence",
+                        "description": ""
+                    },
+                    {
+                        "name": "Mickey",
+                        "actor": "Joyce Jones",
+                        "description": ""
+                    },
+                    {
+                        "name": "Renee",
+                        "actor": "Angel Orenstein",
+                        "description": ""
+                    },
+                    {
+                        "name": "Sylvia",
+                        "actor": "Liz Burling",
+                        "description": ""
+                    },
+                    {
+                        "name": "Vera",
+                        "actor": "Brittany Lightfoot",
+                        "description": ""
+                    },
+                    {
+                        "name": "Manolo",
+                        "actor": "David Snow",
+                        "description": ""
+                    },
+                    { "name": "Jesus", "actor": "Greg Knox", "description": "" }
+                ],
+                "ticketLink": "the-odd-couple-female-version-19838"
+            },
+            {
+                "title": "The Haunting of Hill House",
+                "author": ["F Andrew Leslie", "Shirley Jackson"],
+                "director": ["Sarah Campbell", "Dennis Hart"],
+                "image": "hillHouse",
+                "opens": "October 8, 2021 22:00:00",
+                "closes": "October 31, 2021 15:00:00",
+                "description": "A chilling and mystifying study in mounting terror in which a small group of \\“psychically receptive” people are brought together in Hill House, a brooding, mid-Victorian mansion known as a place of evil and \\“contained ill will.\\” Led by the learned Dr. Montague, who is conducting research in supernatural phenomena, the visitors have come to probe the secrets of the old house and to draw forth the mysterious powers that it is alleged to possess—powers which have brought madness and death to those who have lived therein in the past. The play was adapted from the novel by Shirley Jackson.",
+                "cast": [
+                    {
+                        "name": "Eleanor Vance",
+                        "actor": "Shelby Frye",
+                        "description": ""
+                    },
+                    {
+                        "name": "Theodora",
+                        "actor": "Raine Palmer",
+                        "description": ""
+                    },
+                    {
+                        "name": "Dr. Montague",
+                        "actor": "Tristan Brown",
+                        "description": ""
+                    },
+                    {
+                        "name": "Mrs. Montague",
+                        "actor": "Cameron Skillen",
+                        "description": ""
+                    },
+                    {
+                        "name": "Luke Sanderson",
+                        "actor": "Josh Bigwood",
+                        "description": ""
+                    },
+                    {
+                        "name": "Arthur",
+                        "actor": "Ryan Rotella",
+                        "description": ""
+                    },
+                    {
+                        "name": "Mrs. Dudley",
+                        "actor": "Graham Marema",
+                        "description": ""
+                    }
+                ],
+                "ticketLink": ""
+            },
+            {
+                "title": "A Doublewide, Texas Christmas",
+                "author": ["Jones", "Hope", "Wooten"],
+                "director": "Candace Moore",
+                "image": "doublewide",
+                "opens": "December 3, 2021 22:00:00",
+                "closes": "December 19, 2021 15:00:00",
+                "description": "In this outrageously funny comedy, it’s Christmas-time in the newest—and tiniest—town in Texas. And it’s beginning to look a lot like trouble in Doublewide. Not only are the trailer park residents dealing with the stress of the holiday season, but they’ve just discovered that Doublewide is being double-crossed by the County. With their official incorporation papers in jeopardy, this band of eccentric Texans throw themselves into taking on the “Big Guys.” Determined to bolster their legitimacy, they first set their sights on the County-wide “Battle of The Mangers” competition. They conspire to win this smackdown with their “Nativity At The Alamo” entry…by any means possible.",
+                "cast": [
+                    { "name": "Big Ethel", "actor": "Donna Shoun" },
+                    { "name": "Georgia Dean", "actor": "Justine Link" },
+                    { "name": "Lark Barken", "actor": "Eleanor Weedman" },
+                    { "name": "Haywood Slogget", "actor": "Tom Ireland" },
+                    { "name": "Patsy Price", "actor": "Windie Wilson" },
+                    { "name": "Baby Crumpler", "actor": "Eric Collins" },
+                    {
+                        "name": "Caprice Crumpler",
+                        "actor": "Joann Damiani"
+                    },
+                    {
+                        "name": "Nash Slogget",
+                        "actor": "Tristan Brown"
+                    },
+                    {
+                        "name": "Joveeta Crumpler",
+                        "actor": "Sarah Campbell"
+                    }
+                ],
+                "ticketLink": "a-doublewide-texas-christmas-81671"
+            },
+            {
+                "title": "Office Hours",
+                "author": "Norm Foster",
+                "director": "Windie Wilson",
+                "image": "officeHours",
+                "opens": "January 21, 2022 22:00:00",
+                "closes": "February 13, 2022 15:00:00",
+                "description": "Office Hours is a full-length comedy by Norm Foster. Six separate stories are unfolding in six separate offices on one Friday afternoon. In true Norm Foster style, it makes us laugh at our humanity, cleverly linking a TV news producer, a pair of Canadian movie producers, a rather unsavoury agent, an entertainment lawyer, a horse track owner. and a psychiatrist. This highly acclaimed theatrical comedy is a madcap race towards quitting time.",
+                "cast": [
+                    {
+                        "name": "Warren Kimble",
+                        "actor": "",
+                        "description": "A television news reporter"
+                    },
+                    {
+                        "name": "Pam Gerard",
+                        "actor": "",
+                        "description": "A television news reporter"
+                    },
+                    {
+                        "name": "One-Armed Man",
+                        "actor": "",
+                        "description": "A veiwer"
+                    },
+                    {
+                        "name": "Gordon Blaine",
+                        "actor": "",
+                        "description": "A Canadian film producer"
+                    },
+                    {
+                        "name": "Francine Majors",
+                        "actor": "",
+                        "description": "A Canadian film producer"
+                    },
+                    {
+                        "name": "Bobby Holland",
+                        "actor": "",
+                        "description": "An American film producer"
+                    },
+                    {
+                        "name": "Mark Young",
+                        "actor": "",
+                        "description": "An Agent"
+                    },
+                    {
+                        "name": "Ellie Young",
+                        "actor": "",
+                        "description": "Mark's wife"
+                    },
+                    {
+                        "name": "Richard Penny",
+                        "actor": "",
+                        "description": "A lawyer"
+                    },
+                    {
+                        "name": "Rhonda Penny",
+                        "actor": "",
+                        "description": "Richard's Mother"
+                    },
+                    {
+                        "name": "Lloyd Penny",
+                        "actor": "",
+                        "description": "Richard's Father"
+                    },
+                    {
+                        "name": "Stan Thurber",
+                        "actor": "",
+                        "description": "A racetrack owner"
+                    },
+                    {
+                        "name": "Artie Barnes",
+                        "actor": "",
+                        "description": "A racetrack Employee"
+                    },
+                    {
+                        "name": "Sharon Freeman",
+                        "actor": "",
+                        "description": "A psychiatrist"
+                    },
+                    {
+                        "name": "Man",
+                        "actor": "",
+                        "description": "A patient"
+                    },
+                    {
+                        "name": "Neil Penny",
+                        "actor": "",
+                        "description": "A patient"
+                    }
+                ],
+
+                "ticketLink": "office-hours-30914"
+            },
+            {
+                "title": "I Hate Hamlet",
+                "author": "Paul Rudnick",
+                "director": "Courtney Woolard",
+                "image": "iHateHamlet",
+                "opens": "April 1, 2022 22:00:00",
+                "closes": "April 17, 2022 15:00:00",
+                "description": "A young and successful television actor relocates to New York, where he rents a marvelous, gothic apartment. With his television career in limbo, the actor is offered the opportunity to play Hamlet onstage, but there’s one problem: He hates Hamlet. His dilemma deepens with the entrance of John Barrymore’s ghost, who arrives intoxicated and in full costume to the apartment that once was his. The contrast between the two actors, the towering, dissipated Barrymore whose Hamlet was the greatest of his time, and Andrew Rally, hot young television star, leads to a wildly funny duel over women, art, success, duty, television, and yes, the apartment.",
+                "cast": [
+                    {
+                        "name": "Felicia Dantine",
+                        "actor": "",
+                        "description": "Andrew Rally's real estate broker, Felicia Dantine claims that she can speak to the dead; however, her séance arranged to speak with the ghost of Barry more appears on the surface to have been a failure."
+                    },
+                    {
+                        "name": "Andrew Rally",
+                        "actor": "",
+                        "description": "Young and popular, Andrew Rally is a television actor and star of a recently canceled soap opera. He just moved to New York City from Los Angeles, where he will soon be playing Hamlet on stage. He is both overwhelmed and chagrined by the challenge, because it is the stage, not Hollywood, and because it is perhaps the most difficult role every written. However, he has unwittingly moved into the apartment of the deceased John Barrymore, perhaps the greatest Shakespearean actor who ever lived."
+                    },
+                    {
+                        "name": "Deirdre McDavey",
+                        "actor": "",
+                        "description": "Attractive and emotional, Deirdre McDavey is Rally's girlfriend. She is committed, much to his annoyance, to \"saving herself\" until they are married."
+                    },
+                    {
+                        "name": "Lillian Troy",
+                        "actor": "",
+                        "description": "Rally's agent, Lillian Troy is in her early twenties but remembers fondly an affair she had with John Barry more many years ago, in the apartment Rally now lives in."
+                    },
+                    {
+                        "name": "John Barrymore",
+                        "actor": "",
+                        "description": "A lengendary actor, John Barrymore, or, rather, his ghost is still quite active (in many ways) and appears to help Rally in the nuances of both acting and love."
+                    },
+                    {
+                        "name": "Gary Peter Lefkowitz",
+                        "actor": "",
+                        "description": "A cocky, pompous television producer, Gary Peter Lefkowitz gave Rally his first big break. He wants Rally to move back to Los Angeles to film a new television series and can't understand why he isn't jumping at the chance."
+                    }
+                ],
+                "ticketLink": "i-hate-hamlet-79784"
+            },
+            {
+                "title": "Rope",
+                "author": "Patrick Hamilton",
+                "director": "Dennis Hart",
+                "image": "rope",
+                "opens": "June 3, 2022 20:00:00",
+                "closes": "June 19, 2022 15:00:00",
+                "description": "For the mere sake of adventure, danger, and the \"fun of the thing,\" Wyndham Brandon persuades his weak minded friend, Charles Granillo, to assist him in the murder of a fellow undergraduate, a perfectly harmless man named Ronald Raglan. They place the body in a wooden chest, and to add spice to their handiwork, invite a few acquaintances, including the dead youth's father, to a party, the chest with its gruesome contents serving as a supper table. The horror and tension are worked up gradually; thunder grows outside, the guests leave, and we see the reactions of the two murderers, watched closely by the suspecting lame poet, Rupert Cadell. Finally they break down under the strain and confess their guilt.",
+                "cast": [
+                    {
+                        "name": "Wyndham Brandon",
+                        "actor": "",
+                        "description": ""
+                    },
+                    {
+                        "name": "Charles Granillo",
+                        "actor": "",
+                        "description": ""
+                    },
+                    { "name": "Sabot", "actor": "", "description": "" },
+                    {
+                        "name": "Kenneth Raglan",
+                        "actor": "",
+                        "description": ""
+                    },
+                    { "name": "Leila Arden", "actor": "", "description": "" },
+                    {
+                        "name": "Sir Johnstone Kentley",
+                        "actor": "",
+                        "description": ""
+                    },
+                    { "name": "Mrs. Debenham", "actor": "", "description": "" },
+                    { "name": "Rupert Cadell", "actor": "", "description": "" }
+                ],
+                "ticketLink": "rope-78454"
+            }
+        ]
+    },
+    {
+        "start": 2020,
+        "end": 2021,
+        "shows": [
+            {
+                "title": "Doublewide, Texas",
+                "author": ["Jones", "Hope", "Wooten"],
+                "director": "Joe Johnson",
+                "image": "",
+                "opens": "August 2, 2019 22:00:00",
+                "closes": "August 18, 2019 15:00:00",
+                "description": "",
+                "cast": [
+                    { "name": "", "actor": "Katie Dollar", "description": "" },
+                    {
+                        "name": "",
+                        "actor": "Joyce Schuster",
+                        "description": ""
+                    },
+                    {
+                        "name": "",
+                        "actor": "Richard Taylor",
+                        "description": ""
+                    },
+                    {
+                        "name": "",
+                        "actor": "Bonny Pendleton",
+                        "description": ""
+                    },
+                    {
+                        "name": "",
+                        "actor": "Sarah Campbell",
+                        "description": ""
+                    },
+                    { "name": "", "actor": "Mona Lyden", "description": "" },
+                    { "name": "", "actor": "Scott Smith", "description": "" },
+                    {
+                        "name": "",
+                        "actor": "Brad Stapleton",
+                        "description": ""
+                    },
+                    {
+                        "name": "",
+                        "actor": "Arisa Carero-Spencer",
+                        "description": ""
+                    }
+                ],
+                "ticketLink": ""
+            },
+            {
+                "title": "All in the Timing",
+                "author": "David Ives",
+                "director": "Greg Congleton",
+                "image": "",
+                "opens": "September 13, 2019 22:00:00",
+                "closes": "September 29, 2019 15:00:00",
+                "description": "",
+                "cast": [
+                    { "name": "", "actor": "JoAnn Damiani", "description": "" },
+                    {
+                        "name": "",
+                        "actor": "Spencer Flottman",
+                        "description": ""
+                    },
+                    {
+                        "name": "",
+                        "actor": "Bill Householder",
+                        "description": ""
+                    },
+                    { "name": "", "actor": "Anna McCoig", "description": "" },
+                    { "name": "", "actor": "Mark Palmer", "description": "" },
+                    {
+                        "name": "",
+                        "actor": "Lisa SIlverman",
+                        "description": ""
+                    },
+                    { "name": "", "actor": "Craig Smith", "description": "" },
+                    {
+                        "name": "",
+                        "actor": "Greta Thorderson",
+                        "description": ""
+                    }
+                ],
+                "ticketLink": ""
+            },
+            {
+                "title": "Agatha Christie's Murder on the Otient Express",
+                "author": ["Agatha Christie", "Ken Ludwig"],
+                "director": "Courtney Woolard",
+                "image": "",
+                "opens": "October 25, 2019 22:00:00",
+                "closes": "November 10, 2019 15:00:00",
+                "description": "",
+                "cast": [
+                    { "name": "", "actor": "David Snow", "description": "" },
+                    { "name": "", "actor": "Barry Wallace", "description": "" },
+                    { "name": "", "actor": "Lydia Weeks", "description": "" },
+                    { "name": "", "actor": "Casey Cain", "description": "" },
+                    { "name": "", "actor": "Noah Jones", "description": "" },
+                    { "name": "", "actor": "Tracy Walker", "description": "" },
+                    { "name": "", "actor": "Julia Dietz", "description": "" },
+                    { "name": "", "actor": "Raine Palmer", "description": "" },
+                    {
+                        "name": "",
+                        "actor": "Christina Sayer",
+                        "description": ""
+                    },
+                    {
+                        "name": "",
+                        "actor": "David Hutto, Jr.",
+                        "description": ""
+                    },
+                    { "name": "", "actor": "Kevin Cannon", "description": "" }
+                ],
+                "ticketLink": ""
+            }
+        ]
+    }
+]

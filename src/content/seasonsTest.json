@@ -8,17 +8,41 @@
         "closes": "September 12, 2021 15:00:00",
         "description": "Unger and Madison are at it again! Florence Unger and Olive Madison, that is, in Neil Simon\\'s hilarious 80\\'s comic classic: the female version of The Odd Couple. Instead of the poker party that begins the original version, Ms. Madison has invited the girls over for an evening of Trivial Pursuit. The Pidgeon sisters have been replaced by the two Constazuela brothers. But the hilarity remains the same!",
         "cast": [
-            { "name": "Olive", "actor": "Courtney Woolard", "description": "" },
-            { "name": "Florence", "actor": "Anna Everence", "description": "" },
-            { "name": "Mickey", "actor": "Joyce Jones", "description": "" },
-            { "name": "Renee", "actor": "Angel Orenstein", "description": "" },
-            { "name": "Sylvia", "actor": "Liz Burling", "description": "" },
+            {
+                "name": "Olive",
+                "actor": "Courtney Woolard",
+                "description": ""
+            },
+            {
+                "name": "Florence",
+                "actor": "Anna Everence",
+                "description": ""
+            },
+            {
+                "name": "Mickey",
+                "actor": "Joyce Jones",
+                "description": ""
+            },
+            {
+                "name": "Renee",
+                "actor": "Angel Orenstein",
+                "description": ""
+            },
+            {
+                "name": "Sylvia",
+                "actor": "Liz Burling",
+                "description": ""
+            },
             {
                 "name": "Vera",
                 "actor": "Brittany Lightfoot",
                 "description": ""
             },
-            { "name": "Manolo", "actor": "David Snow", "description": "" },
+            {
+                "name": "Manolo",
+                "actor": "David Snow",
+                "description": ""
+            },
             { "name": "Jesus", "actor": "Greg Knox", "description": "" }
         ],
         "ticketLink": "the-odd-couple-female-version-19838"
@@ -37,7 +61,11 @@
                 "actor": "Shelby Frye",
                 "description": ""
             },
-            { "name": "Theodora", "actor": "Raine Palmer", "description": "" },
+            {
+                "name": "Theodora",
+                "actor": "Raine Palmer",
+                "description": ""
+            },
             {
                 "name": "Dr. Montague",
                 "actor": "Tristan Brown",
@@ -53,7 +81,11 @@
                 "actor": "Josh Bigwood",
                 "description": ""
             },
-            { "name": "Arthur", "actor": "Ryan Rotella", "description": "" },
+            {
+                "name": "Arthur",
+                "actor": "Ryan Rotella",
+                "description": ""
+            },
             {
                 "name": "Mrs. Dudley",
                 "actor": "Graham Marema",
@@ -236,15 +268,143 @@
         "closes": "June 19, 2022 15:00:00",
         "description": "For the mere sake of adventure, danger, and the \"fun of the thing,\" Wyndham Brandon persuades his weak minded friend, Charles Granillo, to assist him in the murder of a fellow undergraduate, a perfectly harmless man named Ronald Raglan. They place the body in a wooden chest, and to add spice to their handiwork, invite a few acquaintances, including the dead youth's father, to a party, the chest with its gruesome contents serving as a supper table. The horror and tension are worked up gradually; thunder grows outside, the guests leave, and we see the reactions of the two murderers, watched closely by the suspecting lame poet, Rupert Cadell. Finally they break down under the strain and confess their guilt.",
         "cast": [
-            { "name": "Wyndham Brandon", "actor": "", "description": "" },
-            { "name": "Charles Granillo", "actor": "", "description": "" },
+            {
+                "name": "Wyndham Brandon",
+                "actor": "",
+                "description": ""
+            },
+            {
+                "name": "Charles Granillo",
+                "actor": "",
+                "description": ""
+            },
             { "name": "Sabot", "actor": "", "description": "" },
-            { "name": "Kenneth Raglan", "actor": "", "description": "" },
+            {
+                "name": "Kenneth Raglan",
+                "actor": "",
+                "description": ""
+            },
             { "name": "Leila Arden", "actor": "", "description": "" },
-            { "name": "Sir Johnstone Kentley", "actor": "", "description": "" },
+            {
+                "name": "Sir Johnstone Kentley",
+                "actor": "",
+                "description": ""
+            },
             { "name": "Mrs. Debenham", "actor": "", "description": "" },
             { "name": "Rupert Cadell", "actor": "", "description": "" }
         ],
         "ticketLink": "rope-78454"
+    },
+    {
+        "title": "Doublewide, Texas",
+        "author": ["Jones", "Hope", "Wooten"],
+        "director": "Joe Johnson",
+        "image": "",
+        "opens": "August 2, 2019 22:00:00",
+        "closes": "August 18, 2019 15:00:00",
+        "description": "",
+        "cast": [
+            { "name": "", "actor": "Katie Dollar", "description": "" },
+            {
+                "name": "",
+                "actor": "Joyce Schuster",
+                "description": ""
+            },
+            {
+                "name": "",
+                "actor": "Richard Taylor",
+                "description": ""
+            },
+            {
+                "name": "",
+                "actor": "Bonny Pendleton",
+                "description": ""
+            },
+            {
+                "name": "",
+                "actor": "Sarah Campbell",
+                "description": ""
+            },
+            { "name": "", "actor": "Mona Lyden", "description": "" },
+            { "name": "", "actor": "Scott Smith", "description": "" },
+            {
+                "name": "",
+                "actor": "Brad Stapleton",
+                "description": ""
+            },
+            {
+                "name": "",
+                "actor": "Arisa Carero-Spencer",
+                "description": ""
+            }
+        ],
+        "ticketLink": ""
+    },
+    {
+        "title": "All in the Timing",
+        "author": "David Ives",
+        "director": "Greg Congleton",
+        "image": "",
+        "opens": "September 13, 2019 22:00:00",
+        "closes": "September 29, 2019 15:00:00",
+        "description": "",
+        "cast": [
+            { "name": "", "actor": "JoAnn Damiani", "description": "" },
+            {
+                "name": "",
+                "actor": "Spencer Flottman",
+                "description": ""
+            },
+            {
+                "name": "",
+                "actor": "Bill Householder",
+                "description": ""
+            },
+            { "name": "", "actor": "Anna McCoig", "description": "" },
+            { "name": "", "actor": "Mark Palmer", "description": "" },
+            {
+                "name": "",
+                "actor": "Lisa SIlverman",
+                "description": ""
+            },
+            { "name": "", "actor": "Craig Smith", "description": "" },
+            {
+                "name": "",
+                "actor": "Greta Thorderson",
+                "description": ""
+            }
+        ],
+        "ticketLink": ""
+    },
+    {
+        "title": "Agatha Christie's Murder on the Orient Express",
+        "author": ["Agatha Christie", "Ken Ludwig"],
+        "director": "Courtney Woolard",
+        "image": "",
+        "opens": "October 25, 2019 22:00:00",
+        "closes": "November 10, 2019 15:00:00",
+        "description": "",
+        "cast": [
+            { "name": "", "actor": "David Snow", "description": "" },
+            { "name": "", "actor": "Barry Wallace", "description": "" },
+            { "name": "", "actor": "Lydia Weeks", "description": "" },
+            { "name": "", "actor": "Casey Cain", "description": "" },
+            { "name": "", "actor": "Noah Jones", "description": "" },
+            { "name": "", "actor": "Tracy Walker", "description": "" },
+            { "name": "", "actor": "Julia Dietz", "description": "" },
+            { "name": "", "actor": "Raine Palmer", "description": "" },
+            {
+                "name": "",
+                "actor": "Christina Sayer",
+                "description": ""
+            },
+            {
+                "name": "",
+                "actor": "David Hutto, Jr.",
+                "description": ""
+            },
+            { "name": "", "actor": "Kevin Cannon", "description": "" }
+        ],
+        "ticketLink": ""
     }
 ]

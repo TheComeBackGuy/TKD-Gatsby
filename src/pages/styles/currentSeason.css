@@ -2,7 +2,9 @@
     background-color: white;
     color: var(--tkdBlack);
 }
-
+.thumb {
+    width: 100%;
+}
 .season h3 {
     font-size: 40px;
 }
