@@ -19,11 +19,10 @@ export default function Home() {
                 <ProductionMasthead />
             </div>
             <CovidUpdates />
-            <div className="card">
+            {/* <div className="card">
                 <ReactPlayer url="https://www.youtube.com/watch?v=HJgDp3Xnn0s" />
                 {/* <YouTubePlayer url="https://www.youtube.com/watch?v=HJgDp3Xnn0s" /> */}
-            </div>
-
+            {/* </div> */}
             <div className="cardBlank white">
                 <h1 className="pageHeader">Our Guests Agree...</h1>
                 <ul className="flexReviews">

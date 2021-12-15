@@ -5,6 +5,7 @@ import * as React from 'react'
 
 import ContactBar from '../components/ContactBar'
 import { Link } from 'gatsby'
+import Logo from '../images/logo2.png'
 import MobileNav from '../components/MobileNav'
 import Nav from '../components/Nav'
 import { StaticImage } from 'gatsby-plugin-image'
@@ -48,12 +49,7 @@ export default function Header(props) {
             <div className="headerGrid">
                 <div className="logoBox">
                     <Link to="/">
-                        <StaticImage
-                            src="../images/logo2.png"
-                            alt="Theatre Knoxville Downtown Logo"
-                            className="logo"
-                            description="An outline of the Knoxville skyline is encasing the words Theatre Knoxville Downtown in a script font "
-                        />
+                        <img src={Logo} className="logo" />
                     </Link>
                 </div>
                 <div className="navBlock">

@@ -134,7 +134,7 @@ li {
 
 .standardPage {
     width: 100%;
-    background-color: var(--tkdGold);
+    background-color: var(--tkdRed);
     padding: 20px;
     color: white;
 }

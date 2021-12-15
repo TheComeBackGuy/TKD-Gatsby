@@ -64,6 +64,15 @@
     }
     .contactContainer {
         width: 100%;
-        padding: 0 10px;
+        padding: 0;
+    }
+    .phone {
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .email {
+        display: none;
     }
 }

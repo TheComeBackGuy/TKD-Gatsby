@@ -42,9 +42,7 @@ export default function ContactBar() {
                                     />
                                 </button>
                             </form>
-                            <p className="phoneNumber">
-                                info@TheatreKnoxville.com
-                            </p>
+                            <p className="email">info@TheatreKnoxville.com</p>
                         </div>
                     </li>
                     <li>

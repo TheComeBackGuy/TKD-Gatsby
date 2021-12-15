@@ -10,10 +10,6 @@ import { StaticImage } from 'gatsby-plugin-image'
 import { navigate } from 'gatsby-link'
 
 export default function Parking() {
-    function mapIt() {
-        navigate('https://goo.gl/maps/1K2feQ9H3HGfXuSg9')
-    }
-
     return (
         <div className="everything">
             <header>
@@ -24,7 +20,14 @@ export default function Parking() {
                 <div className="card">
                     <div className="mapsLink">
                         <Pin />
-                        <button className="mainButton" onClick={mapIt}>
+                        <button
+                            className="mainButton"
+                            onClick={() =>
+                                navigate(
+                                    'https://goo.gl/maps/1K2feQ9H3HGfXuSg9'
+                                )
+                            }
+                        >
                             Map us
                         </button>
                     </div>
@@ -37,7 +40,16 @@ export default function Parking() {
                         </p>
                         <div className="knockoutBlank lightGrey garage">
                             <h3>State Street Garage</h3>
-                            <cite>500 State St, Knoxville, TN 37902</cite>
+                            <button
+                                className="mainButton"
+                                onClick={() =>
+                                    navigate(
+                                        `https://goo.gl/maps/sMKqeiJi5rSEU8uC8`
+                                    )
+                                }
+                            >
+                                500 State St, Knoxville, TN 37902
+                            </button>
                             <StaticImage
                                 className="parkingImage"
                                 src="../images/state-street-parking.jpg"
@@ -53,7 +65,16 @@ export default function Parking() {
                         </div>
                         <div className="knockoutBlank lightGrey garage">
                             <h3>First Horizon Bank Garage</h3>
-                            <cite>800 S Gay St, Knoxville, TN 37929</cite>
+                            <button
+                                className="mainButton"
+                                onClick={() =>
+                                    navigate(
+                                        `https://goo.gl/maps/b7khABJJRbo5MuE57`
+                                    )
+                                }
+                            >
+                                800 S Gay St, Knoxville, TN 37929
+                            </button>
                             <StaticImage
                                 className="parkingImage"
                                 src="../images/first-horizon-bank.jpg"
