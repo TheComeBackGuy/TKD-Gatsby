@@ -1,5 +1,6 @@
 {
     "title": "",
+    "slug": "",
     "author": "",
     "director": "",
     "image": "",
@@ -7,5 +8,7 @@
     "closes": "",
     "description": "",
     "cast": [{ "name": "", "actor": "", "description": "" }],
+    "reviews": [{ "quote": "", "source": "" }],
+    "gallery": "",
     "ticketLink": ""
 }

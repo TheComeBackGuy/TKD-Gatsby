@@ -4,21 +4,28 @@ import * as React from 'react'
 
 import { Link } from 'gatsby'
 import TopNav from '../content/TopNav.json'
+import { navigate } from 'gatsby'
 
 export default function Nav(props) {
     // if (props.aStyle == 'mobile' && props.isActive) {
+    function goToPage(x) {}
+
     return (
-        <ul className={`desktopMenu`}>
-            {TopNav.topNav.map((data, index) => {
+        <nav className={`desktopMenu`}>
+            {TopNav.map((data, index) => {
                 return (
-                    <li key={`content_item_${index}`}>
-                        <Link to={`/${data.url}/`}>
-                            <button>{data.label}</button>
-                        </Link>
-                    </li>
+                    <button
+                        key={`content_item_${index}`}
+                        className="navLink"
+                        onClick={() => {
+                            navigate(`/${data.url}/`)
+                        }}
+                    >
+                        {data.label}
+                    </button>
                 )
             })}
-        </ul>
+        </nav>
     )
     // }
     // return null

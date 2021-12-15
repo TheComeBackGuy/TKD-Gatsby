@@ -19,6 +19,7 @@
     flex-flow: row wrap;
     justify-content: space-between;
     align-content: flex-start;
+    margin-top: 20px;
 }
 .showContainer {
     display: flex;
@@ -27,7 +28,7 @@
     background-color: var(--tkdLightGrey);
     color: var(--tkdBlack);
     margin: 10px;
-    border-radius: var(--tkdBorderRadius);
+    border-radius: 3px;
     overflow: hidden;
     flex-basis: 30%;
 }
@@ -39,15 +40,22 @@
 
 .showTicket {
     width: 100%;
-    border: none;
     color: white;
     padding: 10px;
-    border-radius: 3px;
     font-weight: 400;
     font-size: 20px;
-    background-color: var(--tkdOrange);
+    background-color: var(--tkdLightBlue);
+    border: 1px solid var(--tkdLightBlue);
+    cursor: pointer;
+    transition: 0.25s ease-in-out;
+    text-transform: uppercase;
 }
 
+.showTicket:hover {
+    background-color: white;
+    color: var(--tkdLightBlue);
+    transition: 0.25s ease-in-out;
+}
 .director {
     display: inline-block;
     margin: 20px 0 0 0;

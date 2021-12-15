@@ -28,10 +28,11 @@
         "gatsby-transformer-json": "^4.3.0",
         "gatsby-transformer-sharp": "^4.2.0",
         "install": "^0.13.0",
-        "npm": "^8.1.4",
+        "npm": "^8.2.0",
         "react": "^17.0.1",
         "react-dom": "^17.0.1",
         "react-helmet": "^6.1.0",
+        "react-player": "^2.9.0",
         "react-router": "^6.0.0",
         "react-router-dom": "^6.0.2",
         "react-scripts": "^4.0.3"

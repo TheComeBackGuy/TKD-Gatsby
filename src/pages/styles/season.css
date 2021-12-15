@@ -1,0 +1,10 @@
+.seasonHead {
+    justify-content: center;
+    /* border: 1px solid tomato; */
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+.arrow {
+    margin: 0 10px;
+}

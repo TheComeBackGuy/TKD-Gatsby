@@ -1,0 +1,29 @@
+.archiveKnockout {
+    display: flex;
+    flex-flow: column nowrap;
+    flex-basis: 100%;
+    background-color: white;
+    color: var(--tkdBlack);
+    text-align: left;
+    margin-bottom: 40px;
+}
+.archiveAuthor {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.cast {
+    margin: 5px 0 0 0;
+    font-size: 12px;
+}
+.seasonYear {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: left;
+    margin: 0 0 20px 0;
+    justify-content: space-between;
+}
+.archiveButton {
+    margin: 10px;
+    font-size: 20px;
+}

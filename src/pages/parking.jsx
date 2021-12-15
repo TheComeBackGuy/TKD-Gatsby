@@ -5,33 +5,36 @@ import * as React from 'react'
 
 import Footer from '../components/footer'
 import Header from '../components/header'
+import Pin from '../images/svg/pin.jsx'
 import { StaticImage } from 'gatsby-plugin-image'
+import { navigate } from 'gatsby-link'
 
 export default function Parking() {
+    function mapIt() {
+        navigate('https://goo.gl/maps/1K2feQ9H3HGfXuSg9')
+    }
+
     return (
         <div className="everything">
             <header>
-                <Header text="This is the header" />
+                <Header />
             </header>
             <main className="container">
                 <h1 className="standardPage topElement">Parking</h1>
                 <div className="card">
-                    <h3>We are located at:</h3>
-                    <cite>
-                        800 S. Central Street
-                        <br />
-                        Knoxville, TN 37902
-                    </cite>
-
-                    <h2>Parking options</h2>
+                    <div className="mapsLink">
+                        <Pin />
+                        <button className="mainButton" onClick={mapIt}>
+                            Map us
+                        </button>
+                    </div>
                     <div className="parking">
-                        <p className="knockoutWhite metered">
+                        <p className="metered">
                             Metered parking is available on all of the streets
                             around the theater. The meters are FREE evenings
                             after 6 pm and all day Sunday. Parking is also
                             available in several garages nearby.
                         </p>
-
                         <div className="knockoutBlank lightGrey garage">
                             <h3>State Street Garage</h3>
                             <cite>500 State St, Knoxville, TN 37902</cite>

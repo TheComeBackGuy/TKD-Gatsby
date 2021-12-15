@@ -9,7 +9,7 @@ import Mask from '../images/svg/maskIcon.svg'
 export default function CovidUpdate() {
     return (
         <div className="card">
-            <h1>Health and Safety Updates</h1>
+            <h1 className="pageheader">Health and Safety Updates</h1>
             <p>
                 TKD is dedicated to keeping it's performers, volunteers, and
                 guests as safe as we can during the ebb and flow of this

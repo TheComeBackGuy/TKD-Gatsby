@@ -12,7 +12,7 @@ import { useState } from 'react'
 
 export default function Header(props) {
     const [dropDown, setDropDown] = useState(false)
-
+    const onPage = props.onPage
     /** We're detecting if the user scrolled down and if we're in desktop veiw
      * If they scroll dow, we shrink the navbar.
      */
@@ -79,7 +79,7 @@ export default function Header(props) {
                             ></li>
                         </ul>
                     </button>
-                    <Nav aStyle="desktop" />
+                    <Nav aStyle="desktop" onPage={onPage} />
                 </div>
             </div>
             <MobileNav aStyle="mobile" isActive={dropDown} />

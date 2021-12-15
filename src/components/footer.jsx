@@ -37,9 +37,10 @@ export default function Footer() {
                     <Link to="/auditions">
                         <li className="listBullet">Auditions</li>
                     </Link>
-                    {/* <Link to="/archive">
+
+                    <Link to="/archive">
                         <li className="listBullet">Archive</li>
-                    </Link> */}
+                    </Link>
                 </ul>
             </div>
         </footer>

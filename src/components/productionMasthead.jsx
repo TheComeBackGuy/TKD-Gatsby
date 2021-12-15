@@ -17,13 +17,13 @@ export default function ProductionMasthead() {
     return (
         <div className="mastheadContainer topElement">
             <button className="showStatus">{showStatus}</button>
+
             <img
                 src={`shows/${show.image}.jpg`}
                 alt={show.image}
                 width="100%"
             />
 
-            {/* {banner()} */}
             <BuyTickets url="https://www.onthestage.tickets/show/theatre-knoxville-downtown/a-doublewide-texas-christmas-81671/tickets" />
         </div>
     )

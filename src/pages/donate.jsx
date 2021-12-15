@@ -10,10 +10,11 @@ import Kroger from '../images/svg/Kroger.svg'
 import PaypalLogo from '../images/svg/Paypal'
 
 export default function Donate() {
+    const onPage = 'donate'
     return (
         <div className="everything">
             <header>
-                <Header text="This is the header" />
+                <Header page="donate" onPage={onPage} />
             </header>
             <main className="container">
                 <h1 className="standardPage topElement">Donate</h1>
@@ -23,7 +24,7 @@ export default function Donate() {
                     shows. We appreciate every cent of support we get. Here are
                     three ways to easily support us.
                     <div className="donateGrid">
-                        <div className="knockout paypal">
+                        <div className="knockout donateCard">
                             <PaypalLogo className="logo" />
                             <p>
                                 Make a one-time contribution by credit card or
@@ -40,12 +41,12 @@ export default function Donate() {
                                     name="hosted_button_id"
                                     value="NXF5VSVXZF6QQ"
                                 />
-                                <button className="paypalButton">
+                                <button className="mainButton">
                                     Donate with Paypal
                                 </button>
                             </form>
                         </div>
-                        <div className="knockout amazonSmile">
+                        <div className="knockout donateCard">
                             <Amazon
                                 className="logo"
                                 alt="Amazon Logo"
@@ -56,11 +57,17 @@ export default function Donate() {
                                 your favorite charitable organization, at no
                                 cost to you.
                             </p>
-                            <button className="amazonButton">
-                                Shop at Amazon
-                            </button>
+                            <form
+                                action="https://smile.amazon.com/gp/chpf/homepage?orig=%2F"
+                                method="post"
+                                target="_top"
+                            >
+                                <button className="mainButton">
+                                    Shop at Amazon
+                                </button>
+                            </form>
                         </div>
-                        <div className="knockout kroger">
+                        <div className="knockout donateCard">
                             <Kroger
                                 className="logo"
                                 alt="Paypal Logo"
@@ -72,9 +79,15 @@ export default function Donate() {
                                 Downtown” in the Community Rewards section of
                                 your profile.
                             </p>
-                            <button className="krogerButton">
-                                Shop at Kroger
-                            </button>
+                            <form
+                                action="https://www.kroger.com/i/community/community-rewards/"
+                                method="post"
+                                target="_top"
+                            >
+                                <button className="mainButton">
+                                    Shop at Kroger
+                                </button>
+                            </form>
                         </div>
                     </div>
                 </article>

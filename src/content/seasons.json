@@ -50,6 +50,8 @@
                     },
                     { "name": "Jesus", "actor": "Greg Knox", "description": "" }
                 ],
+                "reviews": [{ "qoute": "", "source": "" }],
+                "gallery": "https://flic.kr/s/aHsmWrZ3yA",
                 "ticketLink": "the-odd-couple-female-version-19838"
             },
             {
@@ -98,6 +100,8 @@
                         "description": ""
                     }
                 ],
+                "reviews": [{ "qoute": "", "source": "" }],
+                "gallery": "",
                 "ticketLink": ""
             },
             {
@@ -105,7 +109,7 @@
                 "slug": "A-Doublewide-Texas-Christmas",
                 "author": ["Jones", "Hope", "Wooten"],
                 "director": "Candace Moore",
-                "image": "doublewide",
+                "image": "doublewide-christmas",
                 "opens": "December 3, 2021 22:00:00",
                 "closes": "December 19, 2021 15:00:00",
                 "description": "<p>In this outrageously funny comedy, it’s Christmas-time in the newest—and tiniest—town in Texas. And it’s beginning to look a lot like trouble in Doublewide.</p><p>Not only are the trailer park residents dealing with the stress of the holiday season, but they’ve just discovered that Doublewide is being double-crossed by the County. With their official incorporation papers in jeopardy, this band of eccentric Texans throw themselves into taking on the “Big Guys.” Determined to bolster their legitimacy, they first set their sights on the County-wide “Battle of The Mangers” competition. They conspire to win this smackdown with their “Nativity At The Alamo” entry…by any means possible.</p>",
@@ -129,6 +133,8 @@
                         "actor": "Sarah Campbell"
                     }
                 ],
+                "reviews": [{ "qoute": "", "source": "" }],
+                "gallery": "",
                 "ticketLink": "a-doublewide-texas-christmas-81671"
             },
             {
@@ -223,6 +229,8 @@
                     }
                 ],
 
+                "reviews": [{ "qoute": "", "source": "" }],
+                "gallery": "",
                 "ticketLink": "office-hours-30914"
             },
             {
@@ -266,6 +274,8 @@
                         "description": "A cocky, pompous television producer, Gary Peter Lefkowitz gave Rally his first big break. He wants Rally to move back to Los Angeles to film a new television series and can't understand why he isn't jumping at the chance."
                     }
                 ],
+                "reviews": [{ "qoute": "", "source": "" }],
+                "gallery": "",
                 "ticketLink": "i-hate-hamlet-79784"
             },
             {
@@ -303,6 +313,8 @@
                     { "name": "Mrs. Debenham", "actor": "", "description": "" },
                     { "name": "Rupert Cadell", "actor": "", "description": "" }
                 ],
+                "reviews": [{ "qoute": "", "source": "" }],
+                "gallery": "",
                 "ticketLink": "rope-78454"
             }
         ]
@@ -312,49 +324,147 @@
         "end": 2021,
         "shows": [
             {
-                "title": "Doublewide, Texas",
-                "slug": "Doublewide-Texas",
-                "author": ["Jones", "Hope", "Wooten"],
-                "director": "Joe Johnson",
-                "image": "",
-                "opens": "August 2, 2019 22:00:00",
-                "closes": "August 18, 2019 15:00:00",
-                "description": "",
+                "title": "Waiting For Godot",
+                "slug": "waiting-for-godot",
+                "author": "Samuel Beckett",
+                "director": "Sarah Campbell",
+                "image": "waitingForGodot",
+                "opens": "April 9, 2021 22:00:00",
+                "closes": "April 18, 2021 15:00:00",
+                "description": "<p>A classic of the modern theatre. On Broadway, WAITING FOR GODOT roused audiences to demonstrations of enthusiasm and anger. A play that will provide an exciting challenge for groups interested in producing something out of the ordinary.</p>",
                 "cast": [
-                    { "name": "", "actor": "Katie Dollar", "description": "" },
                     {
-                        "name": "",
+                        "name": "Joveeta Crumpler",
+                        "actor": "Katie Dollar",
+                        "description": ""
+                    },
+                    {
+                        "name": "Caprice Crumpler",
                         "actor": "Joyce Schuster",
                         "description": ""
                     },
                     {
-                        "name": "",
+                        "name": "Norwayne 'Baby' Crumpler",
                         "actor": "Richard Taylor",
                         "description": ""
                     },
                     {
-                        "name": "",
+                        "name": "Big Ethel Satterwhite",
                         "actor": "Bonny Pendleton",
                         "description": ""
                     },
                     {
-                        "name": "",
+                        "name": "Georgia Dean Rudd",
                         "actor": "Sarah Campbell",
                         "description": ""
                     },
-                    { "name": "", "actor": "Mona Lyden", "description": "" },
-                    { "name": "", "actor": "Scott Smith", "description": "" },
                     {
-                        "name": "",
+                        "name": "Lark Barken",
+                        "actor": "Mona Lyden",
+                        "description": ""
+                    },
+                    {
+                        "name": "Haywood Sloggett",
+                        "actor": "Scott Smith",
+                        "description": ""
+                    },
+                    {
+                        "name": "Lomax Tanner",
                         "actor": "Brad Stapleton",
                         "description": ""
                     },
                     {
-                        "name": "",
+                        "name": "Starla Pudney",
                         "actor": "Arisa Carero-Spencer",
                         "description": ""
                     }
                 ],
+                "reviews": [
+                    {
+                        "quote": "…moving, often funny, grotesquely beautiful and utterly absorbing.",
+                        "source": "NY Post"
+                    },
+                    {
+                        "quote": "…at once pathetic and hilarious.",
+                        "source": "NY World-Telegram"
+                    }
+                ],
+                "gallery": "",
+                "ticketLink": ""
+            }
+        ]
+    },
+    {
+        "start": 2019,
+        "end": 2020,
+        "shows": [
+            {
+                "title": "Doublewide, Texas",
+                "slug": "Doublewide-Texas",
+                "author": ["Jones", "Hope", "Wooten"],
+                "director": "Joe Johnson",
+                "image": "doublewide",
+                "opens": "August 2, 2019 22:00:00",
+                "closes": "August 18, 2019 15:00:00",
+                "description": "<p>The inhabitants of one of the smallest trailer parks in Texas – four doublewides and a shed – are thrown for a loop when they realize the nearby town of Tugaloo is determined to annex them.</p><p>But odd assortment of friends, enemies and neighbors realize they’ll have to work together to defeat the encroaching annexation if they – and their way of life – have a snowball’s chance to survive being swallowed up by ‘the big guys.’ The rollicking mayhem of this flat-out funny Jones Hope Wooten comedy escalates as the residents attempt to secede from Texas, discover a traitor in their midst and turn the tables in a surprising and side-splitting finale.</p><p>So grab your Stetson and come on over to Doublewide, Texas, where life is double the fun, double the joy, and where audiences double over with laughter!</p>",
+                "cast": [
+                    {
+                        "name": "Joveeta Crumpler",
+                        "actor": "Katie Dollar",
+                        "description": ""
+                    },
+                    {
+                        "name": "Caprice Crumpler",
+                        "actor": "Joyce Schuster",
+                        "description": ""
+                    },
+                    {
+                        "name": "Norwayne 'Baby' Crumpler",
+                        "actor": "Richard Taylor",
+                        "description": ""
+                    },
+                    {
+                        "name": "Big Ethel Satterwhite",
+                        "actor": "Bonny Pendleton",
+                        "description": ""
+                    },
+                    {
+                        "name": "Georgia Dean Rudd",
+                        "actor": "Sarah Campbell",
+                        "description": ""
+                    },
+                    {
+                        "name": "Lark Barken",
+                        "actor": "Mona Lyden",
+                        "description": ""
+                    },
+                    {
+                        "name": "Haywood Sloggett",
+                        "actor": "Scott Smith",
+                        "description": ""
+                    },
+                    {
+                        "name": "Lomax Tanner",
+                        "actor": "Brad Stapleton",
+                        "description": ""
+                    },
+                    {
+                        "name": "Starla Pudney",
+                        "actor": "Arisa Carero-Spencer",
+                        "description": ""
+                    }
+                ],
+                "reviews": [
+                    {
+                        "quote": "This show has audiences laughing so hard, you can probably hear them outside the theatre!",
+                        "source": "Murry's Dinner Playhouse"
+                    },
+                    {
+                        "quote": "You will howl with laughter at these characters. So leave your troubles at home. Because in Doublewide Texas, they’ve got enough for everybody!",
+                        "source": "Bay Review"
+                    }
+                ],
+                "gallery": "https://flic.kr/s/aHsmFKdvkX",
                 "ticketLink": ""
             },
             {
@@ -362,10 +472,10 @@
                 "slug": "All-In-The-Timing",
                 "author": "David Ives",
                 "director": "Greg Congleton",
-                "image": "",
+                "image": "all-in-the-timing",
                 "opens": "September 13, 2019 22:00:00",
                 "closes": "September 29, 2019 15:00:00",
-                "description": "",
+                "description": "<p>Featuring six diverse but equally hysterical one-act comedies, David Ives’ <i>All in the Timing</i> is a witty, romantic, absurd, and existentially-minded evening of theatre.</p><p>In <i><b>Sure Thing</b></i>, a couple on a first date has the opportunity to reset and try again each time they say the wrong thing. <i><b>Words, Words, Words</b></i> takes the “infinite monkey theorem”– the idea that given enough time, three monkeys in a room could eventually compose any given text, including Shakespeare’s Hamlet — and turns it into reality. In <i><b>The Universal Language</b></i>, a shy young woman places her faith in her fraudulent language tutor, who is changed for the better when he discovers the language they share: not the the made-up “Unamunda” that he professes to be fluent in, but rather the language of love. <i><b>Philip Glass Buys a Loaf of Bread</b></i> is an existential mini-musical parody based on the work of composer Philip Glass. In <i><b>The Philadelphia</b></i>, a man discovers that he’s entered a strange pocket of the universe where the only way to get what he wants is to ask for the opposite. Finally, in <i><b>Variations on the Death of Leon Trotsky</b></i>, the audience is treated to the hilarious vision of the famous Marxist waxing poetical — and dying, over and over and over again.</p><p>Winner of the John Gassner Playwriting Award.</p>",
                 "cast": [
                     { "name": "", "actor": "JoAnn Damiani", "description": "" },
                     {
@@ -392,6 +502,13 @@
                         "description": ""
                     }
                 ],
+                "reviews": [
+                    {
+                        "quote": "Like sketches for some hilarious, celestially conceived revue. The writing is not only very funny, it has density of thought and precision of poetry … ALL IN THE TIMING is by a master of fun. David Ives spins hilarity out of words.",
+                        "source": "The New York Times"
+                    }
+                ],
+                "gallery": "https://flic.kr/s/aHsmGV9HL7",
                 "ticketLink": ""
             },
             {
@@ -424,6 +541,701 @@
                     },
                     { "name": "", "actor": "Kevin Cannon", "description": "" }
                 ],
+                "reviews": [{ "qoute": "", "source": "" }],
+                "gallery": "https://flic.kr/s/aHsmJ1m8A7",
+                "ticketLink": ""
+            },
+            {
+                "title": "It's A Wonderful Life: A Live Radio Play",
+                "slug": "its-a-wonderful-life-radio-play",
+                "author": "Joe Landry",
+                "director": "Candace Moore",
+                "image": "",
+                "opens": "December 6, 2019 20:00:00",
+                "closes": "December 22, 2019 15:00:00",
+                "description": "",
+                "cast": [
+                    { "name": "", "actor": "Caleb Burnham", "description": "" },
+                    { "name": "", "actor": "Raine Palmer", "description": "" },
+                    {
+                        "name": "",
+                        "actor": "Billy Kyle Roach",
+                        "description": ""
+                    },
+                    { "name": "", "actor": "Emma Wright", "description": "" },
+                    {
+                        "name": "",
+                        "actor": "Kevin Teffeteller",
+                        "description": ""
+                    },
+                    {
+                        "name": "",
+                        "actor": "Angel Winklepleck",
+                        "description": ""
+                    },
+                    { "name": "", "actor": "Randy Thompson", "description": "" }
+                ],
+                "reviews": [{ "quote": "", "source": "" }],
+                "gallery": "https://flic.kr/s/aHsmJQy3bS",
+                "ticketLink": ""
+            },
+            {
+                "title": "Death of a Salesman",
+                "slug": "death-of-a-salesman",
+                "author": "Arthur Miller",
+                "director": "Sarah Campbell",
+                "image": "",
+                "opens": "January 10, 2020 20:00:00",
+                "closes": "January 26, 2020 15:00:00",
+                "description": "",
+                "cast": [
+                    { "name": "", "actor": "Joe Jaynes", "description": "" },
+                    {
+                        "name": "",
+                        "actor": "Bonny Pendleton",
+                        "description": ""
+                    },
+                    {
+                        "name": "",
+                        "actor": "Christopher Freeman",
+                        "description": ""
+                    },
+                    { "name": "", "actor": "Dennis Hart", "description": "" },
+                    { "name": "", "actor": "Casey Cain", "description": "" },
+                    { "name": "", "actor": "Bill Howard", "description": "" },
+                    { "name": "", "actor": "Kevin Cannon", "description": "" },
+                    {
+                        "name": "",
+                        "actor": "Jonnnie Collins",
+                        "description": ""
+                    },
+                    { "name": "", "actor": "Emmy Eddy", "description": "" },
+                    {
+                        "name": "",
+                        "actor": "Arisa Carero-Spencer",
+                        "description": ""
+                    },
+                    {
+                        "name": "",
+                        "actor": "Catherine Blevins",
+                        "description": ""
+                    },
+                    { "name": "", "actor": "Catyana Davis", "description": "" }
+                ],
+                "reviews": [{ "quote": "", "source": "" }],
+                "gallery": "https://flic.kr/s/aHsmKCnUPB",
+                "ticketLink": ""
+            },
+            {
+                "title": "Barefoot in the Park",
+                "slug": "barefoot-in-the-park",
+                "author": "Neil Simon",
+                "director": "Rebecca Gomez",
+                "image": "",
+                "opens": "February 21, 2020 20:00:00",
+                "closes": "March 8, 2020 15:00:00",
+                "description": "",
+                "cast": [
+                    { "name": "", "actor": "Rebekah Reed", "description": "" },
+                    { "name": "", "actor": "Chad Marriott", "description": "" },
+                    { "name": "", "actor": "Windie Wilson", "description": "" },
+                    { "name": "", "actor": "Joe Jaynes", "description": "" },
+                    {
+                        "name": "",
+                        "actor": "Richard Taylor",
+                        "description": ""
+                    },
+                    {
+                        "name": "",
+                        "actor": "Aland Westmoreland",
+                        "description": ""
+                    }
+                ],
+                "reviews": [{ "quote": "", "source": "" }],
+                "gallery": "https://flic.kr/s/aHsmLwUTV3",
+                "ticketLink": ""
+            }
+        ]
+    },
+    {
+        "start": 2018,
+        "end": 2019,
+        "shows": [
+            {
+                "title": "The Fantasticks",
+                "slug": "the-fantasticks",
+                "author": ["Harvey Schmidt", "Tom Jones"],
+                "director": "Rebecca Gomez",
+                "image": "",
+                "opens": "July 20, 2018 20:00:00",
+                "closes": "August 5, 2018 15:00:00",
+                "description": "",
+                "cast": [
+                    {
+                        "name": "",
+                        "actor": "Jackson Burnette",
+                        "description": ""
+                    },
+                    { "name": "", "actor": "Casey Cain", "description": "" },
+                    { "name": "", "actor": "Bill Howard", "description": "" },
+                    { "name": "", "actor": "Doug James", "description": "" },
+                    {
+                        "name": "",
+                        "actor": "Frank Rosamond, Sr.",
+                        "description": ""
+                    },
+                    {
+                        "name": "",
+                        "actor": "Frank Rosamond, Jr.",
+                        "description": ""
+                    },
+                    {
+                        "name": "",
+                        "actor": "Brookie Smothers",
+                        "description": ""
+                    },
+
+                    {
+                        "name": "",
+                        "actor": "Kara Van Veghel",
+                        "description": ""
+                    }
+                ],
+                "reviews": [{ "quote": "", "source": "" }],
+                "gallery": "https://eddumas.smugmug.com/Plays/The-Fantasticks",
+                "ticketLink": ""
+            },
+            {
+                "title": "Four Old Broads",
+                "slug": "four-old-broads",
+                "author": "Leslie Kimbell",
+                "director": "Joe Johnson",
+                "image": "",
+                "opens": "August 31, 2018 20:00:00",
+                "closes": "September 16, 2018 15:00:00",
+                "description": "",
+                "cast": [
+                    {
+                        "name": "",
+                        "actor": "Judie Douglass",
+                        "description": ""
+                    },
+                    { "name": "", "actor": "Emmy Eddy", "description": "" },
+                    { "name": "", "actor": "Bill Howard", "description": "" },
+                    { "name": "", "actor": "Katie Manning", "description": "" },
+                    {
+                        "name": "",
+                        "actor": "Bonny Pendleton",
+                        "description": ""
+                    },
+                    {
+                        "name": "",
+                        "actor": "Kathy Wasserlein",
+                        "description": ""
+                    },
+                    {
+                        "name": "",
+                        "actor": "Courtney Woolard",
+                        "description": ""
+                    }
+                ],
+                "reviews": [{ "quote": "", "source": "" }],
+                "gallery": "https://eddumas.smugmug.com/Plays/Four-Old-Broads",
+                "ticketLink": ""
+            },
+            {
+                "title": "Wait Until Dark",
+                "slug": "wait-until-dark",
+                "author": ["Fredrick Knott", "Jeffery Hatcher"],
+                "director": "Barry Wallace",
+                "image": "",
+                "opens": "October 12, 2018 20:00:00",
+                "closes": "October 28, 2018 15:00:00",
+                "description": "",
+                "cast": [
+                    { "name": "", "actor": "Eleni Johnson", "description": "" },
+                    { "name": "", "actor": "Steve Louis", "description": "" },
+                    { "name": "", "actor": "Raine Palmer", "description": "" },
+                    {
+                        "name": "",
+                        "actor": "Andrew Shipman",
+                        "description": ""
+                    },
+                    { "name": "", "actor": "Craig Smith", "description": "" },
+                    { "name": "", "actor": "Ryan Tomlinson", "description": "" }
+                ],
+                "reviews": [{ "quote": "", "source": "" }],
+                "gallery": "https://eddumas.smugmug.com/Plays/Wait-Until-Dark",
+                "ticketLink": ""
+            },
+            {
+                "title": "Every Christmas Story Ever Told (And Then Some!)",
+                "slug": "every-christmas-story-ever-told",
+                "author": ["Alvarez", "Carleton", "FitzGerald"],
+                "director": "Courtney Woolard",
+                "image": "",
+                "opens": "November 23, 2018 20:00:00",
+                "closes": "December 9, 2018 15:00:00",
+                "description": "",
+                "cast": [
+                    { "name": "", "actor": "Hayden Hall", "description": "" },
+                    {
+                        "name": "",
+                        "actor": "Andrew Shipman",
+                        "description": ""
+                    },
+                    { "name": "", "actor": "David Snow", "description": "" }
+                ],
+                "reviews": [{ "quote": "", "source": "" }],
+                "gallery": "https://eddumas.smugmug.com/Plays/Every-Christmas-Story-Ever-Told",
+                "ticketLink": ""
+            },
+            {
+                "title": "On Golden Pond",
+                "slug": "on-golden-pond",
+                "author": "Ernest Thompson",
+                "director": "Candace Moore",
+                "image": "",
+                "opens": "January 4, 2019 20:00:00",
+                "closes": "January 20, 2019 15:00:00",
+                "description": "",
+                "cast": [
+                    { "name": "", "actor": "Luke Atchley", "description": "" },
+                    {
+                        "name": "",
+                        "actor": "Greg Congleton",
+                        "description": ""
+                    },
+                    { "name": "", "actor": "Eileen Conway", "description": "" },
+                    { "name": "", "actor": "Dennis Hart", "description": "" },
+                    { "name": "", "actor": "Lisa Howard", "description": "" },
+                    { "name": "", "actor": "Boone Sommers", "description": "" }
+                ],
+                "reviews": [{ "quote": "", "source": "" }],
+                "gallery": "https://eddumas.smugmug.com/Plays/On-Golden-Pond",
+                "ticketLink": ""
+            },
+            {
+                "title": "One Slight Hitch",
+                "slug": "one-slight-hitch",
+                "author": "Lewis Black",
+                "director": "Windie Wilson",
+                "image": "",
+                "opens": "April 5, 2019 20:00:00",
+                "closes": "April 21, 2019 15:00:00",
+                "description": "",
+                "cast": [
+                    { "name": "", "actor": "Summer Awad", "description": "" },
+                    { "name": "", "actor": "Rebecca Gomez", "description": "" },
+                    {
+                        "name": "",
+                        "actor": "Mary Sue Greiner",
+                        "description": ""
+                    },
+                    { "name": "", "actor": "Dennis Hart", "description": "" },
+                    { "name": "", "actor": "Matt Lyscas", "description": "" },
+                    {
+                        "name": "",
+                        "actor": "Carys Mullinax",
+                        "description": ""
+                    },
+                    { "name": "", "actor": "Craig Smith", "description": "" }
+                ],
+                "reviews": [{ "quote": "", "source": "" }],
+                "gallery": "https://flic.kr/s/aHsmCHCvo8",
+                "ticketLink": ""
+            },
+            {
+                "title": "Jerome Bixby's The Man from Earth",
+                "slug": "the-man-from-earth",
+                "author": "Jerome Bixby",
+                "director": "Sarah Campbell",
+                "image": "",
+                "opens": "May 17, 2019 20:00:00",
+                "closes": "June 12, 2019 15:00:00",
+                "description": "",
+                "cast": [
+                    { "name": "", "actor": "Rebecca Gomez", "description": "" },
+                    { "name": "", "actor": "Bill Howard", "description": "" },
+                    {
+                        "name": "",
+                        "actor": "Bill Householder",
+                        "description": ""
+                    },
+                    { "name": "", "actor": "Joe Johnson", "description": "" },
+                    { "name": "", "actor": "Staci Mize", "description": "" },
+                    {
+                        "name": "",
+                        "actor": "Randy Thompson",
+                        "description": ""
+                    },
+                    { "name": "", "actor": "Saleh Shahid", "description": "" },
+                    { "name": "", "actor": "David Snow", "description": "" },
+                    {
+                        "name": "",
+                        "actor": "Rochard Taylor",
+                        "description": ""
+                    },
+                    { "name": "", "actor": "Windie Wilson", "description": "" }
+                ],
+                "reviews": [{ "quote": "", "source": "" }],
+                "gallery": "https://flic.kr/s/aHsmEuQP44",
+                "ticketLink": ""
+            },
+            {
+                "title": "45 Seconds From Broadway",
+                "slug": "45-seconds-from-broadway",
+                "author": "Neil Simon",
+                "director": "Courtney Woolard",
+                "image": "",
+                "opens": "June 28, 2019 20:00:00",
+                "closes": "July 14, 2019 15:00:00",
+                "description": "",
+                "cast": [
+                    {
+                        "name": "Andrew Duncan",
+                        "actor": "Gary Mullins",
+                        "description": ""
+                    },
+                    {
+                        "name": "Megan Woods",
+                        "actor": "Hayden Hall",
+                        "description": ""
+                    },
+                    {
+                        "name": "Bessie",
+                        "actor": "Joyce Cotner",
+                        "description": ""
+                    },
+                    {
+                        "name": "Bernie",
+                        "actor": "Lee Wittenberg",
+                        "description": ""
+                    },
+                    {
+                        "name": "Zelda",
+                        "actor": "Emmy Eddy",
+                        "description": ""
+                    },
+                    {
+                        "name": "Salone Mantutu",
+                        "actor": "Lena Allison",
+                        "description": ""
+                    },
+                    {
+                        "name": "Cindy",
+                        "actor": "Barbara Robertson",
+                        "description": ""
+                    },
+                    {
+                        "name": "Arleen",
+                        "actor": "Sauni Rinehart",
+                        "description": ""
+                    },
+                    {
+                        "name": "Mickey Fox",
+                        "actor": "Mike McMahan",
+                        "description": ""
+                    },
+                    {
+                        "name": "Harry Fox",
+                        "actor": "Kevin Cannon",
+                        "description": ""
+                    },
+                    {
+                        "name": "Rayleen",
+                        "actor": "Jennifer Hayes",
+                        "description": ""
+                    },
+                    {
+                        "name": "Charles W. Browning III",
+                        "actor": "Richard Taylor",
+                        "description": ""
+                    }
+                ],
+                "reviews": [{ "quote": "", "source": "" }],
+                "gallery": "https://flic.kr/s/aHsmEKy7nz",
+                "ticketLink": ""
+            }
+        ]
+    },
+    {
+        "start": 2017,
+        "end": 2018,
+        "shows": [
+            {
+                "title": "Greater Tuna",
+                "slug": "greater-tuna",
+                "author": ["Jaston Williams", "Joe Sears", "Ed Howard"],
+                "director": "Tiffany Tallent",
+                "image": "",
+                "opens": "July 21, 2017 20:00:00",
+                "closes": "August 6, 2017 15:00:00",
+                "description": "",
+                "cast": [
+                    { "name": "", "actor": "Joshua Farner", "description": "" },
+                    {
+                        "name": "",
+                        "actor": "Kevin Teffeteller",
+                        "description": ""
+                    }
+                ],
+                "reviews": [{ "quote": "", "source": "" }],
+                "gallery": "https://eddumas.smugmug.com/Plays/Greater-Tuna",
+                "ticketLink": ""
+            },
+            {
+                "title": "God of Carnage",
+                "slug": "god-of-carnage",
+                "author": "Yasmina Reza",
+                "director": "Greg Congleton",
+                "image": "",
+                "opens": "August 25, 2017 20:00:00",
+                "closes": "September 10, 2017 15:00:00",
+                "description": "",
+                "cast": [
+                    {
+                        "name": "",
+                        "actor": "Crystal Braeuner",
+                        "description": ""
+                    },
+                    {
+                        "name": "",
+                        "actor": "Jim Conn",
+                        "description": ""
+                    },
+                    {
+                        "name": "",
+                        "actor": "Jeffrey Eberting",
+                        "description": ""
+                    },
+                    {
+                        "name": "",
+                        "actor": "Carrie Booher Thompson",
+                        "description": ""
+                    }
+                ],
+                "reviews": [{ "quote": "", "source": "" }],
+                "gallery": "",
+                "ticketLink": ""
+            },
+            {
+                "title": "The Mousetrap",
+                "slug": "the-mousetrap",
+                "author": "Agatha Christie",
+                "director": "Rebecca Gomez",
+                "image": "",
+                "opens": "October 13, 2017 20:00:00",
+                "closes": "October 29, 2017 15:00:00",
+                "description": "",
+                "cast": [
+                    { "name": "", "actor": "Casey Cain", "description": "" },
+                    { "name": "", "actor": "Adam Crandall", "description": "" },
+                    { "name": "", "actor": "Sandy Failing", "description": "" },
+                    { "name": "", "actor": "David Snow", "description": "" },
+                    { "name": "", "actor": "Steven Trigg", "description": "" },
+                    { "name": "", "actor": "Lydia Weeks", "description": "" },
+                    {
+                        "name": "",
+                        "actor": "Lee Wittenburg",
+                        "description": ""
+                    },
+                    {
+                        "name": "",
+                        "actor": "Courtney Woolard",
+                        "description": ""
+                    }
+                ],
+                "reviews": [{ "quote": "", "source": "" }],
+                "gallery": "https://eddumas.smugmug.com/Plays/The-Mousetrap-2017",
+                "ticketLink": ""
+            },
+            {
+                "title": "Christmas Belles",
+                "slug": "christmas-belles",
+                "author": ["Jones", "Hope", "Wooten"],
+                "director": ["Sarah Campbell", "Joe Johnson"],
+                "image": "",
+                "opens": "November 24, 2017 20:00:00",
+                "closes": "December 10, 2017 15:00:00 ",
+                "description": "",
+                "cast": [
+                    { "name": "", "actor": "Casey Cain", "description": "" },
+                    {
+                        "name": "",
+                        "actor": "Sarah Campbell",
+                        "description": ""
+                    },
+                    {
+                        "name": "",
+                        "actor": "Kristy Weekley Giles",
+                        "description": ""
+                    },
+                    { "name": "", "actor": "Lisa Howard", "description": "" },
+                    { "name": "", "actor": "Doug James", "description": "" },
+                    { "name": "", "actor": "Greg Knox", "description": "" },
+                    { "name": "", "actor": "Asya Mounger", "description": "" },
+                    {
+                        "name": "",
+                        "actor": "Billy Kyle Roach",
+                        "description": ""
+                    },
+                    {
+                        "name": "",
+                        "actor": "Julianna Sanderson",
+                        "description": ""
+                    },
+                    { "name": "", "actor": "Artece Slay", "description": "" },
+                    {
+                        "name": "",
+                        "actor": "Kara Van Veghel",
+                        "description": ""
+                    }
+                ],
+                "reviews": [{ "quote": "", "source": "" }],
+                "gallery": "https://eddumas.smugmug.com/Plays/Christmas-Belles-2017",
+                "ticketLink": ""
+            },
+            {
+                "title": "Ken Ludwig's Moon Over Buffalo",
+                "slug": "moon-over-buffalo",
+                "author": "Ken Ludwig",
+                "director": "Courtney Woolard",
+                "image": "",
+                "opens": "January 5, 2018",
+                "closes": "January 21, 2018",
+                "description": "",
+                "cast": [
+                    { "name": "", "actor": "Rebecca Gomez", "description": "" },
+                    {
+                        "name": "",
+                        "actor": "Bill Householder",
+                        "description": ""
+                    },
+                    { "name": "", "actor": "Joe Jaynes", "description": "" },
+                    { "name": "", "actor": "Pook Pfaffe", "description": "" },
+                    { "name": "", "actor": "David Snow", "description": "" },
+                    { "name": "", "actor": "Staci Sweeden", "description": "" },
+                    { "name": "", "actor": "Bed Weathers", "description": "" },
+                    { "name": "", "actor": "Chad Wood", "description": "" }
+                ],
+                "reviews": [{ "quote": "", "source": "" }],
+                "gallery": "https://eddumas.smugmug.com/Plays/Moon-Over-Buffalo-2018",
+                "ticketLink": ""
+            },
+            {
+                "title": "Almost Maine",
+                "slug": "almost-maine",
+                "author": "John Cariani",
+                "director": "Matt Lyscas",
+                "image": "",
+                "opens": "February 16, 2018",
+                "closes": "March 4, 2018",
+                "description": "",
+                "cast": [
+                    {
+                        "name": "",
+                        "actor": "Harrison Akers",
+                        "description": ""
+                    },
+                    { "name": "", "actor": "Casey Cain", "description": "" },
+                    {
+                        "name": "",
+                        "actor": "Carolyn Corley",
+                        "description": ""
+                    },
+                    { "name": "", "actor": "Lisa Howard", "description": "" },
+                    {
+                        "name": "",
+                        "actor": "Julianna Sanderson",
+                        "description": ""
+                    },
+                    { "name": "", "actor": "Steven Trigg", "description": "" }
+                ],
+                "reviews": [{ "quote": "", "source": "" }],
+                "gallery": "https://eddumas.smugmug.com/Plays/Almost-Maine",
+                "ticketLink": ""
+            },
+            {
+                "title": "Tennessee Stage Company New Play Festival",
+                "slug": "new-play-festival",
+                "author": "",
+                "director": "",
+                "image": "",
+                "opens": "March 9, 2018",
+                "closes": "March 25, 2018",
+                "description": "",
+                "cast": [{ "name": "", "actor": "", "description": "" }],
+                "reviews": [{ "quote": "", "source": "" }],
+                "gallery": "",
+                "ticketLink": ""
+            },
+            {
+                "title": "Sherlock's Last Case",
+                "slug": "sherlocks-last-case",
+                "author": "Charles Marowitz",
+                "director": "Candace Moore",
+                "image": "",
+                "opens": "April 20, 2018",
+                "closes": "May 6, 2018",
+                "description": "",
+                "cast": [
+                    { "name": "", "actor": "Ben Bean", "description": "" },
+                    { "name": "", "actor": "Tom Ireland", "description": "" },
+                    { "name": "", "actor": "Joe Jaynes", "description": "" },
+                    {
+                        "name": "",
+                        "actor": "Bonny Pendleton",
+                        "description": ""
+                    },
+                    { "name": "", "actor": "Emma Wright", "description": "" }
+                ],
+                "reviews": [{ "quote": "", "source": "" }],
+                "gallery": "https://eddumas.smugmug.com/Plays/Sherlocks-Last-Case-1",
+                "ticketLink": ""
+            },
+            {
+                "title": "Sordid Lives",
+                "slug": "sordid-lives",
+                "author": "Del Shores",
+                "director": "Keri McClain",
+                "image": "",
+                "opens": "June 1, 2018",
+                "closes": "June 17, 2018",
+                "description": "",
+                "cast": [
+                    { "name": "", "actor": "David Cain", "description": "" },
+                    {
+                        "name": "",
+                        "actor": "Sarah Campbell",
+                        "description": ""
+                    },
+                    { "name": "", "actor": "Scott Cureton", "description": "" },
+                    { "name": "", "actor": "Emmy Eddy", "description": "" },
+                    { "name": "", "actor": "Leslie Fox", "description": "" },
+                    { "name": "", "actor": "Dennis Hart", "description": "" },
+
+                    { "name": "", "actor": "Steve Louis", "description": "" },
+                    { "name": "", "actor": "Kami Lunsford", "description": "" },
+                    {
+                        "name": "",
+                        "actor": "Carol Nordstrom",
+                        "description": ""
+                    },
+                    {
+                        "name": "",
+                        "actor": "Julianna Sanderson",
+                        "description": ""
+                    },
+                    { "name": "", "actor": "David Steele", "description": "" },
+                    {
+                        "name": "",
+                        "actor": "Kara Van Veghel",
+                        "description": ""
+                    }
+                ],
+                "reviews": [{ "quote": "", "source": "" }],
+                "gallery": "https://eddumas.smugmug.com/Plays/Sordid-Lives-2018",
                 "ticketLink": ""
             }
         ]

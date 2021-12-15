@@ -5,10 +5,14 @@ import * as React from 'react'
 
 import Footer from '../components/footer'
 import Header from '../components/header'
+import { Helmet } from 'react-helmet'
 
 export default function TheBoard() {
     return (
         <div className="everything">
+            <Helmet>
+                <title>Board of Directors</title>
+            </Helmet>
             <header>
                 <Header text="This is the header" />
             </header>
@@ -17,14 +21,14 @@ export default function TheBoard() {
                 <div className="card">
                     <ul className="boardNames">
                         <li>
-                            <h3 className="president">
+                            <h1 className="president">
                                 President: Sarah Campbell
-                            </h3>
+                            </h1>
                         </li>
                         <li>
-                            <h3 className="vice">
+                            <h2 className="vice">
                                 Vice-President: Joe Johnson
-                            </h3>
+                            </h2>
                         </li>
                         <li>
                             <h3 className="boardMember">

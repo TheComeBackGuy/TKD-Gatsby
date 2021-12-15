@@ -18,7 +18,7 @@ export default function ProgramAds(props) {
                 <h1 className="standardPage topElement">Program Ads</h1>
 
                 <div className="card">
-                    <h1>Levels of support</h1>
+                    <h1 className="pageHeader">Levels of support</h1>
                     <p>
                         Theatre Knoxville Downtown is a 501(c)(3) organization
                         that has been operating continuously in Knoxville since

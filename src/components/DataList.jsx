@@ -1,5 +1,3 @@
-import * as React from 'react'
-
 /**Detects if the entry is an array */
 export default function DataList(category) {
     //If it's not, it just returns the single entry

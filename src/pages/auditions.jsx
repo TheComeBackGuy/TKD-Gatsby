@@ -15,7 +15,7 @@ export default function Auditions() {
     return (
         <div className="everything">
             <header>
-                <Header text="This is the header" />
+                <Header />
             </header>
             <main className="container">
                 <h1 className="standardPage topElement">Auditions</h1>

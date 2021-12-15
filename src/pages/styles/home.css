@@ -54,11 +54,6 @@
     background-color: white;
 }
 
-.card h1 {
-    border-bottom: 1px solid var(--tkdBlue);
-    margin-bottom: 20px;
-}
-
 .etfGrid {
     display: flex;
     flex-flow: row wrap;
@@ -68,6 +63,7 @@
 .etfLogo {
     flex-basis: 30%;
     align-self: center;
+    nav-index: 1;
 }
 .etfText {
     flex-basis: 60%;

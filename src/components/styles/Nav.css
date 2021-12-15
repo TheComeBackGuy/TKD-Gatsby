@@ -1,26 +1,30 @@
 .desktopMenu {
-    width: 100%;
     display: flex;
-    flex-flow: row wrap;
-    align-content: flex-end;
-    justify-content: flex-end;
+    flex-flow: row nowrap;
     width: 100%;
+    height: inherit;
+    justify-content: flex-end;
 }
 
-.desktopMenu button {
+.navLink {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    padding: 0 10px;
+    margin: 0;
+    height: inherit;
     background-color: transparent;
     font-size: 20px;
     font-weight: 400;
     border: none;
     color: var(--tkdBlue);
-    padding: 0 10px;
+    transition: 0.5s ease-in-out;
 }
-.desktopMenu button:hover {
-    color: var(--tkdOrange);
+.navLink:hover {
+    color: white;
     cursor: pointer;
-    transition: 0.5s;
-    transition-timing-function: ease;
-    border-radius: 0 0 4px 4px;
+    transition: 0.25s ease-in-out;
+    background-color: var(--tkdRed);
 }
 
 .mobileMenu {
@@ -31,6 +35,21 @@
     text-align: right;
     justify-content: space-between;
     width: 100%;
+    /* disabled: true; */
+}
+
+.onPage {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    padding: 0 10px;
+    margin: 0;
+    height: inherit;
+    background-color: var(--tkdOrange);
+    font-size: 20px;
+    font-weight: 400;
+    border: none;
+    color: white;
 }
 
 .mobileMenu button {
@@ -41,12 +60,18 @@
     color: var(--tkdBlue);
     padding: 0 10px;
 }
+
+.Link {
+    color: inherit;
+}
+
 .mobileMenu button:hover {
-    color: var(--tkdOrange);
+    color: white;
+    text-align: right;
     cursor: pointer;
-    transition: 0.5s;
-    transition-timing-function: ease;
-    border-radius: 0 0 4px 4px;
+    width: 100%;
+    transition: 0.25s ease-in-out;
+    background-color: var(--tkdRed);
 }
 
 @media only screen and (max-width: 850px) {

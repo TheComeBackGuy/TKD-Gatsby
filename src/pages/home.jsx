@@ -6,6 +6,7 @@ import * as React from 'react'
 import CovidUpdates from '../components/covidUpdate'
 import ProductionMasthead from '../components/productionMasthead'
 import Quotes from '../images/svg/quotations.svg'
+import ReactPlayer from 'react-player/youtube'
 import Reviews from '../content/reviews.json'
 import { StaticImage } from 'gatsby-plugin-image'
 
@@ -18,8 +19,13 @@ export default function Home() {
                 <ProductionMasthead />
             </div>
             <CovidUpdates />
+            <div className="card">
+                <ReactPlayer url="https://www.youtube.com/watch?v=HJgDp3Xnn0s" />
+                {/* <YouTubePlayer url="https://www.youtube.com/watch?v=HJgDp3Xnn0s" /> */}
+            </div>
+
             <div className="cardBlank white">
-                <h1>Our Guests Agree...</h1>
+                <h1 className="pageHeader">Our Guests Agree...</h1>
                 <ul className="flexReviews">
                     {Reviews.map((data, index) => {
                         if (data.name !== '' && data.review !== '') {
@@ -47,8 +53,6 @@ export default function Home() {
                 </ul>
             </div>
             <div className="cardBlank lightGrey">
-                <h1>East Tennessee Foundation</h1>
-
                 <div className="etfGrid">
                     <div className="etfLogo">
                         <StaticImage

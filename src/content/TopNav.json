@@ -1,8 +1,6 @@
-{
-    "topNav": [
-        { "label": "Current Season", "url": "currentSeason" },
-        { "label": "Parking", "url": "parking" },
-        { "label": "Auditions", "url": "auditions" },
-        { "label": "Donate", "url": "donate" }
-    ]
-}
+[
+    { "label": "Current Season", "url": "currentSeason" },
+    { "label": "Parking", "url": "parking" },
+    { "label": "Auditions", "url": "auditions" },
+    { "label": "Donate", "url": "donate" }
+]

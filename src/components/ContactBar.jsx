@@ -17,25 +17,35 @@ export default function ContactBar() {
             <p className="contactContainer">
                 <ul className="contactList ">
                     <li>
-                        <span className="phoneNumber">865-544-1999</span>
-                        <span className="phoneIcon">
-                            <Phone
-                                width={thumbSize}
-                                height={thumbSize}
-                                fill="#222"
-                            />
-                        </span>
-                    </li>
-                    <li>
-                        <form action="mailto:infor@theatreknoxville.com">
-                            <button className="iconButton">
-                                <Email
+                        <div className="phone">
+                            <button
+                                className="iconButton"
+                                onclick="window.open('tel:8655441999')"
+                            >
+                                <Phone
                                     width={thumbSize}
                                     height={thumbSize}
                                     fill="#222"
                                 />
                             </button>
-                        </form>
+                            <p className="phoneNumber">(865)544-1999</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div className="phone">
+                            <form action="mailto:info@theatreknoxville.com">
+                                <button className="iconButton">
+                                    <Email
+                                        width={thumbSize}
+                                        height={thumbSize}
+                                        fill="#222"
+                                    />
+                                </button>
+                            </form>
+                            <p className="phoneNumber">
+                                info@TheatreKnoxville.com
+                            </p>
+                        </div>
                     </li>
                     <li>
                         <form action="https://www.facebook.com/theatreknoxvilledowntown">
@@ -49,7 +59,7 @@ export default function ContactBar() {
                         </form>
                     </li>
                     <li>
-                        <form action="https://www.instagram.com/?hl=en">
+                        <form action="https://www.instagram.com/theatreknoxville/">
                             <button className="iconButton">
                                 <Instagram
                                     width={thumbSize}

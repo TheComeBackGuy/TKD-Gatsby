@@ -21,6 +21,7 @@
     justify-content: flex-end;
     font-size: 12px;
     /* border: 1px solid tomato; */
+    /* border: 1px solid tomato; */
 }
 
 .contactList li {
@@ -49,12 +50,11 @@
     display: none;
 }
 
-.phoneNumber {
-    display: block;
-    /* border: 1px solid blue; */
-}
-.phoneIcon {
-    display: none;
+.phone {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 0 10px;
+    align-items: center;
 }
 
 @media only screen and (max-width: 600px) {
@@ -65,8 +65,5 @@
     .contactContainer {
         width: 100%;
         padding: 0 10px;
-    }
-    .phoneIcon {
-        display: flex;
     }
 }

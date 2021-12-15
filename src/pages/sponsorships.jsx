@@ -5,10 +5,14 @@ import * as React from 'react'
 
 import Footer from '../components/footer'
 import Header from '../components/header'
+import { Helmet } from 'react-helmet'
 
 export default function Sponsorships() {
     return (
         <div className="everything">
+            <Helmet>
+                <title>Sponsorships</title>
+            </Helmet>
             <header>
                 <Header text="This is the header" />
             </header>
@@ -17,7 +21,7 @@ export default function Sponsorships() {
                     Be a part of the community!
                 </h1>
                 <div className="card">
-                    <h1>Levels of support</h1>
+                    <h1 className="pageHeader">Levels of support</h1>
                     <p>
                         Theatre Knoxville Downtown is a 501(c)(3) organization
                         that has been operating continuously in Knoxville since

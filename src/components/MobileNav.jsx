@@ -9,7 +9,7 @@ export default function Nav(props) {
     if (props.isActive) {
         return (
             <ul className={`mobileMenu`}>
-                {TopNav.topNav.map((data, index) => {
+                {TopNav.map((data, index) => {
                     return (
                         <li key={`content_item_${index}`}>
                             <Link to={`/${data.url}/`}>

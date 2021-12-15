@@ -1,18 +1,15 @@
 import './styles/currentSeason.css'
 import './styles/index.css'
+import '../components/styles/Nav.css'
 
 import * as React from 'react'
 
 import DataList from '../components/DataList'
-import FindImage from '../components/FindImage'
 import Footer from '../components/footer'
-import { GatsbyImage } from 'gatsby-plugin-image'
 import Header from '../components/header'
 import InThePast from '../components/InThePast'
 import { Link } from 'gatsby'
 import ParseDate from '../components/ParseDate'
-import { getImage } from 'gatsby-plugin-image'
-import { graphql } from 'gatsby'
 import thisSeason from '../content/seasons.json'
 import { useState } from 'react'
 
@@ -31,9 +28,9 @@ export default function CurrentSeason() {
         if (allShows) {
             return (
                 <div>
-                    <h1>Productions This Season</h1>
+                    <h1 className="pageHeader">Productions This Season</h1>
                     <button
-                        className="seasonButton"
+                        className="mainButton"
                         onClick={() => {
                             setAllShows(!allShows)
                         }}
@@ -45,9 +42,9 @@ export default function CurrentSeason() {
         } else if (!allShows) {
             return (
                 <div>
-                    <h1>Upcoming Productions</h1>
+                    <h1 className="pageHeader">Upcoming Productions</h1>
                     <button
-                        className="seasonButton"
+                        className="mainButton"
                         onClick={() => {
                             setAllShows(!allShows)
                         }}
@@ -72,80 +69,6 @@ export default function CurrentSeason() {
         }
     })
 
-    /**Month detector so we can display the date for the shows */
-    function ParseDate(date) {
-        const thisDate = new Date(date)
-        let month = thisDate.getMonth() + 1
-        const day = thisDate.getDate()
-
-        switch (month) {
-            case 1:
-                month = 'January'
-                break
-            case 2:
-                month = 'February'
-                break
-            case 3:
-                month = 'March'
-                break
-            case 4:
-                month = 'April'
-                break
-            case 5:
-                month = 'May'
-                break
-            case 6:
-                month = 'June'
-                break
-            case 7:
-                month = 'July'
-                break
-            case 8:
-                month = 'August'
-                break
-            case 9:
-                month = 'September'
-                break
-            case 10:
-                month = 'October'
-                break
-            case 11:
-                month = 'November'
-                break
-            case 12:
-                month = 'December'
-                break
-            default:
-                break
-        }
-        // let slicedMonth = month.slice(3)
-        // console.log(month)
-        return `${month.toString().slice(0, 3)} ${day}`
-    }
-
-    /**Detects if the entry is an array */
-    function DataList(category) {
-        //If it's not, it just returns the single entry
-        if (!Array.isArray(category)) {
-            return category
-            //if it's just 2 items, it puts the apersand between them
-        } else if (category.length === 2) {
-            return category.join(' & ')
-            //if it's more than 2 items, it adds commas and the apersand
-        } else if (category.length >= 3) {
-            let middleItems = ''
-            let firstItem = category[0]
-            for (let i = 1; i < category.length - 1; i++) {
-                //everything but the last item in the list gets a comma
-                middleItems += ', ' + category[i]
-            }
-            //The last item gets a comma and ampersand
-            let lastItem = ', & ' + category[category.length - 1]
-            //combines items into a readable list
-            return firstItem + middleItems + lastItem
-        }
-    }
-
     /**If the event has passed, it doesn't render a Buy Ticket button */
     function checkTicketButton(check, link) {
         if (!InThePast(check)) {
@@ -158,7 +81,7 @@ export default function CurrentSeason() {
                         )
                     }}
                 >
-                    Tickets
+                    Get Tickets
                 </button>
             )
         }
@@ -192,7 +115,7 @@ export default function CurrentSeason() {
                                             ).getFullYear()}/${show.slug}/`}
                                         >
                                             <img
-                                                src={`/shows/${show.image}.jpg`}
+                                                src={`/shows/thumbs/${show.image}.jpg`}
                                                 alt={show.title}
                                                 className="thumb"
                                             />
@@ -208,10 +131,9 @@ export default function CurrentSeason() {
                                             {ParseDate(show.opens)} -{' '}
                                             {ParseDate(show.closes)}
                                             <br />
-                                            <strong className="director">
-                                                Directed By:{' '}
-                                            </strong>
-                                            <br />
+                                            <h3 className="director">
+                                                Directed By:
+                                            </h3>
                                             {DataList(show.director)}
                                         </p>
                                     </div>
@@ -219,16 +141,6 @@ export default function CurrentSeason() {
                                         show.closes,
                                         show.ticketLink
                                     )}
-                                    {/* <button
-                                        className="showTicket"
-                                        onClick={() => {
-                                            window.open(
-                                                `https://www.onthestage.tickets/show/theatre-knoxville-downtown/${data.ticketLink}/tickets`
-                                            )
-                                        }}
-                                    >
-                                        Tickets
-                                    </button> */}
                                 </li>
                             )
                         })}
