@@ -11,9 +11,6 @@ exports.createPages = ({ actions: { createPage } }) => {
                 shows: season.shows,
             },
         })
-    })
-
-    productions.forEach((season) => {
         season.shows.forEach((show) => {
             const startYear = new Date(show.opens)
             createPage({
