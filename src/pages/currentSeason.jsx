@@ -28,7 +28,7 @@ export default function CurrentSeason() {
         if (allShows) {
             return (
                 <div>
-                    <h1 className="pageHeader">Productions This Season</h1>
+                    <h1>Productions This Season</h1>
                     <button
                         className="mainButton"
                         onClick={() => {
@@ -42,7 +42,7 @@ export default function CurrentSeason() {
         } else if (!allShows) {
             return (
                 <div>
-                    <h1 className="pageHeader">Upcoming Productions</h1>
+                    <h1>Upcoming Productions</h1>
                     <button
                         className="mainButton"
                         onClick={() => {
@@ -124,17 +124,16 @@ export default function CurrentSeason() {
                                     <div className="showDetails">
                                         <h3>{show.title}</h3>
                                         <p>
-                                            <cite>
-                                                By: {DataList(show.author)}
-                                            </cite>
-                                            <br />
+                                            <cite> By: </cite>
+                                            {DataList(show.author)}
+                                        </p>
+                                        <p>
+                                            <cite>Directed By: </cite>
+                                            {DataList(show.director)}
+                                        </p>
+                                        <p className="showDate">
                                             {ParseDate(show.opens)} -{' '}
                                             {ParseDate(show.closes)}
-                                            <br />
-                                            <h3 className="director">
-                                                Directed By:
-                                            </h3>
-                                            {DataList(show.director)}
                                         </p>
                                     </div>
                                     {checkTicketButton(

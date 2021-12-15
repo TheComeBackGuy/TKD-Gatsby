@@ -1,0 +1,30 @@
+[
+    {
+        "title": "Donate",
+        "url": "donate"
+    },
+    {
+        "title": "Volunteer",
+        "url": "volunteer"
+    },
+    {
+        "title": "The Board",
+        "url": "Board"
+    },
+    {
+        "title": "Sponsorships",
+        "url": "sponsorships"
+    },
+    {
+        "title": "Program Ads",
+        "url": "programAds"
+    },
+    {
+        "title": "Auditions",
+        "url": "auditions"
+    },
+    {
+        "title": "Archive",
+        "url": "archive"
+    }
+]

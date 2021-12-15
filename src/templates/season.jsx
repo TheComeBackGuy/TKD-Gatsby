@@ -1,5 +1,6 @@
 import '../pages/styles/index.css'
-import '../pages/styles/season.css'
+import './season.css'
+import '../pages/styles/currentSeason.css'
 
 import * as React from 'react'
 
@@ -83,24 +84,23 @@ export default function SeasonList({ pageContext }) {
     function displayShow(show) {
         if (InThePast(show.closes)) {
             return (
-                <div className=" archiveKnockout">
-                    <h4>{show.title}</h4>
-                    <cite className="archiveAuthor">
-                        By: {DataList(show.author)}
-                    </cite>
-                    <cite>
+                <div className="archiveKnockout">
+                    <h3>{show.title}</h3>
+                    <p>
+                        <cite>By: </cite> {DataList(show.author)}
+                    </p>{' '}
+                    <p>
+                        <cite>Directed By: {''}</cite>
+                        {DataList(show.director)}
+                    </p>
+                    <p>
                         {ParseDate(show.opens)},{' '}
                         {new Date(show.opens).getFullYear()} -{' '}
                         {ParseDate(show.closes)},{' '}
                         {new Date(show.closes).getFullYear()}
-                    </cite>
-                    <p>
-                        <b>Directed By:</b> {''}
-                        {DataList(show.director)}
                     </p>
-
-                    <p className="cast">
-                        <b>Cast: </b>
+                    <p>
+                        <cite>Cast: </cite>
                         {/* Okay,  @MakeCastList is taking in the show.cast array, pulling all the actors name out and putting that into it's own list. 
                                             Then DataList is doing it's thing and converting that to a properly formatted list of text.*/}
                         {DataList(MakeCastList(show.cast))}
@@ -129,12 +129,20 @@ export default function SeasonList({ pageContext }) {
                 <div className="card">
                     <div className="seasonHead">
                         {showArrow('back')}
-                        <h1>
+                        <h1 className="archiveHeader">
                             {pageContext.start} - {pageContext.end}
                         </h1>
                         {showArrow('forward')}
                     </div>
-                    <div className="seasonYear">
+                    <button
+                        className="mainButton"
+                        onClick={() => {
+                            navigate(`/archive/`)
+                        }}
+                    >
+                        Back to Archives
+                    </button>
+                    <div className="seasonYear ">
                         {pageContext.shows.map((show) => displayShow(show))}
                     </div>
                 </div>

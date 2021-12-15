@@ -16,7 +16,10 @@ export default function ProductionMasthead() {
     console.log(`/images/shows/${show.image}.jpg`)
     return (
         <div className="mastheadContainer topElement">
-            <button className="showStatus">{showStatus}</button>
+            <BuyTickets
+                url="https://www.onthestage.tickets/show/theatre-knoxville-downtown/a-doublewide-texas-christmas-81671/tickets"
+                status={showStatus}
+            />
 
             <img
                 src={`shows/${show.image}.jpg`}
@@ -24,7 +27,7 @@ export default function ProductionMasthead() {
                 width="100%"
             />
 
-            <BuyTickets url="https://www.onthestage.tickets/show/theatre-knoxville-downtown/a-doublewide-texas-christmas-81671/tickets" />
+            {/* <button className="showStatus">{showStatus}</button> */}
         </div>
     )
 }

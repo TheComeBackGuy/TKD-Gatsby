@@ -1,14 +1,16 @@
 .callToActionButton {
     width: 100%;
-    background-color: var(--tkdGreen);
+    background-color: var(--tkdLightBlue);
+    border: 1px solid var(--tkdLightBlue);
     color: white;
     padding: 10px;
     font-size: 20px;
-    border: none;
+    transition: 0.25s ease-in;
 }
 
 .callToActionButton:hover {
-    background-color: #93e528;
+    background-color: white;
+    color: var(--tkdLightBlue);
     cursor: pointer;
     transition: 0.25s ease-in;
 }

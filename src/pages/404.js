@@ -1,10 +1,14 @@
+import './styles/index.css'
+
 import * as React from 'react'
 
-import { Link } from 'gatsby'
+import { Link, navigate } from 'gatsby'
+
+import Ghost from '../images/svg/ghost.svg'
 
 // styles
 const pageStyles = {
-    color: '#232129',
+    color: `var( --tkdLightGrey)`,
     padding: '96px',
     fontFamily: '-apple-system, Roboto, sans-serif, serif',
 }
@@ -29,25 +33,23 @@ const codeStyles = {
 const NotFoundPage = () => {
     return (
         <main style={pageStyles}>
-            <title>Not found</title>
-            <h1 style={headingStyles}>Page not found</h1>
+            <title>No page here</title>
+            <Ghost />
+            <h1>OOPS!</h1>
+            <h4>You found the ghost of the theatre page!</h4>
             <p style={paragraphStyles}>
-                Sorry{' '}
-                <span role="img" aria-label="Pensive emoji">
-                    😔
-                </span>{' '}
-                we couldn’t find what you were looking for.
+                There wasn't a page here, but maybe start at the home page?
                 <br />
-                {process.env.NODE_ENV === 'development' ? (
-                    <>
-                        <br />
-                        Try creating a page in{' '}
-                        <code style={codeStyles}>src/pages/</code>.
-                        <br />
-                    </>
-                ) : null}
                 <br />
-                <Link to="/">Go home</Link>.
+                <button
+                    className="mainButton"
+                    onClick={() => {
+                        navigate('/')
+                    }}
+                >
+                    {' '}
+                    Go home
+                </button>
             </p>
         </main>
     )

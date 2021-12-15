@@ -2,6 +2,7 @@ import './styles/footer.css'
 
 import * as React from 'react'
 
+import FooterLinks from '../content/footerNav.json'
 import { Link } from 'gatsby'
 
 export default function Footer() {
@@ -17,30 +18,13 @@ export default function Footer() {
                     Knoxville, TN 37902
                 </p>
                 <ul className="list">
-                    <Link to="/donate">
-                        <li className="listBullet">Donate</li>
-                    </Link>
-                    <Link to="/volunteer">
-                        <li className="listBullet">Volunteer</li>
-                    </Link>
-                    <Link to="/theBoard">
-                        <li className="listBullet">The Board</li>
-                    </Link>
-
-                    <Link to="/sponsorships">
-                        <li className="listBullet">Sponsorships</li>
-                    </Link>
-                    <Link to="/programAds">
-                        <li className="listBullet">Program Ads</li>
-                    </Link>
-
-                    <Link to="/auditions">
-                        <li className="listBullet">Auditions</li>
-                    </Link>
-
-                    <Link to="/archive">
-                        <li className="listBullet">Archive</li>
-                    </Link>
+                    {FooterLinks.map((link) => {
+                        return (
+                            <Link to={`/${link.url}`}>
+                                <li className="listBullet">{link.title}</li>
+                            </Link>
+                        )
+                    })}
                 </ul>
             </div>
         </footer>

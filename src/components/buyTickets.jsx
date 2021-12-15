@@ -4,7 +4,7 @@ import './styles/buyTickets.css'
 import * as React from 'react'
 
 export default function BuyTickets(props) {
-    const text = 'Buy Tickets'
+    const text = `${props.status} - Buy Tickets`
 
     return (
         <button

@@ -37,7 +37,12 @@
     flex-grow: 1;
     padding: 10px 30px;
 }
-
+.showDetails cite {
+    font-weight: 200;
+}
+.showDate {
+    margin-top: 10px;
+}
 .showTicket {
     width: 100%;
     color: white;

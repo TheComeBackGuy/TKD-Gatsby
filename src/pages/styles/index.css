@@ -63,7 +63,7 @@
 
 .pageHeader {
     /* border-bottom: 1px solid var(--tkdBlue); */
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 * {
     margin: 0;
@@ -202,5 +202,9 @@ a {
     .standardPage {
         padding: 10px;
         font-size: 20px;
+    }
+    .pageHeader {
+        font-size: 25px;
+        margin-bottom: 20px;
     }
 }
