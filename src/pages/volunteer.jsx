@@ -1,3 +1,5 @@
+/* global VR */
+
 import './styles/index.css'
 import './styles/volunteer.css'
 
@@ -9,21 +11,32 @@ import { Helmet } from 'react-helmet'
 import { StaticImage } from 'gatsby-plugin-image'
 
 export default function Volunteer() {
-    function submitVR() {
-        document.querySelector('.volunteerForm').style.display = 'none'
-        document.querySelector('.volunteerThanks').style.display = 'flex'
-
-        return alert('here we go')
-    }
+    // useEffect(() => {
+    //     const script = document.createElement('script')
+    //     script.src =
+    //         'https://vr2.verticalresponse.com/signup_forms/signup_forms.embedded-2.js'
+    //     script.async = true
+    //     document.body.appendChild(script)
+    //     return () => {
+    //         document.body.removeChild(script)
+    //     }
+    // }, [])
 
     return (
         <div className="everything">
             <Helmet>
-                <title>Volunteer</title>
-                <script
-                    src="https://vr2.verticalresponse.com/signup_forms/signup_forms.embedded-2.js"
-                    typ="text/javascript"
+                <link
+                    media="all"
+                    rel="stylesheet"
+                    type="text/css"
+                    href="https://vr2.verticalresponse.com/signup_forms/signup_forms.embedded-2.css"
                 />
+                <script
+                    type="text/javascript"
+                    src={`https://vr2.verticalresponse.com/signup_forms/signup_forms.embedded-2.js`}
+                    onLoad={console.log('loaded')}
+                />
+                <title>Volunteer</title>
             </Helmet>
             <header>
                 <Header text="This is the header" />
@@ -188,7 +201,36 @@ export default function Volunteer() {
                                             <input
                                                 type="submit"
                                                 className="formButton"
-                                                onClick={submitVR}
+                                                onClick={() => {
+                                                    if (
+                                                        typeof VR !==
+                                                            'undefined' &&
+                                                        typeof VR.SignupForm !==
+                                                            'undefined'
+                                                    ) {
+                                                        new VR.SignupForm({
+                                                            id: '38482906974664',
+                                                            element:
+                                                                'vr-signup-form-38482906974664',
+                                                            endpoint:
+                                                                'https://vr2.verticalresponse.com/se/',
+                                                            embeddable: 'true',
+                                                            redirect_url: '',
+                                                            submitLabel:
+                                                                'Submitting...',
+                                                            invalidEmailMessage:
+                                                                'Invalid email address',
+                                                            generalErrorMessage:
+                                                                'An error occurred',
+                                                            notFoundMessage:
+                                                                'Sign up form not found',
+                                                            successMessage:
+                                                                'Success!',
+                                                            nonMailableMessage:
+                                                                'Nonmailable address',
+                                                        })
+                                                    }
+                                                }}
                                                 value="Sign Up"
                                             />
                                         </label>
