@@ -1,5 +1,3 @@
-/* global VR */
-
 import './styles/index.css'
 import './styles/volunteer.css'
 
@@ -9,18 +7,107 @@ import Footer from '../components/footer'
 import Header from '../components/header'
 import { Helmet } from 'react-helmet'
 import { StaticImage } from 'gatsby-plugin-image'
+import { useState } from 'react'
+
+// import { useEffect } from 'react'
 
 export default function Volunteer() {
-    // useEffect(() => {
-    //     const script = document.createElement('script')
-    //     script.src =
-    //         'https://vr2.verticalresponse.com/signup_forms/signup_forms.embedded-2.js'
-    //     script.async = true
-    //     document.body.appendChild(script)
-    //     return () => {
-    //         document.body.removeChild(script)
-    //     }
-    // }, [])
+    const [isLoaded, setIsLoaded] = useState(false)
+    // console.log(isLoaded)
+    function showForm() {
+        if (isLoaded) {
+            console.log(window.VR)
+            return (
+                <form
+                    className="vr-signup-form"
+                    id="vr-signup-form-38482906974696"
+                >
+                    <div className="vr-notice"></div>
+                    <div className="vr-field">
+                        <ul>
+                            <li>
+                                <label>
+                                    First Name:
+                                    <br />
+                                    <input
+                                        type="text"
+                                        name="first_name"
+                                        required
+                                    />
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    Last Name: <br />
+                                    <input type="text" name="last_name" />
+                                </label>
+                            </li>
+                            <li className="email">
+                                <label>
+                                    Email:
+                                    <input
+                                        type="email"
+                                        name="email_address"
+                                        className="emailField"
+                                        required
+                                    />
+                                </label>
+                            </li>
+                            <li className="submit">
+                                <label htmlFor="#">
+                                    <input
+                                        type="submit"
+                                        className="formButton"
+                                        onClick={() => {
+                                            if (
+                                                typeof window.VR !==
+                                                    'undefined' &&
+                                                typeof window.VR.SignupForm !==
+                                                    'undefined'
+                                            ) {
+                                                new window.VR.SignupForm({
+                                                    id: '38482906974664',
+                                                    element:
+                                                        'vr-signup-form-38482906974664',
+                                                    endpoint:
+                                                        'https://vr2.verticalresponse.com/se/',
+                                                    embeddable: 'true',
+                                                    redirect_url: '',
+                                                    submitLabel:
+                                                        'Submitting...',
+                                                    invalidEmailMessage:
+                                                        'Invalid email address',
+                                                    generalErrorMessage:
+                                                        'An error occurred',
+                                                    notFoundMessage:
+                                                        'Sign up form not found',
+                                                    successMessage: 'Success!',
+                                                    nonMailableMessage:
+                                                        'Nonmailable address',
+                                                })
+                                            }
+                                        }}
+                                        value="Sign Up"
+                                    />
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </form>
+            )
+        } else if (!isLoaded) {
+            return <h1>False</h1>
+        }
+    }
+
+    function checkVR() {
+        if (window.VR) {
+            setIsLoaded(true)
+            clearInterval(lookForVR)
+        }
+    }
+
+    const lookForVR = setInterval(checkVR)
 
     return (
         <div className="everything">
@@ -33,8 +120,8 @@ export default function Volunteer() {
                 />
                 <script
                     type="text/javascript"
+                    crossOrigin
                     src={`https://vr2.verticalresponse.com/signup_forms/signup_forms.embedded-2.js`}
-                    onLoad={console.log('loaded')}
                 />
                 <title>Volunteer</title>
             </Helmet>
@@ -159,10 +246,12 @@ export default function Volunteer() {
                         <h3 className="formHeader">
                             Let us know you want to volunteer!
                         </h3>
-                        <form
+                        {showForm()}
+                        {/* <form
                             className="vr-signup-form"
                             id="vr-signup-form-38482906974696"
                         >
+                            <div className="vr-notice"></div>
                             <div className="vr-field">
                                 <ul>
                                     <li>
@@ -237,10 +326,10 @@ export default function Volunteer() {
                                     </li>
                                 </ul>
                             </div>
-                            {/* <link media="all" rel="stylesheet" type="text/css" href="https://vr2.verticalresponse.com/signup_forms/signup_forms.embedded-2.css"> */}
-                            {/* <script type="text/javascript" src="https://vr2.verticalresponse.com/signup_forms/signup_forms.embedded-2.js"></script>
+                        {/* </form> */}
+                        {/* <link media="all" rel="stylesheet" type="text/css" href="https://vr2.verticalresponse.com/signup_forms/signup_forms.embedded-2.css"> */}
+                        {/* <script type="text/javascript" src="https://vr2.verticalresponse.com/signup_forms/signup_forms.embedded-2.js"></script>
 <script type="text/javascript">if (typeof VR !== "undefined" && typeof VR.SignupForm !== "undefined") { new VR.SignupForm({ id: "38482906974664", element: "vr-signup-form-38482906974664", endpoint: "https://vr2.verticalresponse.com/se/", embeddable: "true", redirect_url: "", submitLabel: "Submitting...", invalidEmailMessage: "Invalid email address", generalErrorMessage: "An error occurred", notFoundMessage: "Sign up form not found", successMessage: "Success!", nonMailableMessage: "Nonmailable address"}); }</script> */}
-                        </form>
                     </div>
                 </div>
 
