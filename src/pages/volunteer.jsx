@@ -101,7 +101,7 @@ export default function Volunteer() {
     }
 
     function checkVR() {
-        if (typeof window && window.VR) {
+        if (typeof window !== 'undefined' && window.VR) {
             setIsLoaded(true)
             clearInterval(lookForVR)
         }
