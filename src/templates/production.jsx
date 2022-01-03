@@ -35,8 +35,8 @@ export default function Production({ pageContext }) {
                     </h3>
                     <h4 className="director">
                         Directed by {DataList(pageContext.director)}
-                    </h4>{' '}
-                    <h4 className="director">
+                    </h4>
+                    <h4 className="date">
                         {ParseDate(pageContext.opens)} -{' '}
                         {ParseDate(pageContext.closes)},{' '}
                         {new Date(pageContext.closes).getFullYear()}

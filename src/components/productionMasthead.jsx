@@ -5,6 +5,7 @@ import * as React from 'react'
 
 import BuyTickets from './buyTickets'
 import InThePast from './InThePast'
+import { Link } from 'gatsby'
 import Seasons from '../content/seasons.json'
 
 export default function ProductionMasthead() {
@@ -20,12 +21,17 @@ export default function ProductionMasthead() {
                 url="https://www.onthestage.tickets/show/theatre-knoxville-downtown/a-doublewide-texas-christmas-81671/tickets"
                 status={showStatus}
             />
-
-            <img
-                src={`shows/${show.image}.jpg`}
-                alt={show.image}
-                width="100%"
-            />
+            <Link
+                to={`/production/${new Date(show.opens).getFullYear()}/${
+                    show.slug
+                }/`}
+            >
+                <img
+                    src={`shows/${show.image}.jpg`}
+                    alt={show.title}
+                    width="100%"
+                />
+            </Link>
 
             {/* <button className="showStatus">{showStatus}</button> */}
         </div>

@@ -5,6 +5,7 @@ import * as React from 'react'
 
 import Footer from '../components/footer'
 import Header from '../components/header'
+import { Helmet } from 'react-helmet'
 import Pin from '../images/svg/pin.jsx'
 import { StaticImage } from 'gatsby-plugin-image'
 import { navigate } from 'gatsby-link'
@@ -12,6 +13,9 @@ import { navigate } from 'gatsby-link'
 export default function Parking() {
     return (
         <div className="everything">
+            <Helmet>
+                <title>Parking</title>
+            </Helmet>
             <header>
                 <Header />
             </header>

@@ -6,6 +6,7 @@ import * as React from 'react'
 import Amazon from '../images/svg/amazon-smile.svg'
 import Footer from '../components/footer'
 import Header from '../components/header'
+import { Helmet } from 'react-helmet'
 import Kroger from '../images/svg/Kroger.svg'
 import PaypalLogo from '../images/svg/Paypal'
 
@@ -13,6 +14,9 @@ export default function Donate() {
     const onPage = 'donate'
     return (
         <div className="everything">
+            <Helmet>
+                <title>Donate to TKD!</title>
+            </Helmet>
             <header>
                 <Header page="donate" onPage={onPage} />
             </header>

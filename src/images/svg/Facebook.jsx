@@ -1,25 +1,23 @@
-import * as React from 'react'
+import React from 'react'
 
-export default function FaceBook(props) {
+function Facebook(props) {
     return (
         <svg
-            version="1.1"
-            id="Layer_1"
             xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            x="0px"
-            y="0px"
             width={props.width}
-            height={props.width}
-            viewBox="0 0 25.49 49.029"
-            style="enable-background:new 0 0 25.49 49.029;"
-            xml:space="preserve"
+            height={props.height}
+            x="0"
+            y="0"
+            version="1.1"
+            viewBox="0 0 102.24 196.56"
+            xmlSpace="preserve"
         >
             <path
-                fill={props.color}
-                d="M20.974,7.648c1.512,0,4.33,0,4.33,0V0.394h-4.02c-12.251,0-13.317,6.784-13.317,10.177v7.725H0.243
-	v7.537h7.724v22.805h8.482V25.833h7.725l1.13-7.537H16.45v-7.725C16.449,9.184,18.342,7.648,20.974,7.648z"
-            />
+                fill={props.fill}
+                d="M84.267 29.609h17.55V.198H85.52c-49.675 0-53.999 27.509-53.999 41.263v31.324H.207v30.561h31.314v92.457h34.391v-92.457h31.324l4.581-30.561H65.921V41.461c-.01-5.62 7.669-11.852 18.346-11.852z"
+            ></path>
         </svg>
     )
 }
+
+export default Facebook

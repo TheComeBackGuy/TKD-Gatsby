@@ -1,49 +1,126 @@
 import './styles/index.css'
 import './styles/auditions.css'
+import '../templates/production.css'
 
 import * as React from 'react'
 
+import DataList from '../components/DataList'
 import Footer from '../components/footer'
 import Header from '../components/header'
+import { Helmet } from 'react-helmet'
 import InThePast from '../components/InThePast'
+import ParseDate from '../components/ParseDate'
 import Seasons from '../content/seasons.json'
 
 export default function Auditions() {
     const auditionShow = Seasons[0].shows.find((show) => !InThePast(show.opens))
     console.log(auditionShow)
 
+    function showAuditionDates(show) {
+        console.log('submitting: ' + show.auditionDates)
+        //first checking to make sure it's not empty
+        if (show.auditionDates.length === 0 || show.auditionDates === '') {
+            return <p>TBD</p>
+        }
+        //okay, not empty? check to see if the last date is in the past
+        else if (InThePast(show.auditionDates)) {
+            return (
+                <div className="punch">
+                    Sorry, auditions for this show have already passed.
+                </div>
+            )
+        }
+        //not in the past? Great. Show the dates.
+        else if (!InThePast(show.auditionDates)) {
+            return (
+                <ul>
+                    {show.auditionDates.map((date) => {
+                        return <li>{ParseDate(date, 'auditions')}</li>
+                    })}
+                </ul>
+            )
+        }
+    }
+
     return (
         <div className="everything">
+            <Helmet>
+                <title>Audition Info</title>
+            </Helmet>
             <header>
                 <Header />
             </header>
             <main className="container">
-                <h1 className="standardPage topElement">Auditions</h1>
+                <h1 className="standardPage topElement ">Auditions</h1>
                 <img
                     src={`/shows/${auditionShow.image}.jpg`}
                     alt={auditionShow.title}
-                    className="showBanner"
+                    className="showBanner optional"
                 />
-                <article className="cardBlank gold">
+                <article className="cardBlank lightGrey">
                     <h1>General Requirements</h1>
-                    <p>
-                        No monologue is necessary. The audition will consist of
-                        cold readings from the script in a group enviroment. A
-                        headshot and resume are recommended but not required.
-                        Please bring a detailed list of conflicts for the next 3
-                        months.
-                    </p>
-                    <p>
+                    <ul className="auditionConstants">
+                        <li className="knockout white note">
+                            No monologue is necessary. The audition will consist
+                            of cold readings from the script in a group
+                            enviroment.
+                        </li>
+                        <li className="knockout white note">
+                            A headshot and resume are recommended but not
+                            required.
+                        </li>
+                        <li className="knockout white note">
+                            Please bring a detailed list of conflicts for the
+                            next 3 months.
+                        </li>
+                    </ul>
+                    <p className="knockoutBlank covid">
                         At this time, all performers and show volunteers must be
                         vaccinated.
                     </p>
                 </article>
-                <article className="card">
-                    <p>
-                        Our next production is Office Hours by Norm
-                        Foster.Auditions will be anounced here and on our social
-                        media accounts when auditions begin.
-                    </p>
+
+                <article className="card auditionInfo">
+                    <div className="auditionContainer">
+                        <img
+                            src={`/shows/${auditionShow.image}_poster.jpg`}
+                            alt={auditionShow.title}
+                            className="showImage"
+                        />
+                        <div className="detailsContainer">
+                            <h1 className="showName">{auditionShow.title}</h1>
+                            <h3 className="author">
+                                by {DataList(auditionShow.author)}
+                            </h3>
+                            <h3 className="director">
+                                Directed by: {DataList(auditionShow.director)}
+                            </h3>
+                            <h4>Show starts {ParseDate(auditionShow.opens)}</h4>
+                            <h4>
+                                Rehearsals start{' '}
+                                {ParseDate(auditionShow.rehearsalStartDate)}
+                            </h4>
+                            <h3 className="details">Audition Dates</h3>
+                            {showAuditionDates(auditionShow, 'audition')}
+                            <h3 className="details">Summary</h3>
+                            <p
+                                dangerouslySetInnerHTML={{
+                                    __html: auditionShow.description,
+                                }}
+                            ></p>
+                            <h3 className="details">Characters</h3>
+                            <ul>
+                                {auditionShow.cast.map((character) => {
+                                    return (
+                                        <li>
+                                            <strong> {character.name}</strong>:{' '}
+                                            {character.description}
+                                        </li>
+                                    )
+                                })}
+                            </ul>
+                        </div>
+                    </div>
                 </article>
                 <Footer />
             </main>

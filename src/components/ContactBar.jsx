@@ -4,10 +4,10 @@ import './styles/ContactBar.css'
 import * as React from 'react'
 
 import Email from '../images/svg/email.svg'
-import Facebook from '../images/svg/facebook.svg'
-import Instagram from '../images/svg/instagram.svg'
+import Facebook from '../images/svg/Facebook.jsx'
+import Instagram from '../images/svg/Instagram.jsx'
 import Phone from '../images/svg/phone.svg'
-import Twitter from '../images/svg/twitter.svg'
+import Twitter from '../images/svg/Twitter.jsx'
 
 export default function ContactBar() {
     const thumbSize = '15px'
@@ -23,9 +23,10 @@ export default function ContactBar() {
                                 onclick="window.open('tel:8655441999')"
                             >
                                 <Phone
-                                    width={thumbSize}
+                                    width="auto"
                                     height={thumbSize}
-                                    fill="#222"
+                                    className="phoneIcon"
+                                    fill="white"
                                 />
                             </button>
                             <p className="phoneNumber">(865)544-1999</p>
@@ -36,9 +37,10 @@ export default function ContactBar() {
                             <form action="mailto:info@theatreknoxville.com">
                                 <button className="iconButton">
                                     <Email
-                                        width={thumbSize}
+                                        width="auto"
                                         height={thumbSize}
-                                        fill="#222"
+                                        className="emailIcon"
+                                        fill="white"
                                     />
                                 </button>
                             </form>
@@ -49,20 +51,20 @@ export default function ContactBar() {
                         <form action="https://www.facebook.com/theatreknoxvilledowntown">
                             <button className="iconButton">
                                 <Facebook
-                                    width={thumbSize}
+                                    width="auto"
                                     height={thumbSize}
-                                    fill="#222"
+                                    fill="white"
                                 />
-                            </button>{' '}
+                            </button>
                         </form>
                     </li>
                     <li>
                         <form action="https://www.instagram.com/theatreknoxville/">
                             <button className="iconButton">
                                 <Instagram
-                                    width={thumbSize}
+                                    width="auto"
                                     height={thumbSize}
-                                    fill="#222"
+                                    fill="white"
                                 />
                             </button>{' '}
                         </form>
@@ -71,9 +73,9 @@ export default function ContactBar() {
                         <form action="https://twitter.com/theatreknox">
                             <button className="iconButton">
                                 <Twitter
-                                    width={thumbSize}
+                                    width="auto"
                                     height={thumbSize}
-                                    fill="#222"
+                                    fill="white"
                                 />
                             </button>{' '}
                         </form>

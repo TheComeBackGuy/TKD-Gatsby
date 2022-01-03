@@ -6,11 +6,15 @@ import * as React from 'react'
 import AdInfo from '../content/programAds.json'
 import Footer from '../components/footer'
 import Header from '../components/header'
+import { Helmet } from 'react-helmet'
 
 export default function ProgramAds(props) {
     console.log(AdInfo)
     return (
         <div className="everything">
+            <Helmet>
+                <title>Program Ads</title>
+            </Helmet>
             <header>
                 <Header text="This is the header" />
             </header>

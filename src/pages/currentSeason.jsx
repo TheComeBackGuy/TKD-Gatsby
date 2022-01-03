@@ -7,6 +7,7 @@ import * as React from 'react'
 import DataList from '../components/DataList'
 import Footer from '../components/footer'
 import Header from '../components/header'
+import { Helmet } from 'react-helmet'
 import InThePast from '../components/InThePast'
 import { Link } from 'gatsby'
 import ParseDate from '../components/ParseDate'
@@ -91,6 +92,9 @@ export default function CurrentSeason() {
     /**Main return */
     return (
         <div className="everything">
+            <Helmet>
+                <title>This Season's Shows</title>
+            </Helmet>
             <header>
                 <Header text="This is the header" />
             </header>

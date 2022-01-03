@@ -7,107 +7,51 @@ import Footer from '../components/footer'
 import Header from '../components/header'
 import { Helmet } from 'react-helmet'
 import { StaticImage } from 'gatsby-plugin-image'
+import VRform from '../components/VRform'
+import { useEffect } from 'react'
 import { useState } from 'react'
-
-// import { useEffect } from 'react'
 
 export default function Volunteer() {
     const [isLoaded, setIsLoaded] = useState(false)
     // console.log(isLoaded)
     function showForm() {
-        if (isLoaded) {
-            console.log(window.VR)
-            return (
-                <form
-                    className="vr-signup-form"
-                    id="vr-signup-form-38482906974696"
-                >
-                    <div className="vr-notice"></div>
-                    <div className="vr-field">
-                        <ul>
-                            <li>
-                                <label>
-                                    First Name:
-                                    <br />
-                                    <input
-                                        type="text"
-                                        name="first_name"
-                                        required
-                                    />
-                                </label>
-                            </li>
-                            <li>
-                                <label>
-                                    Last Name: <br />
-                                    <input type="text" name="last_name" />
-                                </label>
-                            </li>
-                            <li className="email">
-                                <label>
-                                    Email:
-                                    <input
-                                        type="email"
-                                        name="email_address"
-                                        className="emailField"
-                                        required
-                                    />
-                                </label>
-                            </li>
-                            <li className="submit">
-                                <label htmlFor="#">
-                                    <input
-                                        type="submit"
-                                        className="formButton"
-                                        onClick={() => {
-                                            if (
-                                                typeof window.VR !==
-                                                    'undefined' &&
-                                                typeof window.VR.SignupForm !==
-                                                    'undefined'
-                                            ) {
-                                                new window.VR.SignupForm({
-                                                    id: '38482906974664',
-                                                    element:
-                                                        'vr-signup-form-38482906974664',
-                                                    endpoint:
-                                                        'https://vr2.verticalresponse.com/se/',
-                                                    embeddable: 'true',
-                                                    redirect_url: '',
-                                                    submitLabel:
-                                                        'Submitting...',
-                                                    invalidEmailMessage:
-                                                        'Invalid email address',
-                                                    generalErrorMessage:
-                                                        'An error occurred',
-                                                    notFoundMessage:
-                                                        'Sign up form not found',
-                                                    successMessage: 'Success!',
-                                                    nonMailableMessage:
-                                                        'Nonmailable address',
-                                                })
-                                            }
-                                        }}
-                                        value="Sign Up"
-                                    />
-                                </label>
-                            </li>
-                        </ul>
-                    </div>
-                </form>
-            )
+        if (typeof window.VR !== 'undefined' && isLoaded) {
+            // console.log(window.VR)
+            return <VRform />
         } else if (!isLoaded) {
             return <h1>False</h1>
         }
     }
 
-    function checkVR() {
-        if (typeof window !== 'undefined' && window.VR) {
-            setIsLoaded(true)
-            clearInterval(lookForVR)
+    useEffect(() => {
+        const lookForVR = setInterval(checkVR)
+        function checkVR() {
+            if (typeof window !== 'undefined' && window.VR) {
+                setIsLoaded(true)
+                clearInterval(lookForVR)
+            }
         }
-    }
+        checkVR()
+    }, [])
 
-    const lookForVR = setInterval(checkVR)
+    useEffect(() => {
+        if (window?.VR?.SignupForm) {
+            new window.VR.SignupForm({
+                id: '38482906974664',
+                element: 'vr-signup-form-38482906974664',
+                endpoint: 'https://vr2.verticalresponse.com/se/',
+                embeddable: 'true',
+                redirect_url: '',
+                submitLabel: 'Submitting...',
+                invalidEmailMessage: 'Invalid email address',
+                generalErrorMessage: 'An error occurred',
+                notFoundMessage: 'Sign up form not found',
+                successMessage: 'Success!',
+                nonMailableMessage: 'Nonmailable address',
+                debug: true,
+            })
+        }
+    }, [isLoaded])
 
     return (
         <div className="everything">
@@ -126,7 +70,7 @@ export default function Volunteer() {
                 <title>Volunteer</title>
             </Helmet>
             <header>
-                <Header text="This is the header" />
+                <Header text="" />
             </header>
             <div className="container">
                 <h1 className="standardPage topElement">Volunteer</h1>
@@ -242,95 +186,7 @@ export default function Volunteer() {
                         <h1 className="formHeader">Hey! Thanks for that!</h1>
                         <p>Getting involved is such a big help.</p>
                     </div>
-                    <div className="volunteerForm">
-                        <h3 className="formHeader">
-                            Let us know you want to volunteer!
-                        </h3>
-                        {showForm()}
-                        {/* <form
-                            className="vr-signup-form"
-                            id="vr-signup-form-38482906974696"
-                        >
-                            <div className="vr-notice"></div>
-                            <div className="vr-field">
-                                <ul>
-                                    <li>
-                                        <label>
-                                            First Name:
-                                            <br />
-                                            <input
-                                                type="text"
-                                                name="first_name"
-                                                required
-                                            />
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label>
-                                            Last Name: <br />
-                                            <input
-                                                type="text"
-                                                name="last_name"
-                                            />
-                                        </label>
-                                    </li>
-                                    <li className="email">
-                                        <label>
-                                            Email:
-                                            <input
-                                                type="email"
-                                                name="email_address"
-                                                className="emailField"
-                                                required
-                                            />
-                                        </label>
-                                    </li>
-                                    <li className="submit">
-                                        <label htmlFor="#">
-                                            <input
-                                                type="submit"
-                                                className="formButton"
-                                                onClick={() => {
-                                                    if (
-                                                        typeof VR !==
-                                                            'undefined' &&
-                                                        typeof VR.SignupForm !==
-                                                            'undefined'
-                                                    ) {
-                                                        new VR.SignupForm({
-                                                            id: '38482906974664',
-                                                            element:
-                                                                'vr-signup-form-38482906974664',
-                                                            endpoint:
-                                                                'https://vr2.verticalresponse.com/se/',
-                                                            embeddable: 'true',
-                                                            redirect_url: '',
-                                                            submitLabel:
-                                                                'Submitting...',
-                                                            invalidEmailMessage:
-                                                                'Invalid email address',
-                                                            generalErrorMessage:
-                                                                'An error occurred',
-                                                            notFoundMessage:
-                                                                'Sign up form not found',
-                                                            successMessage:
-                                                                'Success!',
-                                                            nonMailableMessage:
-                                                                'Nonmailable address',
-                                                        })
-                                                    }
-                                                }}
-                                                value="Sign Up"
-                                            />
-                                        </label>
-                                    </li>
-                                </ul>
-                            </div>
-                        {/* </form> */}
-                        {/* <link media="all" rel="stylesheet" type="text/css" href="https://vr2.verticalresponse.com/signup_forms/signup_forms.embedded-2.css"> */}
-                        {/* <script type="text/javascript" src="https://vr2.verticalresponse.com/signup_forms/signup_forms.embedded-2.js"></script>
-<script type="text/javascript">if (typeof VR !== "undefined" && typeof VR.SignupForm !== "undefined") { new VR.SignupForm({ id: "38482906974664", element: "vr-signup-form-38482906974664", endpoint: "https://vr2.verticalresponse.com/se/", embeddable: "true", redirect_url: "", submitLabel: "Submitting...", invalidEmailMessage: "Invalid email address", generalErrorMessage: "An error occurred", notFoundMessage: "Sign up form not found", successMessage: "Success!", nonMailableMessage: "Nonmailable address"}); }</script> */}
-                    </div>
+                    <div className="volunteerForm">{showForm()}</div>
                 </div>
 
                 <Footer />

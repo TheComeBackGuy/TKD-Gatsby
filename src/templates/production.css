@@ -16,6 +16,12 @@
     display: block;
     font-size: 25px;
 }
+.date {
+    display: block;
+    font-size: 25px;
+    line-height: 1em;
+    font-weight: 400;
+}
 .split {
     width: 100%;
     display: flex;

@@ -1,9 +1,22 @@
-import * as React from 'react'
-
-export default function ParseDate(date) {
+export default function ParseDate(date, type) {
     const thisDate = new Date(date)
     let month = thisDate.getMonth() + 1
-    const day = thisDate.getDate()
+    let day = thisDate.getDate()
+    let hour = thisDate.getHours()
+    let minutes = thisDate.getMinutes()
+    let ampm = hour > 12 ? 'pm' : 'am'
+
+    //only returns a number so had to add formatting to minutes
+    if (minutes === 0) {
+        minutes = '00'
+    } else if (minutes < 10) {
+        minutes = '0' + minutes.toString()
+    }
+
+    //disabling military time
+    if (hour > 12) {
+        hour -= 12
+    }
 
     switch (month) {
         case 1:
@@ -45,7 +58,11 @@ export default function ParseDate(date) {
         default:
             break
     }
-    // let slicedMonth = month.slice(3)
-    // console.log(month)
-    return `${month.toString().slice(0, 3)} ${day}`
+    if (type === 'auditions') {
+        return `${month
+            .toString()
+            .slice(0, 3)} ${day} - ${hour}:${minutes} ${ampm}`
+    } else {
+        return `${month.toString().slice(0, 3)} ${day}`
+    }
 }

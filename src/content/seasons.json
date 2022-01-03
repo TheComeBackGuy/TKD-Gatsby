@@ -11,6 +11,8 @@
                 "image": "oddCouple",
                 "opens": "August 20, 2021 22:00:00",
                 "closes": "September 12, 2021 15:00:00",
+                "rehearsalStartDate": "",
+                "auditionDates": [],
                 "description": "<p>Unger and Madison are at it again! Florence Unger and Olive Madison, that is, in Neil Simon's hilarious 80's comic classic: the female version of The Odd Couple. Instead of the poker party that begins the original version, Ms. Madison has invited the girls over for an evening of Trivial Pursuit. The Pidgeon sisters have been replaced by the two Constazuela brothers. But the hilarity remains the same!<p>",
                 "cast": [
                     {
@@ -62,6 +64,8 @@
                 "image": "hillHouse",
                 "opens": "October 8, 2021 22:00:00",
                 "closes": "October 31, 2021 15:00:00",
+                "rehearsalStartDate": "",
+                "auditionDates": [],
                 "description": "<p>A chilling and mystifying study in mounting terror in which a small group of “psychically receptive” people are brought together in Hill House, a brooding, mid-Victorian mansion known as a place of evil and “contained ill will.”</p><p> Led by the learned Dr. Montague, who is conducting research in supernatural phenomena, the visitors have come to probe the secrets of the old house and to draw forth the mysterious powers that it is alleged to possess—powers which have brought madness and death to those who have lived therein in the past. The play was adapted from the novel by Shirley Jackson.</p>",
                 "cast": [
                     {
@@ -112,6 +116,8 @@
                 "image": "doublewide-christmas",
                 "opens": "December 3, 2021 22:00:00",
                 "closes": "December 19, 2021 15:00:00",
+                "rehearsalStartDate": "",
+                "auditionDates": [],
                 "description": "<p>In this outrageously funny comedy, it’s Christmas-time in the newest—and tiniest—town in Texas. And it’s beginning to look a lot like trouble in Doublewide.</p><p>Not only are the trailer park residents dealing with the stress of the holiday season, but they’ve just discovered that Doublewide is being double-crossed by the County. With their official incorporation papers in jeopardy, this band of eccentric Texans throw themselves into taking on the “Big Guys.” Determined to bolster their legitimacy, they first set their sights on the County-wide “Battle of The Mangers” competition. They conspire to win this smackdown with their “Nativity At The Alamo” entry…by any means possible.</p>",
                 "cast": [
                     { "name": "Big Ethel", "actor": "Donna Shoun" },
@@ -145,6 +151,11 @@
                 "image": "officeHours",
                 "opens": "January 21, 2022 22:00:00",
                 "closes": "February 13, 2022 15:00:00",
+                "rehearsalStartDate": "January 3, 2022 18:00:00",
+                "auditionDates": [
+                    "December 5, 2021 19:00:00",
+                    "December 6, 2021 19:30:00"
+                ],
                 "description": "<p>Office Hours is a full-length comedy by Norm Foster. Six separate stories are unfolding in six separate offices on one Friday afternoon. In true Norm Foster style, it makes us laugh at our humanity, cleverly linking a TV news producer, a pair of Canadian movie producers, a rather unsavoury agent, an entertainment lawyer, a horse track owner. and a psychiatrist. This highly acclaimed theatrical comedy is a madcap race towards quitting time.</p>",
                 "cast": [
                     {
@@ -241,6 +252,8 @@
                 "image": "iHateHamlet",
                 "opens": "April 1, 2022 22:00:00",
                 "closes": "April 17, 2022 15:00:00",
+                "rehearsalStartDate": "",
+                "auditionDates": [],
                 "description": "<p>A young and successful television actor relocates to New York, where he rents a marvelous, gothic apartment. With his television career in limbo, the actor is offered the opportunity to play Hamlet onstage, but there’s one problem: He hates Hamlet. </p><p>His dilemma deepens with the entrance of John Barrymore’s ghost, who arrives intoxicated and in full costume to the apartment that once was his. The contrast between the two actors, the towering, dissipated Barrymore whose Hamlet was the greatest of his time, and Andrew Rally, hot young television star, leads to a wildly funny duel over women, art, success, duty, television, and yes, the apartment.</p>",
                 "cast": [
                     {
@@ -286,6 +299,8 @@
                 "image": "rope",
                 "opens": "June 3, 2022 20:00:00",
                 "closes": "June 19, 2022 15:00:00",
+                "rehearsalStartDate": "",
+                "auditionDates": [],
                 "description": "<p>For the mere sake of adventure, danger, and the 'fun of the thing,' Wyndham Brandon persuades his weak minded friend, Charles Granillo, to assist him in the murder of a fellow undergraduate, a perfectly harmless man named Ronald Raglan. They place the body in a wooden chest, and to add spice to their handiwork, and invite a few acquaintances to a party.<p>",
                 "cast": [
                     {
@@ -331,6 +346,8 @@
                 "image": "waitingForGodot",
                 "opens": "April 9, 2021 22:00:00",
                 "closes": "April 18, 2021 15:00:00",
+                "rehearsalStartDate": "",
+                "auditionDates": [],
                 "description": "<p>A classic of the modern theatre. On Broadway, WAITING FOR GODOT roused audiences to demonstrations of enthusiasm and anger. A play that will provide an exciting challenge for groups interested in producing something out of the ordinary.</p>",
                 "cast": [
                     {
@@ -406,6 +423,8 @@
                 "image": "doublewide",
                 "opens": "August 2, 2019 22:00:00",
                 "closes": "August 18, 2019 15:00:00",
+                "rehearsalStartDate": "",
+                "auditionDates": [],
                 "description": "<p>The inhabitants of one of the smallest trailer parks in Texas – four doublewides and a shed – are thrown for a loop when they realize the nearby town of Tugaloo is determined to annex them.</p><p>But odd assortment of friends, enemies and neighbors realize they’ll have to work together to defeat the encroaching annexation if they – and their way of life – have a snowball’s chance to survive being swallowed up by ‘the big guys.’ The rollicking mayhem of this flat-out funny Jones Hope Wooten comedy escalates as the residents attempt to secede from Texas, discover a traitor in their midst and turn the tables in a surprising and side-splitting finale.</p><p>So grab your Stetson and come on over to Doublewide, Texas, where life is double the fun, double the joy, and where audiences double over with laughter!</p>",
                 "cast": [
                     {
@@ -475,6 +494,8 @@
                 "image": "all-in-the-timing",
                 "opens": "September 13, 2019 22:00:00",
                 "closes": "September 29, 2019 15:00:00",
+                "rehearsalStartDate": "",
+                "auditionDates": [],
                 "description": "<p>Featuring six diverse but equally hysterical one-act comedies, David Ives’ <i>All in the Timing</i> is a witty, romantic, absurd, and existentially-minded evening of theatre.</p><p>In <i><b>Sure Thing</b></i>, a couple on a first date has the opportunity to reset and try again each time they say the wrong thing. <i><b>Words, Words, Words</b></i> takes the “infinite monkey theorem”– the idea that given enough time, three monkeys in a room could eventually compose any given text, including Shakespeare’s Hamlet — and turns it into reality. In <i><b>The Universal Language</b></i>, a shy young woman places her faith in her fraudulent language tutor, who is changed for the better when he discovers the language they share: not the the made-up “Unamunda” that he professes to be fluent in, but rather the language of love. <i><b>Philip Glass Buys a Loaf of Bread</b></i> is an existential mini-musical parody based on the work of composer Philip Glass. In <i><b>The Philadelphia</b></i>, a man discovers that he’s entered a strange pocket of the universe where the only way to get what he wants is to ask for the opposite. Finally, in <i><b>Variations on the Death of Leon Trotsky</b></i>, the audience is treated to the hilarious vision of the famous Marxist waxing poetical — and dying, over and over and over again.</p><p>Winner of the John Gassner Playwriting Award.</p>",
                 "cast": [
                     { "name": "", "actor": "JoAnn Damiani", "description": "" },
@@ -519,6 +540,8 @@
                 "image": "",
                 "opens": "October 25, 2019 22:00:00",
                 "closes": "November 10, 2019 15:00:00",
+                "rehearsalStartDate": "",
+                "auditionDates": [],
                 "description": "",
                 "cast": [
                     { "name": "", "actor": "David Snow", "description": "" },
@@ -553,6 +576,8 @@
                 "image": "",
                 "opens": "December 6, 2019 20:00:00",
                 "closes": "December 22, 2019 15:00:00",
+                "rehearsalStartDate": "",
+                "auditionDates": [],
                 "description": "",
                 "cast": [
                     { "name": "", "actor": "Caleb Burnham", "description": "" },
@@ -587,6 +612,8 @@
                 "image": "",
                 "opens": "January 10, 2020 20:00:00",
                 "closes": "January 26, 2020 15:00:00",
+                "rehearsalStartDate": "",
+                "auditionDates": [],
                 "description": "",
                 "cast": [
                     { "name": "", "actor": "Joe Jaynes", "description": "" },
@@ -634,6 +661,8 @@
                 "image": "",
                 "opens": "February 21, 2020 20:00:00",
                 "closes": "March 8, 2020 15:00:00",
+                "rehearsalStartDate": "",
+                "auditionDates": [],
                 "description": "",
                 "cast": [
                     { "name": "", "actor": "Rebekah Reed", "description": "" },
@@ -669,6 +698,8 @@
                 "image": "",
                 "opens": "July 20, 2018 20:00:00",
                 "closes": "August 5, 2018 15:00:00",
+                "rehearsalStartDate": "",
+                "auditionDates": [],
                 "description": "",
                 "cast": [
                     {
@@ -713,6 +744,8 @@
                 "image": "",
                 "opens": "August 31, 2018 20:00:00",
                 "closes": "September 16, 2018 15:00:00",
+                "rehearsalStartDate": "",
+                "auditionDates": [],
                 "description": "",
                 "cast": [
                     {
@@ -751,6 +784,8 @@
                 "image": "",
                 "opens": "October 12, 2018 20:00:00",
                 "closes": "October 28, 2018 15:00:00",
+                "rehearsalStartDate": "",
+                "auditionDates": [],
                 "description": "",
                 "cast": [
                     { "name": "", "actor": "Eleni Johnson", "description": "" },
@@ -776,6 +811,8 @@
                 "image": "",
                 "opens": "November 23, 2018 20:00:00",
                 "closes": "December 9, 2018 15:00:00",
+                "rehearsalStartDate": "",
+                "auditionDates": [],
                 "description": "",
                 "cast": [
                     { "name": "", "actor": "Hayden Hall", "description": "" },
@@ -798,6 +835,8 @@
                 "image": "",
                 "opens": "January 4, 2019 20:00:00",
                 "closes": "January 20, 2019 15:00:00",
+                "rehearsalStartDate": "",
+                "auditionDates": [],
                 "description": "",
                 "cast": [
                     { "name": "", "actor": "Luke Atchley", "description": "" },
@@ -823,6 +862,8 @@
                 "image": "",
                 "opens": "April 5, 2019 20:00:00",
                 "closes": "April 21, 2019 15:00:00",
+                "rehearsalStartDate": "",
+                "auditionDates": [],
                 "description": "",
                 "cast": [
                     { "name": "", "actor": "Summer Awad", "description": "" },
@@ -853,6 +894,8 @@
                 "image": "",
                 "opens": "May 17, 2019 20:00:00",
                 "closes": "June 12, 2019 15:00:00",
+                "rehearsalStartDate": "",
+                "auditionDates": [],
                 "description": "",
                 "cast": [
                     { "name": "", "actor": "Rebecca Gomez", "description": "" },
@@ -890,6 +933,8 @@
                 "image": "",
                 "opens": "June 28, 2019 20:00:00",
                 "closes": "July 14, 2019 15:00:00",
+                "rehearsalStartDate": "",
+                "auditionDates": [],
                 "description": "",
                 "cast": [
                     {
@@ -971,6 +1016,8 @@
                 "image": "",
                 "opens": "July 21, 2017 20:00:00",
                 "closes": "August 6, 2017 15:00:00",
+                "rehearsalStartDate": "",
+                "auditionDates": [],
                 "description": "",
                 "cast": [
                     { "name": "", "actor": "Joshua Farner", "description": "" },
@@ -992,6 +1039,8 @@
                 "image": "",
                 "opens": "August 25, 2017 20:00:00",
                 "closes": "September 10, 2017 15:00:00",
+                "rehearsalStartDate": "",
+                "auditionDates": [],
                 "description": "",
                 "cast": [
                     {
@@ -1027,6 +1076,8 @@
                 "image": "",
                 "opens": "October 13, 2017 20:00:00",
                 "closes": "October 29, 2017 15:00:00",
+                "rehearsalStartDate": "",
+                "auditionDates": [],
                 "description": "",
                 "cast": [
                     { "name": "", "actor": "Casey Cain", "description": "" },
@@ -1058,6 +1109,8 @@
                 "image": "",
                 "opens": "November 24, 2017 20:00:00",
                 "closes": "December 10, 2017 15:00:00 ",
+                "rehearsalStartDate": "",
+                "auditionDates": [],
                 "description": "",
                 "cast": [
                     { "name": "", "actor": "Casey Cain", "description": "" },
@@ -1104,6 +1157,8 @@
                 "image": "",
                 "opens": "January 5, 2018",
                 "closes": "January 21, 2018",
+                "rehearsalStartDate": "",
+                "auditionDates": [],
                 "description": "",
                 "cast": [
                     { "name": "", "actor": "Rebecca Gomez", "description": "" },
@@ -1131,6 +1186,8 @@
                 "image": "",
                 "opens": "February 16, 2018",
                 "closes": "March 4, 2018",
+                "rehearsalStartDate": "",
+                "auditionDates": [],
                 "description": "",
                 "cast": [
                     {
@@ -1164,6 +1221,8 @@
                 "image": "",
                 "opens": "March 9, 2018",
                 "closes": "March 25, 2018",
+                "rehearsalStartDate": "",
+                "auditionDates": [],
                 "description": "",
                 "cast": [{ "name": "", "actor": "", "description": "" }],
                 "reviews": [{ "quote": "", "source": "" }],
@@ -1178,6 +1237,8 @@
                 "image": "",
                 "opens": "April 20, 2018",
                 "closes": "May 6, 2018",
+                "rehearsalStartDate": "",
+                "auditionDates": [],
                 "description": "",
                 "cast": [
                     { "name": "", "actor": "Ben Bean", "description": "" },
@@ -1202,6 +1263,8 @@
                 "image": "",
                 "opens": "June 1, 2018",
                 "closes": "June 17, 2018",
+                "rehearsalStartDate": "",
+                "auditionDates": [],
                 "description": "",
                 "cast": [
                     { "name": "", "actor": "David Cain", "description": "" },
