@@ -14,14 +14,14 @@ import { useState } from 'react'
 export default function Volunteer() {
     const [isLoaded, setIsLoaded] = useState(false)
     // console.log(isLoaded)
-    function showForm() {
-        if (typeof window.VR !== 'undefined' && isLoaded) {
-            // console.log(window.VR)
-            return <h1>This is where the form should be</h1>
-        } else if (!isLoaded) {
-            return <h1>False</h1>
-        }
-    }
+    // function showForm() {
+    //     if (typeof window.VR !== 'undefined' && isLoaded) {
+    //         // console.log(window.VR)
+    //         return <h1>This is where the form should be</h1>
+    //     } else if (!isLoaded) {
+    //         return <h1>False</h1>
+    //     }
+    // }
 
     useEffect(() => {
         const lookForVR = setInterval(checkVR)
@@ -186,7 +186,7 @@ export default function Volunteer() {
                         <h1 className="formHeader">Hey! Thanks for that!</h1>
                         <p>Getting involved is such a big help.</p>
                     </div>
-                    <div className="volunteerForm">{showForm()}</div>
+                    <div className="volunteerForm">{/* {showForm()} */}</div>
                 </div>
 
                 <Footer />
