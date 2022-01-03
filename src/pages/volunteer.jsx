@@ -17,7 +17,7 @@ export default function Volunteer() {
     function showForm() {
         if (typeof window.VR !== 'undefined' && isLoaded) {
             // console.log(window.VR)
-            return <VRform />
+            return <h1>This is where the form should be</h1>
         } else if (!isLoaded) {
             return <h1>False</h1>
         }
