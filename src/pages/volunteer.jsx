@@ -7,9 +7,12 @@ import Footer from '../components/footer'
 import Header from '../components/header'
 import { Helmet } from 'react-helmet'
 import { StaticImage } from 'gatsby-plugin-image'
-import VRform from '../components/VRform'
 import { useEffect } from 'react'
 import { useState } from 'react'
+
+// import VRform from '../components/VRform'
+
+
 
 export default function Volunteer() {
     const [isLoaded, setIsLoaded] = useState(false)
@@ -23,35 +26,35 @@ export default function Volunteer() {
     //     }
     // }
 
-    useEffect(() => {
-        const lookForVR = setInterval(checkVR)
-        function checkVR() {
-            if (typeof window !== 'undefined' && window.VR) {
-                setIsLoaded(true)
-                clearInterval(lookForVR)
-            }
-        }
-        checkVR()
-    }, [])
+    // useEffect(() => {
+    //     const lookForVR = setInterval(checkVR)
+    //     function checkVR() {
+    //         if (typeof window !== 'undefined' && window.VR) {
+    //             setIsLoaded(true)
+    //             clearInterval(lookForVR)
+    //         }
+    //     }
+    //     checkVR()
+    // }, [])
 
-    useEffect(() => {
-        if (window?.VR?.SignupForm) {
-            new window.VR.SignupForm({
-                id: '38482906974664',
-                element: 'vr-signup-form-38482906974664',
-                endpoint: 'https://vr2.verticalresponse.com/se/',
-                embeddable: 'true',
-                redirect_url: '',
-                submitLabel: 'Submitting...',
-                invalidEmailMessage: 'Invalid email address',
-                generalErrorMessage: 'An error occurred',
-                notFoundMessage: 'Sign up form not found',
-                successMessage: 'Success!',
-                nonMailableMessage: 'Nonmailable address',
-                debug: true,
-            })
-        }
-    }, [isLoaded])
+    // useEffect(() => {
+    //     if (window?.VR?.SignupForm) {
+    //         new window.VR.SignupForm({
+    //             id: '38482906974664',
+    //             element: 'vr-signup-form-38482906974664',
+    //             endpoint: 'https://vr2.verticalresponse.com/se/',
+    //             embeddable: 'true',
+    //             redirect_url: '',
+    //             submitLabel: 'Submitting...',
+    //             invalidEmailMessage: 'Invalid email address',
+    //             generalErrorMessage: 'An error occurred',
+    //             notFoundMessage: 'Sign up form not found',
+    //             successMessage: 'Success!',
+    //             nonMailableMessage: 'Nonmailable address',
+    //             debug: true,
+    //         })
+    //     }
+    // }, [isLoaded])
 
     return (
         <div className="everything">
@@ -181,13 +184,13 @@ export default function Volunteer() {
                         </div>
                     </div>
                 </div>
-                <div className="cardBlank red">
+                {/* <div className="cardBlank red">
                     <div className="volunteerThanks hidden">
                         <h1 className="formHeader">Hey! Thanks for that!</h1>
                         <p>Getting involved is such a big help.</p>
                     </div>
-                    <div className="volunteerForm">{/* {showForm()} */}</div>
-                </div>
+                    <div className="volunteerForm"> {showForm()}</div>
+                </div> */}
 
                 <Footer />
             </div>
