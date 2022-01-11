@@ -1,54 +1,32 @@
 <p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
+    <img alt="TKD" src="https://theatreknoxville.netlify.app/static/logo2-7ae8d511b785a71b31068d7c3df3251d.png" width="250" />
 </p>
 <h1 align="center">
-  Gatsby minimal starter
+  Theatre Knoxville Downtown - Retool
 </h1>
 
-## 🚀 Quick start
+## Before and After
 
-1.  **Create a Gatsby site.**
+`Before:` https://www.theatreknoxville.com/
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+`After:` https://theatreknoxville.netlify.app/
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+## Project Goals
 
-2.  **Start developing.**
+1.  **Shorter Load Time**
 
-    Navigate into your new site’s directory and start it up.
+    The current TKD site loads at 7 to 12 seconds and is bogged down by large images and Wordpress themes. I was able to get that down to a couple hundred miliseconds by recoding it from the ground up.
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+2.  **Not a Redesign**
 
-3.  **Open the code and start customizing!**
+    Current site is run by a Wordpress theme and seems to just be the default values without a real sense of design by it. My intent wasn't to do anything drastic in design terms, but some things needed to be organized and no visual language existed. So, things were slightly altered to give the site a more coheasive look and feel.
 
-    Your site is now running at http://localhost:8000!
+3.  **Controlled Data**
 
-    Edit `src/pages/index.js` to see your site update in real-time!
+    Presently, all data on the site is just static on each page. So, editing the site can mean visiting several pages to change one detail. This also means the site needs to be updated anytime anything from a production ending/beginning to changing the Auditions page to updating a director.
 
-4.  **Learn more**
+    Updated design is all controlled by JSON data. From the reviews, to the shows, to the sponsorship price points. The site automatically updates when a production ends and posts the new show banner and info. It also updates the Auditions page so that when the current show starts, it posts the available information for the next show. Aside from adding actors to shows and changes in schedule, this site could theoretically be run the whole season without the need of being updated.
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+4.  **Still in Production**
 
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-## 🚀 Quick start (Gatsby Cloud)
-
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
+    There are admittedly many more improvements I'd like to make on this project and I'm still looking for improvements to be made.

@@ -14,7 +14,7 @@ export default function ProductionMasthead() {
     const showStatus = InThePast(show.opens)
         ? 'NOW SHOWING'
         : 'IN PRE PRODUCTION'
-    console.log(`/images/shows/${show.image}.jpg`)
+    // console.log(`images/shows/${show.image}.jpg`)
     return (
         <div className="mastheadContainer topElement">
             <BuyTickets
