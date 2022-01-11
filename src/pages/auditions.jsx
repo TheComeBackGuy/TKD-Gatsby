@@ -53,7 +53,7 @@ export default function Auditions() {
             <main className="container">
                 <h1 className="standardPage topElement ">Auditions</h1>
                 <img
-                    src={`shows/${auditionShow.image}.jpg`}
+                    src={`/shows/${auditionShow.image}_poster.jpg`}
                     alt={auditionShow.title}
                     className="showBanner optional"
                 />
@@ -83,7 +83,7 @@ export default function Auditions() {
                 <article className="card auditionInfo">
                     <div className="auditionContainer">
                         <img
-                            src={`/shows/${auditionShow.image}_poster.jpg`}
+                            src={`/images/${auditionShow.image}_poster.jpg`}
                             alt={auditionShow.title}
                             className="showImage"
                         />
