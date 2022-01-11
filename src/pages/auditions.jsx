@@ -83,7 +83,7 @@ export default function Auditions() {
                 <article className="card auditionInfo">
                     <div className="auditionContainer">
                         <img
-                            src={`/shows/${auditionShow.image}_poster.jpg`}
+                            src={`/shows/${auditionShow.image}.jpg`}
                             alt={auditionShow.title}
                             className="showImage"
                         />
