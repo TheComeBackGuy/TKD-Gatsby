@@ -52,13 +52,13 @@ export default function Auditions() {
             </header>
             <main className="container">
                 <h1 className="standardPage topElement ">Auditions</h1>
-                <img
-                    src={`shows/${auditionShow.image}_poster.jpg`}
-                    alt={auditionShow.title}
+                {/* <img
+                    src={`/shows/${auditionShow.image}_poster.jpg`}
+                    alt="What images?"
                     className="showBanner optional"
-                />
+                /> */}
                 <article className="cardBlank lightGrey">
-                    <h1>General Requirements</h1>
+                    {/* <h1>General Requirements</h1> */}
                     <ul className="auditionConstants">
                         <li className="knockout white note">
                             No monologue is necessary. The audition will consist
@@ -83,7 +83,7 @@ export default function Auditions() {
                 <article className="card auditionInfo">
                     <div className="auditionContainer">
                         <img
-                            src={`/images/${auditionShow.image}_poster.jpg`}
+                            src={`shows/${auditionShow.image}_poster.jpg`}
                             alt={auditionShow.title}
                             className="showImage"
                         />
