@@ -252,8 +252,11 @@
                 "image": "iHateHamlet",
                 "opens": "April 1, 2022 22:00:00",
                 "closes": "April 17, 2022 15:00:00",
-                "rehearsalStartDate": "",
-                "auditionDates": [],
+                "rehearsalStartDate": "February 15, 2022 18:30:00",
+                "auditionDates": [
+                    "February 7, 2022 18:30:00",
+                    "February 8, 2022 18:30:00"
+                ],
                 "description": "<p>A young and successful television actor relocates to New York, where he rents a marvelous, gothic apartment. With his television career in limbo, the actor is offered the opportunity to play Hamlet onstage, but there’s one problem: He hates Hamlet. </p><p>His dilemma deepens with the entrance of John Barrymore’s ghost, who arrives intoxicated and in full costume to the apartment that once was his. The contrast between the two actors, the towering, dissipated Barrymore whose Hamlet was the greatest of his time, and Andrew Rally, hot young television star, leads to a wildly funny duel over women, art, success, duty, television, and yes, the apartment.</p>",
                 "cast": [
                     {

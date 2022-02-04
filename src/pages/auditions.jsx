@@ -16,6 +16,26 @@ export default function Auditions() {
     const auditionShow = Seasons[0].shows.find((show) => !InThePast(show.opens))
     console.log(auditionShow)
 
+    function showRehearsals(show) {
+        console.log('submitting: ' + show.rehearsalStartDate)
+        //first checking to make sure it's not empty
+        if (show.rehearsalStartDate === '') {
+            return <>TBD</>
+        }
+        //okay, not empty? check to see if the last date is in the past
+        else if (InThePast(show.rehearsalStartDate)) {
+            return (
+                <div className="punch">
+                    Rehearsals for this production have already started.
+                </div>
+            )
+        }
+        //not in the past? Great. Show the dates.
+        else if (!InThePast(show.rehearsalStartDate)) {
+            return <>{ParseDate(show.rehearsalStartDate)}</>
+        }
+    }
+
     function showAuditionDates(show) {
         console.log('submitting: ' + show.auditionDates)
         //first checking to make sure it's not empty
@@ -97,8 +117,7 @@ export default function Auditions() {
                             </h3>
                             <h4>Show starts {ParseDate(auditionShow.opens)}</h4>
                             <h4>
-                                Rehearsals start{' '}
-                                {ParseDate(auditionShow.rehearsalStartDate)}
+                                Rehearsals start {showRehearsals(auditionShow)}
                             </h4>
                             <h3 className="details">Audition Dates</h3>
                             {showAuditionDates(auditionShow, 'audition')}
@@ -112,7 +131,7 @@ export default function Auditions() {
                             <ul>
                                 {auditionShow.cast.map((character) => {
                                     return (
-                                        <li>
+                                        <li className="character">
                                             <strong> {character.name}</strong>:{' '}
                                             {character.description}
                                         </li>
