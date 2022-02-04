@@ -122,11 +122,12 @@ export default function Auditions() {
                             <h3 className="details">Audition Dates</h3>
                             {showAuditionDates(auditionShow, 'audition')}
                             <h3 className="details">Summary</h3>
-                            <p
+                            <div
+                                class="summary"
                                 dangerouslySetInnerHTML={{
                                     __html: auditionShow.description,
                                 }}
-                            ></p>
+                            ></div>
                             <h3 className="details">Characters</h3>
                             <ul>
                                 {auditionShow.cast.map((character) => {

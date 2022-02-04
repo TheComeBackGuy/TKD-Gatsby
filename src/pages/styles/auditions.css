@@ -20,6 +20,10 @@
     justify-content: flex-start;
 }
 
+.summary p {
+    margin-bottom: 20px;
+}
+
 .showImage {
     width: 35%;
     margin-right: 20px;
