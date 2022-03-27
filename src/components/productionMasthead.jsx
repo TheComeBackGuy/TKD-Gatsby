@@ -18,7 +18,7 @@ export default function ProductionMasthead() {
     return (
         <div className="mastheadContainer topElement">
             <BuyTickets
-                url="https://www.onthestage.tickets/show/theatre-knoxville-downtown/a-doublewide-texas-christmas-81671/tickets"
+                url={`https://www.onthestage.tickets/show/theatre-knoxville-downtown/${show.ticketLink}`}
                 status={showStatus}
             />
             <Link
